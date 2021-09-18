@@ -3,7 +3,7 @@ Lock, Load &amp; Ship your generative DS!
 
   - generative "Gravemaker" typescales based on 12pt, 16px & 1ex
   - generative "CMY-FACE" color palette based on Cyaan, Yellow, Magenta color-mixing (soon)
-  - generative "SySS-tokens" layering and naming of system-wide theming (soon)
+  - generative "SySS-layers" layering and naming of system-wide theming (soon)
   - generative "B.O.U.W" naming pattern based on B.O.U.W.:fork:. (always included)
 
 ## Gravemaker Typescales
