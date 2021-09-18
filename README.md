@@ -1,5 +1,10 @@
 # RevolverDS
-Lock, Load &amp; Ship your generative DS
+Lock, Load &amp; Ship your generative DS!
+
+  - generative typescales based on 12pt, 16px & 1ex
+  - generative color palette based on Cyaan, Yellow, Magenta color-mixing (soon)
+  - generative layering and naming of system-wide theming (soon)
+  - generative naming pattern based on B.O.U.W.:fork:. (always included)
 
 ## Gravemaker Typescales
 #### Dedecated to Thomas Gravemaker's 50yrs of Letterpressing Mentoring & Mastering
