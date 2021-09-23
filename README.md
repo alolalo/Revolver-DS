@@ -1,10 +1,20 @@
-# RevolverDS
+# RevolverDS - V001-D001
 Lock, Load &amp; Ship your generative DS!
 
   - generative "Gravemaker" typescales based on 12pt, 16px & 1ex
   - generative "CMY-FACE" color palette based on Cyaan, Yellow, Magenta color-mixing (soon)
-  - generative "SySS-layers" layering and naming of system-wide theming (soon)
-  - generative "B.O.U.W" naming pattern based on B.O.U.W.:fork:. (always included)
+  - generative "SySS-layers" layering and naming of system-wide MVC | MVL patterns (soon)
+
+# Copyright Notice: CC-BA-NC-SA
+For the time being, you can use this for your own personal indie projects, but not commercially. That's to put this in the right perception of expectation first; it's not commercial-grade (yet), it's intellectual property until then using the Creative Commons - Non-commercial, Share-Alike license.
+
+### CopyRight Property Notice: Creative Commons BA-NC-SA
+  - use RevolverDS or any of it's parts for any commercial activities that are directly in line with it's own goals (source DS, affiliate products)
+  - using the naming, branding and conventions of RevolverDS in any form or medium of documentation without asking prior approval at https://www.askgu.us
+  - using the generative "B.O.U.W" naming pattern: B.O.U.W.:_fork_:. in any form or medium of documentation without prior approval at https://www.askgu.us
+  - using the naming, branding and conventions of Gu.us (askgu.us, justgu.us, followgu.us, fuckgu.us) in any form, medium or documentation without using the appropriate accreditation & approval
+
+Why? First Things First: What's yours is yours, what's mine is mine. Tinkering takes more time than you think, and since a GIF is worth millions to people these days, so too do I mark my words and design of the RevolverDS convention as Intelectual Property. You can use my work for free, but never my name or my claims of being the origin to my creation(s). Laws don't make people do the right thing, rights set things straight from the start. That's why all my IP is CopyRight protected, so my work can be copied left.
 
 ## Gravemaker Typescales
 #### Dedecated to Thomas Gravemaker's 50yrs of Letterpressing Mentoring & Mastering
