@@ -6,15 +6,7 @@ Lock, Load &amp; Ship your generative DS!
   - generative "SySS-layers" layering and naming of system-wide MVC | MVL patterns (soon)
 
 # Copyright Notice: CC-BA-NC-SA
-For the time being, you can use this for your own personal indie projects, but not commercially. That's to put this in the right perception of expectation first; it's not commercial-grade (yet), it's intellectual property until then using the Creative Commons - Non-commercial, Share-Alike license.
-
-### CopyRight Property Notice: Creative Commons BA-NC-SA
-  - use RevolverDS or any of it's parts for any commercial activities that are directly in line with it's own goals (source DS, affiliate products)
-  - using the naming, branding and conventions of RevolverDS in any form or medium of documentation without asking prior approval at https://www.askgu.us
-  - using the generative "B.O.U.W" naming pattern: B.O.U.W.:_fork_:. in any form or medium of documentation without prior approval at https://www.askgu.us
-  - using the naming, branding and conventions of Gu.us (askgu.us, justgu.us, followgu.us, fuckgu.us) in any form, medium or documentation without using the appropriate accreditation & approval
-
-Why? First Things First: What's yours is yours, what's mine is mine. Tinkering takes more time than you think, and since a GIF is worth millions to people these days, so too do I mark my words and design of the RevolverDS convention as Intelectual Property. You can use my work for free, but never my name or my claims of being the origin to my creation(s). Laws don't make people do the right thing, rights set things straight from the start. That's why all my IP is CopyRight protected, so my work can be copied left.
+For the time being, you can use this for your own personal indie projects, but not commercially. That's to put this in the right perception of expectation first; it's not commercial-grade any time soon, it's experimentational until then using the Creative Commons - Non-commercial, Share-Alike license. That means basically it's a copy-warning agreement :)
 
 ## Gravemaker Typescales
 #### Dedecated to Thomas Gravemaker's 50yrs of Letterpressing Mentoring & Mastering
@@ -26,7 +18,9 @@ This required a numerical system of **proportional equality** that could support
 
 Thomas Gravemaker was my mentor for only a short while, and hopefully will remain for as long as possible. He will be privately giving physical workshops that you might be able to book at https://www.letterpressamsterdam.com/ next summer (2022), but for now he's handing things over and I was lucky to get one more workshop with him this year.
 
-I got hopelessly lost at the start coming from digital, as we are use to the **8px** grid, but not used to the 12pt in typography, and why that is used as the root value to **devide the real estate**. Spacings in typography can be so minute because the system behind it supports it. 
+I got hopelessly lost at the start coming from digital, as we are use to the **8px** grid, but not used to the 12pt in typography, and why that is used as the root value to **devide the real estate**. Spacings in typography can be so minute because the system behind it supports the layout. And that part is key to creating a great flow of your digital documents too, as we primarely focus on the pixel as the source of truth. Not optimal devisions and flow, like "they" do (typesetters). 
+
+If anything, that would be the aim for for Revolver Design System; to create an optimal flow of import, export and departing from design systems for your next creation. Don't like Gravemaker's way of doing things? Well he's not a big fan of digital either, or Amazon. But I do think it's worthwhile to keep practicing, and so I continue on any "luxery time" I have to dive into it in the applied sense (demos). 
 
 After reading the dutch book _Praktisch Rekenen: voor zetters, drukkers en binders_ by C. Hofmann, I got to learn the math that Thomas was educated with, and knows by heart and hand how to set right each and every time. Perfect, no computer, just by memory and the science behind the math.
 

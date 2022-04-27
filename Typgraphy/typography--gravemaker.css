@@ -1,0 +1,105 @@
+:root {
+    /* Dedicated to Thomas Gravemaker, https://www.letterpressamsterdam.com, for sharing your 50+ years of letterpressing skills with me. Through this repository I hope to kick your eternal knowledge forward, and also creating a resource for your future students how to apply these concepts in digital media. All values used below are for reference to typographic design systems, proportions & calculations in letterpressing and digital media, not actual design choices despite the looks of it. 
+    
+    Change ONLY relational --bu--* values, then apply them to the aliased relational-base. There are three flavors; relational-base (relative units), absolute-base (absolute units), and hybrid-base (x-height-unit) to reference how the duodecimo system in 12pt type differs from the 16px sedecimo system, and how x-height is a hybrid of the two from my opinionated design point of view. Headless, generative & utility-driven type-scales with simple math, and the gentle touch of a dutch giant called Thomas. */
+
+        /* intentional gap */
+        /* intentional gap */
+
+    /* parametric BASE-utility-units using B.O.U.W.:forks:: (c) down the pipe */
+    --bu--rem-base: 16px;
+    --bu--cic-base: 12pt;
+    --bu--rex-base: 1ex;
+    --bu--ch-base: 1ch;
+    /* not yet supported, see CanIUse and MDN docs */
+    --bu--lh-base: 1lh;
+    --bu--cjk-base: 1ic;
+    --bu--cap-base: 1cap;
+
+    /* intentional gap */
+
+    /* these TWO units are the primary setters.  */
+    --bu--rel-base: var(--bu--cic-base);
+    --bu--abs-base: var(--bu--rem-base);
+    /* intentional gap */
+
+    /* B.O.U.W.-fork:: Relative Typographic Sizes */
+    /* proportional relative length-units using duodecimo system, 5 proportions of 12pt korps = 1 cicero = relative-unit-base */
+    --rel-base: var(--bu--rel-base); /* 12pt */
+    /* replacable WITH: ex-base, ch-base for relative control. em is only used in classes, not the system head */
+    --rel-half: calc(var(--rel-base) / 2); /* 6pt */
+    --rel-third: calc(var(--rel-base) / 3); /* 4pt */
+    --rel-fourth: calc(var(--rel-base) / 4); /* 3pt */
+    --rel-sixth: calc(var(--rel-base) / 6); /* 2pt */
+    --rel-twelvth: calc(var(--rel-base) / 12); /* 1pt */
+    /* absolute proportional units ON base using proportions of korps 1pt */
+    /* please be aware that the ORDER is ideal for reading experience, and should be loaded in reverse like so;  */
+    --rel-ob5: calc(var(--rel-ob4) + var(--rel-fourth));
+    --rel-ob4: calc(var(--rel-ob3) + var(--rel-third));
+    --rel-ob3: calc(var(--rel-ob2) + var(--rel-sixth));
+    --rel-ob2: calc(var(--rel-ob1) + var(--rel-twelvth));
+    --rel-ob1: calc(var(--rel-base) + var(--rel-twelvth));
+    /* absolute proportional units UNDER base using proportions of korps 1pt */
+    --rel-ub1: calc(var(--rel-base) - var(--rel-twelvth));
+    --rel-ub2: calc(var(--rel-ub1) - var(--rel-twelvth));
+    --rel-ub3: calc(var(--rel-ub2) - var(--rel-sixth));
+    --rel-ub4: calc(var(--rel-ub3) - var(--rel-twelvth));
+    --rel-ub5: calc(var(--rel-ub4) - var(--rel-twelvth));
+    /* absolute utility units using BASE = 1 relative-unit-base */
+    --rel-8x: calc(var(--rel-base) * var(--rel-third) * var(--rel-sixth)); /* 96pt */
+    --rel-6x: calc(var(--rel-base) * var(--rel-half));  /* 72pt */
+    /* 5x is not used in physical letterpressing, but shown below as an example to see why FIVE is off in 12pt: it's not proportionally equal to the 5 root proportions of cicero multitudes; 1pt, 2pt, 3pt, 4pt, 6pt. Therefor in physical space, you can't subtract whitespace like this since you would need a sawblade on the letterpressing table and make sure not to cut the lead in the proces. 8x is not in the root proportions, but can be made by multiplying them, which is what you want with relative units; to scale proportionally equal to a relative base. Note that 5x is the only odd needing an extra bump to get exact unlike the other proportional relations that can be achieved by only multiplying it's own proportions once. */
+    --rel-5x: calc(var(--rel-base) * var(--rel-half) - var(--rel-twelvth));  /* 60pt */
+    /* intentional gap */
+    --rel-4x: calc(var(--rel-base) * var(--rel-third));  /* 48pt */
+    --rel-3x: calc(var(--rel-base) * var(--rel-fourth));  /* 36pt */
+    --rel-2x: calc(var(--rel-base) * var(--rel-sixth));  /* 24pt */
+
+    /* B.O.U.W.:fork:: Absolute Typographic Sizes */
+    /* proportional absolute-units using sedecimo system, 4 proportions of 16px korps = 1 rem = 1 absolute-unit */
+    --abs-base: var(--bu--abs-base);
+    --abs-half: calc(var(--abs-base) / 2);
+    --abs-quarter: calc(var(--abs-base) / 4);
+    --abs-eighth: calc(var(--abs-base) / 8);
+    --abs-sixtnth: calc(var(--abs-base) / 16);
+
+     /* absolute proportional use the bumps to get them right, are all on odds above 1, and that there are only four proportions of 16 possible by it's own devision of two, unlike twelve that has FIVE proportions. */
+    --abs-ob5: calc(var(--abs--ob4) + var(--abs-quarter) - var(--abs-sixtnth));
+    --abs-ob4: calc(var(--abs--ob3) + var(--abs-quarter));
+    --abs-ob3: calc(var(--abs--ob2) + var(--abs-sixtnth) + var(--abs-eighth));
+    --abs-ob2: calc(var(--abs--ob1) + var(--abs-eighth));
+    --abs-ob1: calc(var(--abs--base) + var(--abs-eighth));
+
+    /* absolute proportional units UNDER base using proportions of korps 1px */
+    --abs-ub1: calc(var(--abs--base) - var(--abs-eighth)); /* 6pt */ 
+    --abs-ub2: calc(var(--abs--ub1) - var(--abs-eighth)); /* 6pt */
+    --abs-ub3: calc(var(--abs--ub2) - var(--abs-sixtnth) - var(--abs-eighth)); /* 6pt */
+    --abs-ub4: calc(var(--abs--ub3) - var(--abs-eighth)); /* 6pt */
+    --abs-ub5: calc(var(--abs--ub4) - var(--abs-sixtnth)); /* 6pt */
+
+    /* absolute utility units using BASE = korps 1rem */
+    --abs-6x: calc(var(--abs-base)* 6);  /* 96px */
+    --abs-5x: calc(var(--abs-base)* 5);  /* 80px */
+    --abs-4x: calc(var(--abs-base)* 4);  /* 64px */
+    --abs-3x: calc(var(--abs-base)* 3);  /* 48px */
+    --abs-2x: calc(var(--abs-base)* 2);  /* 32px */
+
+    /* B.O.U.W.:fork:: Hybrid Typographic Sizes */
+    /* hybrid utility units using 1 relative-ex-base = based on x-height of the first font (!). Note that the multipliers use sedecimo scales below the base, and relative multipliers above the base. None of these values are real values, just for illustration purposes on how to handle equal proportions in a hybrid model that is based on a relative unknown, yet a relative baseline that shows how devissions and multitudes are handled at scale.   */
+    --rex-ob5: calc(var(--rex-base) * 17.875);
+    --rex-ob4: calc(var(--rex-base) * 12.1);
+    --rex-ob3: calc(var(--rex-base) * 7.750);
+    --rex-ob2: calc(var(--rex-base) * 4.350);
+    --rex-ob1: calc(var(--rex-base) * 2.1);
+    --rex-base: var(--bu--rex-base);
+    --rex-half: calc(var(--rex-base) * 0.500);
+    --rex-quarter: calc(var(--rex-base) * 0.250);
+    --rex-eighth: calc(var(--rex-base) * 0.125);
+    --rex-ub1: calc(var(--rex-base) * 0.875);
+    --rex-ub2: calc(var(--rex-base) * 0.750);
+    --rex-ub3: calc(var(--rex-base) * 0.625);
+    --rex-ub4: calc(var(--rex-base) * 0.375);
+    --rex-ub5: calc(var(--rex-base) * 0.210);
+}
+
+/* Created by https://justgu.us , the tiniest design agency you can hire to if you're looking for design system excellence and anti-fragile JIT atomic design. My expertise is naming things, the hardest programming language ever created for computer- mankind. Questions? https://askgu.us */

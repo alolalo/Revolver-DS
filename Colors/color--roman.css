@@ -1,0 +1,211 @@
+
+/* **** CHEAT SHEET ******* */
+/*  how to read & write BOUM design tokens:
+
+BOUM uses a relative center; the BASE. Need a higher value?
+Just go On Base from your relative base. Need less? Just go
+down Under Base from whwere you are. Untill you hit the MAX.
+
+It uses ROMAN SEMANTICS to give name to design tokens on- and
+under the base, and relative to each other, using their first letters o' and u' like the
+roman numbers I, II and III (+ base) uses letters to spell them and refer them to each other.
+
+/// Roman Semantical Notation
+
+MAX On Base : __mob;
+On On On Base : __ooob;
+On On Base: __oob;
+On Base: __ob;
+Base: __base;
+Under Base: __ub;
+Under Under Base: __uub;
+Under Under Under Base: __uuub;
+MAX Under Base: __mub;
+
+which would looks semantically like this without values;
+    --cp__mob: ;
+    --cp__ooob: ;
+    --cp__oob: ;
+    --cp__ob: ;
+    --cp__base: ;
+    --cp__ub: ;
+    --cp__uub: ;
+    --cp__uuub: ;
+    --cp__mub: ;
+
+So in short; need more? On base. Need less? Under base. 
+A minimal and effective way to speak about design tokens as 
+semantical rules, not numbers. 
+
+BOUM is a Semaforic Naming Convention to be exact, but that's
+just literature & leisure versus keeping it layman's; what does
+it do, and how does it work? BOUM keeps it simple; just start
+from the Base, and let the naming BOUM for you!
+
+{{{{  How to write MODIFIERS }}}}
+
+Say you need a color-stop in your palette, between __ob and __oob.
+How would you name that token? And where would you place it?
+
+Let's assume we know the color is "just in between", than we
+could apply the rule "closest to the base" to adopt the name
+from, with a capitalized modifier (prefixed with '_M').
+
+In this case, On Base (__ob) would be the closest value to
+mimic as a name, putting it right there where you want it; 
+modified in between '__ob' and '__oob', the new color-name is:
+
+MODIFIED On Base: --cp_M__ob, so it sticks it's butt out screaming
+"HELLOOOO!", without compromizing a clean reading experience.
+
+which would looks semantically like this in a matrix of colors;
+    --cp__mob: ;
+    --cp__ooob: ;
+    --cp__oob: ;
+    --cp_M__ob: ;
+    --cp__ob: ;
+    --cp__base: ;
+    --cp__ub: ;
+    --cp__uub: ;
+    --cp__uuub: ;
+    --cp__mub: ;
+    
+    Exceptions can be made, but only one per token unless you
+    want something like this to hit your approval inbox;
+    
+    --cp_MMM__ooob
+    --cp_MM__ooob
+    --cp_M__ooob
+    --cp_M__oob
+    --cp_M__ob
+    --cp_MMM__base
+
+Even still, that looks acceptably readable however, it's just
+not clear what the signal versus the noise is anymore.
+
+This showcases why BOUM was made for the reading experience
+of everyday DS-work, not guessing experience, and to quickly adopt when needed. 
+Also, when it fails because laws can be broken, like threes(+1 modifier). 
+
+Like when you might nee to test three different versions of a color to see which one
+works; how would you name them? Well, TESTS probably (_T) but you can do no more than
+three T's per color ( --cp_T__ob, --cp_TT__ob, --cp_TTT__ob), plus the refernce (--cp__ob)
+
+There's nothing wrong with on-the-fly modifications, there's just something
+wrong with having too many choices to modify an entire system of
+design language upfront. 
+
+Just keep it simple and stick to the basics;
+
+0. No Docs, Strictly Comments & Principles
+1. No numbers, Just semantics
+2. No more Than 3, plus 1 modifier per token
+3. Always comment abbreviations & explenations
+4. Always comment ...
+5. Keep The Basics Fresh!
+
+/* *** END OF CHEAT SHEET *** */
+
+/* .: B.O.U~M. :. copyrighted design tokens use ROMAN SEMANTICS to ramp tokens ON or UNDER the base, abbreviated to o's & u's.
+    Lighter colors or ON BASE, Darker colors are UNDER BASE, untill you hit the MAX on either side of the scale. 
+    To read more about the license agreement for using this library containing BOUM tokens, please visit https://folowgu.us/boum*/
+:root {
+    /* color primary, abbreviated to first-letters */
+    --cp__mob: ;
+    --cp__ooob: ;
+    --cp__oob: ;
+    --cp__ob: ;
+    --cp__base: ;
+    --cp__ub: ;
+    --cp__uub: ;
+    --cp__uuub: ;
+    --cp__mub: ;
+
+    /* color secundairy, abbreviated to first-letters */
+    --cs__mob: ;
+    --cs__ooob: ;
+    --cs__oob: ;
+    --cs__ob: ;
+    --cs__base: ;
+    --cs__ub: ;
+    --cs__uub: ;
+    --cs__uuub: ;
+    --cs__mub: ;
+
+    /* color tertiary, abbreviated to first-letters */
+    --ct__mob: ;
+    --ct__ooob: ;
+    --ct__oob: ;
+    --ct__ob: ;
+    --ct__base: ;
+    --ct__ub: ;
+    --ct__uub: ;
+    --ct__uuub: ;
+    --ct__mub: ;
+
+    /* color quarternairy, abbreviated to first-letters */
+    --cq__mob: ;
+    --cq__ooob: ;
+    --cq__oob: ;
+    --cq__ob: ;
+    --cq__base: ;
+    --cq__ub: ;
+    --cq__uub: ;
+    --cq__uuub: ;
+    --cq__mub: ;    
+
+    /* color white, abbreviated to first-letters */
+    --cw__ob: ;
+    --cw__base: ;
+    --cw__ub: ; 
+
+    /* color gray, abbreviated to first-letters */
+    --cg__ob: ;
+    --cg__base: ;
+    --cg__ub: ;
+
+    /* color black, abbreviated to first-letters */
+    --cb__ob: ;
+    --cb__base: ;
+    --cb__ub: ;
+
+    /* utility color succes, abbreviated to first-letters */
+    --ucs__ob: ;
+    --ucs__base: ;
+    --ucs__ub: ; 
+
+    /* utility color notification, abbreviated to first-letters */
+    --ucn__base: ;
+    --ucn__ub: ;
+    --ucn__ob: ;
+
+    /* utility color warning, abbreviated to first-letters */
+    --ucw__ob: ;
+    --ucw__base: ;
+    --ucw__ub: ;
+
+    /* utility color error, abbreviated to first-letters */
+    --uce__ob: ;
+    --uce__base: ;
+    --uce__ub: ;
+
+    /* RELATIVE utility colors, SEMANTICAL CENTER, abbreviated end */
+    --uc__primary--ob: var(--cp__mob);
+    --uc__primary--base:  ;
+    --uc__primary--ub: ;
+    --uc__secondary--ob: ;
+    --uc__secondary--base: ;
+    --uc__secondary--ub: ;
+    --uc__tertiary--ob: ;
+    --uc__tertiary--base: ;
+    --uc__tertiary--ub: ;
+    --uc__quarternairy--ob: ;
+    --uc__quarternairy--base: ;
+    --uc__quarternairy--ub: ;
+    --uc__text--ob: ;
+    --uc__text--base: ;
+    --uc__text--ub: ;
+    --uc__background: ;
+    --uc__fill: ;
+    --uc__border: ;
+}
