@@ -1,16 +1,37 @@
 
 /* **** CHEAT SHEET ******* */
-/*  how to read & write BOUM design tokens:
+/* COPYRIGHT NOTICE & LICENSE AGREEMENT NOTICE
+
+.: B.O.U.~M :. tokensets copyright protected in addition to the Creative Commons 4.0 CC-BA-NC-SA license agreement that protects
+creatives in the field of digital. A copy can be found here: https://followgu.us/license
+
+The addition is simple; BOUM-tokens are tokens that are attached at the end of your design tokens. These tokens are copyright protected
+so your design system work created from it automatically gets legal protection, because the BOUM-tokens you use are protected.
+
+Please read more about the how & why on https://followgu.us/boum, and what license you might need. BOUM-tokens are FREE forever to get started with
+and doesn't require you a penny if your product doesn't get 10K Views, Installs or Prints per Year. 
+
+And if you're using it for education or a CodePen, it's totally not neccesary to get a license unless you intend to publish the entire design token convention. 
+Accreditation (https://justgu.us) with a notification of the license (https://followgu.us/boum) is enough if you don't need to be licensed, but still want to do the right thing.
+*/
+/*  .: HOW-TO:  Read & Write BOUM-tokens :.
 
 BOUM uses a relative center; the BASE. Need a higher value?
 Just go On Base from your relative base. Need less? Just go
 down Under Base from whwere you are. Untill you hit the MAX.
 
-It uses ROMAN SEMANTICS to give name to design tokens on- and
+It uses ROMAN SEMANTICAL NOTATION to give name to design tokens on- and
 under the base, and relative to each other, using their first letters o' and u' like the
-roman numbers I, II and III (+ base) uses letters to spell them and refer them to each other.
+roman numbers I, II and III uses letters to spell numbers.
 
-/// Roman Semantical Notation
+// Roman Semantical Notation: X, I, II, III, M
+
+I'm not reïnventing the wheel here, I'm just using the roman numeric system
+as the primary analogy for how BOUM-tokens are semantically generated. The 
+system works symmetrically and has the BASE in the middle, the X, then the
+three values on and under the base, using O's and U's, untill you hit MAX, m.
+
+//EXAMPLE: 
 
 MAX On Base : __mob;
 On On On Base : __ooob;
@@ -22,7 +43,7 @@ Under Under Base: __uub;
 Under Under Under Base: __uuub;
 MAX Under Base: __mub;
 
-which would looks semantically like this without values;
+which would look semantically like this on an abbreviated color primary;
     --cp__mob: ;
     --cp__ooob: ;
     --cp__oob: ;
@@ -33,83 +54,98 @@ which would looks semantically like this without values;
     --cp__uuub: ;
     --cp__mub: ;
 
-So in short; need more? On base. Need less? Under base. 
+So in short; need more value? On base. Need less value? Under base.
+
 A minimal and effective way to speak about design tokens as 
-semantical rules, not numbers. 
+semantical rules, not numbers, as a universal design language in code.
 
 BOUM is a Semaforic Naming Convention to be exact, but that's
-just literature & leisure versus keeping it layman's; what does
-it do, and how does it work? BOUM keeps it simple; just start
-from the Base, and let the naming BOUM for you!
+just literature & leisure versus keeping it layman's; 
+
+BOUM keeps it simple; just start with three and let your choices 
+grow (no more than three(+1)) ON or UNDER the BASE from there on!
+
+ // START with three...
+--token__mob: ;
+--token__base: ;
+--token__mub: ;
+
+// THEN you add some
+
+--token__mob: ;
+--token__oob: ;
+--token__ob: ;
+--token__base: ;
+--token__ub: ;
+--token__uub: ;
+--token__mub: ;
+
+And then... you need a value "in between" ...
 
 {{{{  How to write MODIFIERS }}}}
 
 Say you need a color-stop in your palette, between __ob and __oob.
 How would you name that token? And where would you place it?
 
+    --cp__mob: ;
+    --cp__ooob: ;
+    --cp__oob: ;    << {{ new color value? }}
+    --cp__ob: ;    << {{ new color value? }}
+    --cp__base: ;
+
 Let's assume we know the color is "just in between", than we
 could apply the rule "closest to the base" to adopt the name
-from, with a capitalized modifier (prefixed with '_M').
+from, with a modifier prefixed: '_m_'.
 
 In this case, On Base (__ob) would be the closest value to
 mimic as a name, putting it right there where you want it; 
 modified in between '__ob' and '__oob', the new color-name is:
 
-MODIFIED On Base: --cp_M__ob, so it sticks it's butt out screaming
-"HELLOOOO!", without compromizing a clean reading experience.
+MODIFIED On Base: --_m_cp__ob, so it sticks it's butt out screaming
+"HELLOOOO!", without compromizing the standard semantics.
 
-which would looks semantically like this in a matrix of colors;
+A modifier looks semantically like this in a matrix of a color;
     --cp__mob: ;
     --cp__ooob: ;
     --cp__oob: ;
-    --cp_M__ob: ;
+    --_m_cp__ob: ;
     --cp__ob: ;
-    --cp__base: ;
-    --cp__ub: ;
-    --cp__uub: ;
-    --cp__uuub: ;
-    --cp__mub: ;
+    --co__base: ;
     
     Exceptions can be made, but only one per token unless you
     want something like this to hit your approval inbox;
     
-    --cp_MMM__ooob
-    --cp_MM__ooob
-    --cp_M__ooob
-    --cp_M__oob
-    --cp_M__ob
-    --cp_MMM__base
+    --_mmm_cp__ooob
+    --_mm_cp__ooob
+    --_m_cp__ooob
+    --_mm_cp__oob
+    --_mm_cp__ob
+    --_mmm_cp__base
 
 Even still, that looks acceptably readable however, it's just
-not clear what the signal versus the noise is anymore.
+not clear what the signal versus the noise is anymore since modifiers
+became the norm, not the exception.
 
-This showcases why BOUM was made for the reading experience
-of everyday DS-work, not guessing experience, and to quickly adopt when needed. 
-Also, when it fails because laws can be broken, like threes(+1 modifier). 
-
-Like when you might nee to test three different versions of a color to see which one
-works; how would you name them? Well, TESTS probably (_T) but you can do no more than
-three T's per color ( --cp_T__ob, --cp_TT__ob, --cp_TTT__ob), plus the refernce (--cp__ob)
-
-There's nothing wrong with on-the-fly modifications, there's just something
-wrong with having too many choices to modify an entire system of
-design language upfront. 
-
-Just keep it simple and stick to the basics;
+Design language is a huge part of Revolver-DS, if not everything.
+That's why RDS keeps principles simple and sticks to these basics;
 
 0. No Docs, Strictly Comments & Principles
 1. No numbers, Just semantics
-2. No more Than 3, plus 1 modifier per token
-3. Always comment abbreviations & explenations
+2. No more Than 3 On or Under, plus 1 modifier per token
+3. Always comment abbreviations & exceptions
 4. Always comment ...
 5. Keep The Basics Fresh!
 
 /* *** END OF CHEAT SHEET *** */
 
-/* .: B.O.U~M. :. copyrighted design tokens use ROMAN SEMANTICS to ramp tokens ON or UNDER the base, abbreviated to o's & u's.
-    Lighter colors or ON BASE, Darker colors are UNDER BASE, untill you hit the MAX on either side of the scale. 
-    To read more about the license agreement for using this library containing BOUM tokens, please visit https://folowgu.us/boum*/
+/* .: B.O.U~M. :. copyrighted design tokens (https://www.followgu.us/license) use ROMAN SEMANTICAL NOTATION to ramp tokens ON or UNDER the base.
+    To read more about this extended freemium CC-BA-NC-SA license extension, please visit https://followgu.us/boum/ 
+    Lighter colors are ON BASE, 
+    Darker colors are UNDER BASE, 
+    Untill you hit the MAX on either side. 
+    */
 :root {
+    /* @layer Base */
     /* color primary, abbreviated to first-letters */
     --cp__mob: ;
     --cp__ooob: ;
@@ -155,24 +191,24 @@ Just keep it simple and stick to the basics;
     --cq__mub: ;    
 
     /* color white, abbreviated to first-letters */
-    --cw__ob: ;
+    --cw__mob: ;
     --cw__base: ;
-    --cw__ub: ; 
+    --cw__mub: ; 
 
     /* color gray, abbreviated to first-letters */
-    --cg__ob: ;
+    --cg__mob: ;
     --cg__base: ;
-    --cg__ub: ;
+    --cg__mub: ;
 
     /* color black, abbreviated to first-letters */
-    --cb__ob: ;
+    --cb__mob: ;
     --cb__base: ;
-    --cb__ub: ;
+    --cb__mub: ;
 
     /* utility color succes, abbreviated to first-letters */
-    --ucs__ob: ;
+    --ucs__mob: ;
     --ucs__base: ;
-    --ucs__ub: ; 
+    --ucs__mub: ; 
 
     /* utility color notification, abbreviated to first-letters */
     --ucn__base: ;
@@ -189,23 +225,26 @@ Just keep it simple and stick to the basics;
     --uce__base: ;
     --uce__ub: ;
 
-    /* RELATIVE utility colors, SEMANTICAL CENTER, abbreviated end */
-    --uc__primary--ob: var(--cp__mob);
-    --uc__primary--base:  ;
-    --uc__primary--ub: ;
-    --uc__secondary--ob: ;
-    --uc__secondary--base: ;
-    --uc__secondary--ub: ;
-    --uc__tertiary--ob: ;
-    --uc__tertiary--base: ;
-    --uc__tertiary--ub: ;
-    --uc__quarternairy--ob: ;
-    --uc__quarternairy--base: ;
-    --uc__quarternairy--ub: ;
-    --uc__text--ob: ;
-    --uc__text--base: ;
-    --uc__text--ub: ;
-    --uc__background: ;
-    --uc__fill: ;
-    --uc__border: ;
+    /* @layer theme */
+    /* RELATIVE utility colors, SEMANTICAL selector */
+    --uc__primary--mob: var(--cp__mob);
+    --uc__primary--base:  var(--cp__base);
+    --uc__primary--mub: var(--cp__uuub);
+    --uc__secondary--mob: var(--cs__ooob);
+    --uc__secondary--base: var(--cs__base);
+    --uc__secondary--mub: var(--cs__mub) ;
+    --uc__tertiary--mob: var(--ct__ooob);
+    --uc__tertiary--base: var(--ct__ob);
+    --uc__tertiary--mub: var(--ct__ub);
+    --uc__quarternairy--mob: var(--cq__mob);
+    --uc__quarternairy--base: var(--cq__mob);
+    --uc__quarternairy--mub: var(--cq__mob);
+    /* default utility colors, SEMANTICAL selector  */
+    --uc__text--mob: var(--cg__base);
+    --uc__text--base: var(--cb__mob);
+    --uc__text--mub: var(--cb__mub);
+    --uc__background: var(--cw__base);
+    --uc__foreground: var(--cb__base);
+    --uc__fill: var(--uc__foreground);
+    --uc__border: var(--uc__foreground);
 }
