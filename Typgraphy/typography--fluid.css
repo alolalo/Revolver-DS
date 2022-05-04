@@ -1,0 +1,48 @@
+/* @link https://utopia.fyi/type/calculator?c=320,15,1.414,1440,28,1.512,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+    /* font utility: Cascading BOUM Sizes, NUMERICAL */
+    --fu__size--ub2: clamp(0.47rem, calc(0.38rem + 0.42vw), 0.77rem);
+    --fu__size--ub1: clamp(0.66rem, calc(0.52rem + 0.71vw), 1.16rem);
+    --fu__size--base: clamp(0.94rem, calc(0.71rem + 1.16vw), 1.75rem);
+    --fu__size--ob1: clamp(1.33rem, calc(0.95rem + 1.89vw), 2.65rem);
+    --fu__size--ob2: clamp(1.87rem, calc(1.27rem + 3.04vw), 4.00rem);
+    --fu__size--ob3: clamp(2.65rem, calc(1.68rem + 4.86vw), 6.05rem);
+    --fu__size--ob4: clamp(3.75rem, calc(2.21rem + 7.71vw), 9.15rem);
+    --fu__size--ob5: clamp(5.30rem, calc(2.86rem + 12.19vw), 13.83rem);
+ 
+    /* font utility: Cascading T-shirt Sizes, SEMANTICAL */
+
+    /*HOWTO: READ & WRITE Cascading T-shirt Sizes:
+      The Sizes cascade to a simple order; M is the Median, or the Mean from which you start.
+      From there on you knit the next t-shirt size as a letter to the previous step you were on.
+      This will cascade as following from the center out, represented as M;
+
+      //start: X marks the start, the smallest possible. Dual Display the largest.
+      XX = extra-extra --(smart watches)
+      XS = extra-small --(smart device)
+      SS = small-small --(smartphone)
+      SM = small-medium --(smartphone dual display)
+      M  = medium --(mobile tablet, the BASE)
+      MM = medium-medium --(mobile tablet dual display)
+      ML = medium-large --(mobile desktop)
+      LL = large-large --(mobile desktop dual display)
+      LD = large-dislplay --(stationairy desktop display)
+      DD = display-display --(stationary desktop dual display)
+      DZ = DEMILITARIZED ZONE --(future display, mobile or stationary)
+      ZZ = ENDZONE --(future dual display, mobile or stationary)
+
+      See, you don't need all of them as you can see in this imaginary example, but the pattern is clear I hope. 
+      They have a system of relation to them, and that is using each other's first-letter in the steps of naming. 
+      The only exception is the BASE, that is declared with only one letter: M
+
+  */
+    --fu__size--XX: clamp(0.47rem, calc(0.38rem + 0.42vw), 0.77rem);
+    --fu__size--XS: clamp(0.66rem, calc(0.52rem + 0.71vw), 1.16rem);
+    --fu__size--M: clamp(0.94rem, calc(0.71rem + 1.16vw), 1.75rem);
+    --fu__size--MM: clamp(1.33rem, calc(0.95rem + 1.89vw), 2.65rem);
+    --fu__size--ML: clamp(1.87rem, calc(1.27rem + 3.04vw), 4.00rem);
+    --fu__size--LL: clamp(2.65rem, calc(1.68rem + 4.86vw), 6.05rem);
+    --fu__size--XL: clamp(3.75rem, calc(2.21rem + 7.71vw), 9.15rem);
+    --fu__size--DD: clamp(5.30rem, calc(2.86rem + 12.19vw), 13.83rem);
+  }

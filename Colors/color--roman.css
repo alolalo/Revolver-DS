@@ -2,34 +2,41 @@
 /* **** CHEAT SHEET ******* */
 /* COPYRIGHT NOTICE & LICENSE AGREEMENT NOTICE
 
-.: B.O.U.~M :. tokensets copyright protected in addition to the Creative Commons 4.0 CC-BA-NC-SA license agreement that protects
-creatives in the field of digital. A copy can be found here: https://followgu.us/license
+.: B.O.U.~M :. tokensets copyright protected in addition to the Creative Commons 4.0 CC-BA-NC-SA license agreement that protects creatives in the field of digital. A copy can be found here: https://followgu.us/license
 
-The addition is simple; BOUM-tokens are tokens that are attached at the end of your design tokens. These tokens are copyright protected
-so your design system work created from it automatically gets legal protection, because the BOUM-tokens you use are protected.
+The addition is simple; BOUM-tokens are tokens that are attached at the end of your design tokens. These tokens are copyright protected so your design system work created from it automatically gets legal protection, because the BOUM-tokens you use are protected by this very legal document. 
 
-Please read more about the how & why on https://followgu.us/boum, and what license you might need. BOUM-tokens are FREE forever to get started with
-and doesn't require you a penny if your product doesn't get 10K Views, Installs or Prints per Year. 
+You in turn have a license or not, which is free to get from the website https://followgu.us/boum.
 
 And if you're using it for education or a CodePen, it's totally not neccesary to get a license unless you intend to publish the entire design token convention. 
 Accreditation (https://justgu.us) with a notification of the license (https://followgu.us/boum) is enough if you don't need to be licensed, but still want to do the right thing.
 */
 /*  .: HOW-TO:  Read & Write BOUM-tokens :.
 
-BOUM uses a relative center; the BASE. Need a higher value?
-Just go On Base from your relative base. Need less? Just go
-down Under Base from whwere you are. Untill you hit the MAX.
+BOUM uses a relative center; the BASE. 
+Need a higher value?
+Just go On Base from your relative base. 
+Need less? 
+Just godown Under Base from whwere you are. 
+Untill you hit the MAX on either side after three.
 
 It uses ROMAN SEMANTICAL NOTATION to give name to design tokens on- and
-under the base, and relative to each other, using their first letters o' and u' like the
-roman numbers I, II and III uses letters to spell numbers.
+under the base, using their first letters o' and u' like the
+roman numbers I, II and III use letters to spell them.
 
 // Roman Semantical Notation: X, I, II, III, M
 
 I'm not reïnventing the wheel here, I'm just using the roman numeric system
-as the primary analogy for how BOUM-tokens are semantically generated. The 
-system works symmetrically and has the BASE in the middle, the X, then the
-three values on and under the base, using O's and U's, untill you hit MAX, m.
+as the primary analogy for how BOUM-tokens are semantically generated. The default 
+way to write out tokens is BEM-like, using --(B)__(E)--(M) as a writing-pattern.
+
+// WRITING PATTERN: --[BASE]__{ELEMENT}--MODIFIER, for example;
+Utility Color Primary, modified On On base; --uc__primary--oob
+Color Primar, modified Under base --cp__ub
+
+Please note that the concept of base and element is therefor interchangable. Some tokens don't
+need more than a Base + Modifier, which makes the BOUM-modifier the element. The
+writing-pattern of the --higher and __lower dashes doesn't swap places to keep consistency.
 
 //EXAMPLE: 
 
@@ -54,15 +61,16 @@ which would look semantically like this on an abbreviated color primary;
     --cp__uuub: ;
     --cp__mub: ;
 
-So in short; need more value? On base. Need less value? Under base.
+So in short; need more value? On base. Need less value? Under base. BOUM
+works fully semantical systematically, and that is what makes it unique.
 
 A minimal and effective way to speak about design tokens as 
 semantical rules, not numbers, as a universal design language in code.
 
-BOUM is a Semaforic Naming Convention to be exact, but that's
-just literature & leisure versus keeping it layman's; 
+BOUM is a Axiomatic and Semaforic IP to be exact, but that's
+just literature & legal slang versus keeping it layman's; 
 
-BOUM keeps it simple; just start with three and let your choices 
+BOUM keeps it simple; just start with three tokens and let your choices 
 grow (no more than three(+1)) ON or UNDER the BASE from there on!
 
  // START with three...
@@ -95,32 +103,35 @@ How would you name that token? And where would you place it?
 
 Let's assume we know the color is "just in between", than we
 could apply the rule "closest to the base" to adopt the name
-from, with a modifier prefixed: '_m_'.
+from, with a modifier prefixed: '_m__'.
 
 In this case, On Base (__ob) would be the closest value to
 mimic as a name, putting it right there where you want it; 
 modified in between '__ob' and '__oob', the new color-name is:
 
-MODIFIED On Base: --_m_cp__ob, so it sticks it's butt out screaming
-"HELLOOOO!", without compromizing the standard semantics.
+MODIFIED On Base: --_m__cp__ob, so it sticks it's butt out screaming
+"HELLOOOO! I'm HERE!", without compromizing the standard semantics when
+you type and select from a list of autocompletes. 
+
+The added _m__ makes it dive straight to the bottom of the list, ignored mostly as it should be.
 
 A modifier looks semantically like this in a matrix of a color;
     --cp__mob: ;
     --cp__ooob: ;
     --cp__oob: ;
-    --_m_cp__ob: ;
+    --_m__cp__ob: ;
     --cp__ob: ;
     --co__base: ;
     
     Exceptions can be made, but only one per token unless you
     want something like this to hit your approval inbox;
     
-    --_mmm_cp__ooob
-    --_mm_cp__ooob
-    --_m_cp__ooob
-    --_mm_cp__oob
-    --_mm_cp__ob
-    --_mmm_cp__base
+    --_mmm__cp--ooob
+    --_mm__cp--ooob
+    --_m__cp--ooob
+    --_mm__cp--oob
+    --_mm__cp--ob
+    --_mmm__cp--base
 
 Even still, that looks acceptably readable however, it's just
 not clear what the signal versus the noise is anymore since modifiers
@@ -146,11 +157,14 @@ That's why RDS keeps principles simple and sticks to these basics;
     */
 :root {
     /* @layer Base */
+    /* Literal Utility Colors */
     /* color primary, abbreviated to first-letters */
     --cp__mob: ;
     --cp__ooob: ;
     --cp__oob: ;
     --cp__ob: ;
+    --cp_m__cp__ob: ;
+    --various: var(cp)
     --cp__base: ;
     --cp__ub: ;
     --cp__uub: ;
@@ -211,19 +225,19 @@ That's why RDS keeps principles simple and sticks to these basics;
     --ucs__mub: ; 
 
     /* utility color notification, abbreviated to first-letters */
+    --ucn__mub: ;
     --ucn__base: ;
-    --ucn__ub: ;
-    --ucn__ob: ;
+    --ucn__mob: ;
 
     /* utility color warning, abbreviated to first-letters */
-    --ucw__ob: ;
+    --ucw__mob: ;
     --ucw__base: ;
-    --ucw__ub: ;
+    --ucw__mub: ;
 
     /* utility color error, abbreviated to first-letters */
-    --uce__ob: ;
+    --uce__mob: ;
     --uce__base: ;
-    --uce__ub: ;
+    --uce__mub: ;
 
     /* @layer theme */
     /* RELATIVE utility colors, SEMANTICAL selector */
