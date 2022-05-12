@@ -1,0 +1,81 @@
+@layer lock {
+    body:not(.rds--freeze *) *:has(.rds *):not(.rds--freeze *) {
+    --_cp__mob: ;
+    --_cp__ooob: ;
+    --_cp__oob: ;
+    --_cp__ob: ;
+    --_cp: #22cafe;
+    --_cp__ub: ;
+    --_cp__uub: ;
+    --_cp__uuub: ;
+    --_cp__mub: ;
+
+    /* color secundairy, abbreviated to first-letters */
+    --_cs__mob: ;
+    --_cs__ooob: ;
+    --_cs__oob: ;
+    --_cs__ob: ;
+    --_cs: ;
+    --_cs__ub: ;
+    --_cs__uub: ;
+    --_cs__uuub: ;
+    --_cs__mub: ;
+
+    /* color tertiary, abbreviated to first-letters */
+    --_ct__mob: ;
+    --_ct__ooob: ;
+    --_ct__oob: ;
+    --_ct_oob: ;
+    --_ct: ;
+    --_ct__ub: ;
+    --_ct__uub: ;
+    --_ct__uuub: ;
+    --_ct__mub: ;
+
+    /* color quarternairy, abbreviated to first-letters */
+    --_cq__mob: ;
+    --_cq__ooob: ;
+    --_cq__oob: ;
+    --_cq__ob: ;
+    --_cq: ;
+    --_cq__ub: ;
+    --_cq__uub: ;
+    --_cq__uuub: ;
+    --_cq__mub: ;
+
+    /* color white, abbreviated to first-letters */
+    --_cw__mob: ;
+    --_cw: ;
+    --_cw__mub
+
+    abbreviated to /
+    --_cg__mob;
+    --_cg;
+    --_cg__mub;
+
+    /* color black, abbreviated to first-letters */
+    --_cb__mob: ;
+    --_cb: ;
+    --_cb__mub: ;
+
+    /* utility color succes, abbreviated to first-letters */
+    --_ucs__mob: ;
+    --_ucs:  ;
+    --_ucs__mub:  ;
+
+    /* utility color notification, abbreviated to first-letters */
+    --_ucn__mub: ;
+    --_ucn:  ;
+    --_ucn__mob: ;
+
+    /* utility color warning, abbreviated to first-letters */
+    --_ucw__mob: ;
+    --_ucw:  ;
+    --_ucw__mub: ;
+
+    /* utility color error, abbreviated to first-letters */
+    --_uce__mob: ;
+    --_uce:  ;
+    --_uce__mub: ;
+    }
+}

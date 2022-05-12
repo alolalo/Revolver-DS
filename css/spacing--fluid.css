@@ -1,15 +1,15 @@
 /* @link https://utopia.fyi/space/calculator?c=320,15,1.2,1920,25,1.25,5,2,320-640-1024-1440-1920-4096&s=0.75|0.5|0.25|0.125,1.5|2|3|4|6|8,s-l|l-2xl|2xl-4xl|4SM-3SM|SS-s|s-l|l-2xl */
-
-:root {
+@layer lock {
+  body:not(.rds--freeze *) *:has(.rds *):not(.rds--freeze *) {
     --space-XX: clamp(0.13rem, calc(0.11rem + 0.06vw), 0.19rem);
     --space-XS: clamp(0.25rem, calc(0.23rem + 0.13vw), 0.38rem);
     --space-SS: clamp(0.50rem, calc(0.44rem + 0.31vw), 0.81rem);
     --space-SM: clamp(0.69rem, calc(0.59rem + 0.50vw), 1.19rem);
-    --space-M: clamp(0.94rem, calc(0.81rem + 0.63vw), 1.56rem);
+    --space-M: clamp(1.0rem, calc(0.81rem + 0.63vw), 1.56rem);
     --space-MM: clamp(1.44rem, calc(1.25rem + 0.94vw), 2.38rem);
     --space-ML: clamp(1.88rem, calc(1.63rem + 1.25vw), 3.13rem);
     --space-LL: clamp(2.81rem, calc(2.44rem + 1.88vw), 4.69rem);
-    --space-XL: clamp(3.75rem, calc(3.25rem + 2.50vw), 6.25rem);
+    --space-LD: clamp(3.75rem, calc(3.25rem + 2.50vw), 6.25rem);
     --space-DD: clamp(5.63rem, calc(4.88rem + 3.75vw), 9.38rem);
     --space-XD: clamp(7.50rem, calc(6.50rem + 5.00vw), 12.50rem);
 
@@ -18,17 +18,24 @@
     --space-XS-SS: clamp(0.25rem, calc(0.14rem + 0.56vw), 0.81rem);
     --space-SS-SM: clamp(0.50rem, calc(0.36rem + 0.69vw), 1.19rem);
     --space-SM-M: clamp(0.69rem, calc(0.51rem + 0.88vw), 1.56rem);
-    --space-M-MM: clamp(0.94rem, calc(0.65rem + 1.44vw), 2.38rem);
+    --space-M-MM: clamp(1.0rem, calc(0.65rem + 1.44vw), 2.38rem);
     --space-MM-ML: clamp(1.44rem, calc(1.10rem + 1.69vw), 3.13rem);
     --space-ML-LL: clamp(1.88rem, calc(1.31rem + 2.81vw), 4.69rem);
-    --space-LL-XL: clamp(2.81rem, calc(2.13rem + 3.44vw), 6.25rem);
-    --space-XL-DD: clamp(3.75rem, calc(2.63rem + 5.63vw), 9.38rem);
+    --space-LL-LD: clamp(2.81rem, calc(2.13rem + 3.44vw), 6.25rem);
+    --space-LD-DD: clamp(3.75rem, calc(2.63rem + 5.63vw), 9.38rem);
     --space-DD-XD: clamp(5.63rem, calc(4.25rem + 6.88vw), 12.50rem);
 
     /* Layout Utilities, using Relative Custom Pairs  */
     --lu__space--mob: clamp(3.75rem, calc(2.00rem + 8.75vw), 12.50rem);
     --lu__space--ob: clamp(1.88rem, calc(1.00rem + 4.38vw), 6.25rem);
-    --lu__space--base: clamp(0.94rem, calc(0.50rem + 2.19vw), 3.13rem);
+    --lu__space--base: clamp(1.0rem, calc(0.50rem + 2.19vw), 3.13rem);
     --lu__space--ub: clamp(0.50rem, calc(0.29rem + 1.06vw), 1.56rem);
     --lu__space--mub: clamp(0.13rem, calc(0.08rem + 0.25vw), 0.38rem);
+    /* BOUM-tokens are offered in both flavors; semantical & numerical */
+    --lu__space--ob2: clamp(3.75rem, calc(2.00rem + 8.75vw), 12.50rem);
+    --lu__space--ob1: clamp(1.88rem, calc(1.00rem + 4.38vw), 6.25rem);
+    --lu__space--base: clamp(1.0rem, calc(0.50rem + 2.19vw), 3.13rem);
+    --lu__space--ub1: clamp(0.50rem, calc(0.29rem + 1.06vw), 1.56rem);
+    --lu__space--ub2: clamp(0.13rem, calc(0.08rem + 0.25vw), 0.38rem);
   }
+}

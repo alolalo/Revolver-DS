@@ -1,0 +1,61 @@
+/* LOAD.css is specifically used to lock in all your Lateral Tokens (utilities). These are referred to as "Lateral  Design Tokens" as they hold lateral values, meaning they don't hold literal or relative values, but refer to something more lateral like the utility itself. */
+
+    .rds:not(.rds--freeze){
+    /* RELATIVE utility colors: RELATIVE selector */
+    --uc__primary--mob: var(--cp__mob);
+    --uc__primary:  var(--cp);
+    --uc__primary--mub: var(--cp__uuub);
+
+    --uc__secondary--mob: var(--cs__ooob);
+    --uc__secondary: var(--cs);
+    --uc__secondary--mub: var(--cs__mub) ;
+
+    --uc__tertiary--mob: var(--ct__ooob);
+    --uc__tertiary: var(--ct__ob);
+    --uc__tertiary--mub: var(--ct__ub);
+
+    --uc__quarternairy--mob: var(--cq__mob);
+    --uc__quarternairy: var(--cq__mob);
+    --uc__quarternairy--mub: var(--cq__mob);
+
+    /* RELATIVE utility colors: LITERAL selector */
+    --uc__background: var(--cs);
+    --uc__foreground: var(--cb);
+
+    --uc__text--mob: var(--);
+    --uc__text: var(--cb);
+    --uc__text--mub: var(--);
+
+    --uc__fill: var(--uc__foreground);
+    --uc__border: var(--uc__foreground);
+    
+    /*  utility layout: Spacing */
+    --ul__space--ob2: clamp(3.75rem, calc(2.00rem + 8.75vw), 12.50rem);
+    --ul__space--ob1: clamp(1.88rem, calc(1.00rem + 4.38vw), 6.25rem);
+    --ul__space--base: clamp(1.0rem, calc(0.50rem + 2.19vw), 3.13rem);
+    --ul__space--ub1: clamp(0.50rem, calc(0.29rem + 1.06vw), 1.56rem);
+    --ul__space--ub2: clamp(0.13rem, calc(0.08rem + 0.25vw), 0.38rem);
+
+    /* utility layout: Spacing pairs */
+    --ul__space-XX-XS: clamp(0.13rem, calc(0.08rem + 0.25vw), 0.38rem);
+    --ul__space-XS-SS: clamp(0.25rem, calc(0.14rem + 0.56vw), 0.81rem);
+    --ul__space-SS-SM: clamp(0.50rem, calc(0.36rem + 0.69vw), 1.19rem);
+    --ul__space-SM-M: clamp(0.69rem, calc(0.51rem + 0.88vw), 1.56rem);
+    --ul__space-M-MM: clamp(1.0rem, calc(0.65rem + 1.44vw), 2.38rem);
+    --ul__space-MM-ML: clamp(1.44rem, calc(1.10rem + 1.69vw), 3.13rem);
+    --ul__space-ML-LL: clamp(1.88rem, calc(1.31rem + 2.81vw), 4.69rem);
+    --ul__space-LL-LD: clamp(2.81rem, calc(2.13rem + 3.44vw), 6.25rem);
+    --ul__space-LD-DD: clamp(3.75rem, calc(2.63rem + 5.63vw), 9.38rem);
+    --ul__space-DD-XD: clamp(5.63rem, calc(4.25rem + 6.88vw), 12.50rem);
+
+    /* utility font: Fluid Font Sizes, NUMERICAL */
+    --uf__size--ub2: clamp(0.47rem, calc(0.38rem + 0.42vw), 0.77rem);
+    --uf__size--ub1: clamp(0.66rem, calc(0.52rem + 0.71vw), 1.16rem);
+    --uf__size--base: clamp(0.94rem, calc(0.71rem + 1.16vw), 1.75rem);
+    --uf__size--ob1: clamp(1.33rem, calc(0.95rem + 1.89vw), 2.65rem);
+    --uf__size--ob2: clamp(1.87rem, calc(1.27rem + 3.04vw), 4.00rem);
+    --uf__size--ob3: clamp(2.65rem, calc(1.68rem + 4.86vw), 6.05rem);
+    --uf__size--ob4: clamp(3.75rem, calc(2.21rem + 7.71vw), 9.15rem);
+    --uf__size--ob5: clamp(5.30rem, calc(2.86rem + 12.19vw), 13.83rem);
+    }
+

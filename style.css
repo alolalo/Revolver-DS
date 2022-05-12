@@ -1,3 +1,94 @@
+/* Revolver-DS; just Lock, Load & Ship your headless DS! */
+@layer reset, lock, load, ship, preset;
+
+
+@import url('../css/rds--reset.css') layer(reset);
+@import url('lock.css') layer(lock);
+@import url('load.css') layer(load);
+@import url('ship.css') layer(ship);
+
+
+/* Why an ANONYMOUS layer? It works the same as a named layer, except without a name
+you can't add anything to it later. This is considered a healthy seperation of concern
+before any authored & class-based cascading kicks in. */
+@layer {
+p, h1, h2, h3 {
+    max-width: clamp(46ch, 50vw, 68ch);
+    margin-inline-start: clamp(2vw, 2.5vw, 3vw);
+}
+
+h1, h2, h3 {
+    margin-block-end: clamp(-0.35vw, -0.6vw, -1vw);
+    white-space: nowrap;
+}
+
+p, h2, h3, ul, ol {
+    font-family: "IBM Plex Mono", Arial, monospace;
+}
+
+p {
+    line-height: 3.6ex;
+    font-weight: 400;
+}
+
+b {
+    font-weight: 900;
+}
+
+i {
+    font-style: italic;
+}
+
+a, u {
+    text-underline-offset: calc(1ex / 4);
+}
+
+ul > *::before, ol > *::before {
+    content: "\1f44D";
+    margin-inline-end: 0.75ch;
+    drop-shadow: 0.5ch 0.5ch 0.75ch rgba(0, 0, 0, 0.65);
+}
+ul, ol {
+list-style: none;
+line-height: 3.5ex;
+}
+
+li {
+    max-width: clamp(46ch, 50vw, 68ch);
+}
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }
+
+h1 {
+    font-family: "Major Mono Display", Helvetica, monospace;
+    margin-block-start: min(3vw, 5vw);
+    margin-block-end: min(2vw, 4vw);
+    font-weight: 400;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--uc__background);
+    width: 100%;
+    padding-block-end: min(5vw, 10vw);
+    padding-block-start: min(1vw, 3vw);
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: 500;
+}
+
+:where(.rds > *:not(.rds--freeze)) {
+    color: var(--uc__text);
+}
+}
 
 /* **** CHEAT SHEET ******* */
 /* COPYRIGHT NOTICE & LICENSE AGREEMENT NOTICE
@@ -44,7 +135,7 @@ MAX On Base : __mob;
 On On On Base : __ooob;
 On On Base: __oob;
 On Base: __ob;
-Base: __base;
+Base: ;
 Under Base: __ub;
 Under Under Base: __uub;
 Under Under Under Base: __uuub;
@@ -55,7 +146,7 @@ which would look semantically like this on an abbreviated color primary;
     --cp__ooob: ;
     --cp__oob: ;
     --cp__ob: ;
-    --cp__base: ;
+    --cp: ;
     --cp__ub: ;
     --cp__uub: ;
     --cp__uuub: ;
@@ -75,7 +166,7 @@ grow (no more than three(+1)) ON or UNDER the BASE from there on!
 
  // START with three...
 --token__mob: ;
---token__base: ;
+--token: ;
 --token__mub: ;
 
 // THEN you add some
@@ -83,7 +174,7 @@ grow (no more than three(+1)) ON or UNDER the BASE from there on!
 --token__mob: ;
 --token__oob: ;
 --token__ob: ;
---token__base: ;
+--token: ;
 --token__ub: ;
 --token__uub: ;
 --token__mub: ;
@@ -99,7 +190,7 @@ How would you name that token? And where would you place it?
     --cp__ooob: ;
     --cp__oob: ;    << {{ new color value? }}
     --cp__ob: ;    << {{ new color value? }}
-    --cp__base: ;
+    --cp: ;
 
 Let's assume we know the color is "just in between", than we
 could apply the rule "closest to the base" to adopt the name
@@ -121,7 +212,7 @@ A modifier looks semantically like this in a matrix of a color;
     --cp__oob: ;
     --_m__cp__ob: ;
     --cp__ob: ;
-    --co__base: ;
+    --co: ;
     
     Exceptions can be made, but only one per token unless you
     want something like this to hit your approval inbox;
@@ -131,7 +222,7 @@ A modifier looks semantically like this in a matrix of a color;
     --_m__cp--ooob
     --_mm__cp--oob
     --_mm__cp--ob
-    --_mmm__cp--base
+    --_mmm__cp
 
 Even still, that looks acceptably readable however, it's just
 not clear what the signal versus the noise is anymore since modifiers
@@ -148,116 +239,3 @@ That's why RDS keeps principles simple and sticks to these basics;
 5. Keep The Basics Fresh!
 
 /* *** END OF CHEAT SHEET *** */
-
-/* .: B.O.U~M. :. copyrighted design tokens (https://www.followgu.us/license) use ROMAN SEMANTICAL NOTATION to ramp tokens ON or UNDER the base.
-    To read more about this extended freemium CC-BA-NC-SA license extension, please visit https://followgu.us/boum/ 
-    Lighter colors are ON BASE, 
-    Darker colors are UNDER BASE, 
-    Untill you hit the MAX on either side. 
-    */
-:root {
-    /* @layer Base */
-    /* Literal Utility Colors */
-    /* color primary, abbreviated to first-letters */
-    --cp__mob: ;
-    --cp__ooob: ;
-    --cp__oob: ;
-    --cp__ob: ;
-    --cp_m__cp__ob: ;
-    --cp__base: ;
-    --cp__ub: ;
-    --cp__uub: ;
-    --cp__uuub: ;
-    --cp__mub: ;
-
-    /* color secundairy, abbreviated to first-letters */
-    --cs__mob: ;
-    --cs__ooob: ;
-    --cs__oob: ;
-    --cs__ob: ;
-    --cs__base: ;
-    --cs__ub: ;
-    --cs__uub: ;
-    --cs__uuub: ;
-    --cs__mub: ;
-
-    /* color tertiary, abbreviated to first-letters */
-    --ct__mob: ;
-    --ct__ooob: ;
-    --ct__oob: ;
-    --ct__ob: ;
-    --ct__base: ;
-    --ct__ub: ;
-    --ct__uub: ;
-    --ct__uuub: ;
-    --ct__mub: ;
-
-    /* color quarternairy, abbreviated to first-letters */
-    --cq__mob: ;
-    --cq__ooob: ;
-    --cq__oob: ;
-    --cq__ob: ;
-    --cq__base: ;
-    --cq__ub: ;
-    --cq__uub: ;
-    --cq__uuub: ;
-    --cq__mub: ;    
-
-    /* color white, abbreviated to first-letters */
-    --cw__mob: ;
-    --cw__base: ;
-    --cw__mub: ; 
-
-    /* color gray, abbreviated to first-letters */
-    --cg__mob: ;
-    --cg__base: ;
-    --cg__mub: ;
-
-    /* color black, abbreviated to first-letters */
-    --cb__mob: ;
-    --cb__base: ;
-    --cb__mub: ;
-
-    /* utility color succes, abbreviated to first-letters */
-    --ucs__mob: ;
-    --ucs__base: ;
-    --ucs__mub: ; 
-
-    /* utility color notification, abbreviated to first-letters */
-    --ucn__mub: ;
-    --ucn__base: ;
-    --ucn__mob: ;
-
-    /* utility color warning, abbreviated to first-letters */
-    --ucw__mob: ;
-    --ucw__base: ;
-    --ucw__mub: ;
-
-    /* utility color error, abbreviated to first-letters */
-    --uce__mob: ;
-    --uce__base: ;
-    --uce__mub: ;
-
-    /* @layer theme */
-    /* RELATIVE utility colors, SEMANTICAL selector */
-    --uc__primary--mob: var(--cp__mob);
-    --uc__primary--base:  var(--cp__base);
-    --uc__primary--mub: var(--cp__uuub);
-    --uc__secondary--mob: var(--cs__ooob);
-    --uc__secondary--base: var(--cs__base);
-    --uc__secondary--mub: var(--cs__mub) ;
-    --uc__tertiary--mob: var(--ct__ooob);
-    --uc__tertiary--base: var(--ct__ob);
-    --uc__tertiary--mub: var(--ct__ub);
-    --uc__quarternairy--mob: var(--cq__mob);
-    --uc__quarternairy--base: var(--cq__mob);
-    --uc__quarternairy--mub: var(--cq__mob);
-    /* default utility colors, SEMANTICAL selector  */
-    --uc__text--mob: var(--cg__base);
-    --uc__text--base: var(--cb__mob);
-    --uc__text--mub: var(--cb__mub);
-    --uc__background: var(--cw__base);
-    --uc__foreground: var(--cb__base);
-    --uc__fill: var(--uc__foreground);
-    --uc__border: var(--uc__foreground);
-}

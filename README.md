@@ -1,9 +1,7 @@
 # RevolverDS - V001-D001
 Lock, Load &amp; Ship your generative DS!
 
-  - generative "Gravemaker" typescales based on 12pt, 16px & 1ex
-  - generative "CMY-FACE" color palette based on Cyaan, Yellow, Magenta color-mixing (soon)
-  - generative "SySS-layers" layering and naming of system-wide MVC | MVL patterns (soon)
+
 
 # Copyright Notice: CC-BA-NC-SA
 For the time being, you can use this for your own personal indie projects, but not commercially. That's to put this in the right perception of expectation first; it's not commercial-grade any time soon, it's experimentational until then using the Creative Commons - Non-commercial, Share-Alike license. That means basically it's a copy-warning agreement :)

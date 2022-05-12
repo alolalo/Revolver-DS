@@ -1,0 +1,106 @@
+/*  Literal Utility Colors */
+@layer lock {
+    body:not(.rds--freeze *) *:has(.rds *):not(.rds--freeze *){
+        /* color primary, abbreviated to first-letters */
+    --cp__ob4: var(--_cp__ob4);
+    --cp__ob3: var(--_cp__ob3);
+    --cp__ob2: var(--_cp__ob2);
+    --cp__ob1: var(--_cp__ob1);
+    --cp: var(--_cp);
+    --cp__ub1: var(--_cp__ub1);
+    --cp__ub2: var(--_cp__ub2);
+    --cp__ub3: var(--_cp__ub3);
+    --cp__ub4: var(--_cp__ub4);
+
+    /* color secundairy, abbreviated to first-letters */
+    --cs__ob4: var(--_cs__ob4);
+    --cs__ob3: var(--_cs__ob3);
+    --cs__ob2: var(--_cs__ob2);
+    --cs__ob1: var(--_cs__ob1);
+    --cs: var(--_cs);
+    --cs__ub1: var(--_cs__ub1);
+    --cs__ub2: var(--_cs__ub2);
+    --cs__ub3: var(--_cs__ub3);
+    --cs__ub4: var(--_cs__ub4);
+
+    /* color tertiary, abbreviated to first-letters */
+    --ct__ob4: var(--_ct__ob4);
+    --ct__ob3: var(--_ct__ob3);
+    --ct__ob2: var(--_ct__ob2);
+    --ct__ob1: var(--_ct__ob1);
+    --ct: var(--_ct) ;
+    --ct__ub1: var(--_ct__ub1);
+    --ct__ub2: var(--_ct__ub2);
+    --ct__ub3: var(--_ct__ub3);
+    --ct__ub4: var(--_ct__ub4);
+
+    /* color quarternairy, abbreviated to first-letters */
+    --cq__ob4: var(--_cq__ob4:);
+    --cq__ob3: var(--_cq__ob3:);
+    --cq__ob2: var(--_cq__ob2:);
+    --cq__ob1: var(--_cq__ob1:);
+    --cq: var(--_cq) ;
+    --cq__ub1: var(--_cq__ub1:);
+    --cq__ub2: var(--_cq__ub2:);
+    --cq__ub3: var(--_cq__ub3:);
+    --cq__ub4: var(--_cq__ub4:);
+
+    /* color white, abbreviated to first-letters */
+    --cw__ob1: var(--_cw__ob1);
+    --cw: var(--_cw);
+    --cw__ub1: var(--_cw__ub1); 
+
+    /* color gray, abbreviated to first-letters */
+    --cg__ob1: var(--_cg__ob1);
+    --cg: var(--_cg);
+    --cg__ub1: var(--_cg__ub1);
+
+    /* color black, abbreviated to first-letters */
+    --cb__ob1: var(--_cb__ob1);
+    --cb: var(--_cb);
+    --cb__ub1: var(--_cb__ub1);
+
+    /* utility color succes, abbreviated to first-letters */
+    --ucs__ob1: var(--_cs__ob1);
+    --ucs: var(--_cs);
+    --ucs__ub1: var(--_cs__ub1); 
+
+    /* utility color notification, abbreviated to first-letters */
+    --ucn__ob1: var(--_ucn__ob1);
+    --ucn: var(--_ucn);
+    --ucn__ub1: var(--_ucn__ub1);
+
+    /* utility color warning, abbreviated to first-letters */
+    --ucw__ob1: var(--_ucw__ob1);
+    --ucw: var(--_ucw);
+    --ucw__ub1: var(--_ucw__ub1);
+
+    /* utility color error, abbreviated to first-letters */
+    --uce__ob1: var(--_uce__ob1);
+    --uce: var(--_uce);
+    --uce__ub1: var(--uce__ub1);
+
+    /* Relative Utility Colors, set to imaginary values */
+    --uc__primary--ob1: var(--cp__ob4);
+    --uc__primary:  var(--cp);
+    --uc__primary--ub1: var(--cp__ub3);
+    --uc__secondary--ob1: var(--cs__ob3);
+    --uc__secondary: var(--cs);
+    --uc__secondary--ub1: var(--cs__mub) ;
+    --uc__tertiary--ob1: var(--ct__ob3);
+    --uc__tertiary: var(--ct__ob1);
+    --uc__tertiary--ub1: var(--ct__ub2);
+    --uc__quarternairy--ob1: var(--cq__ob3);
+    --uc__quarternairy: var(--cq);
+    --uc__quarternairy--ub1: var(--cq__ub4);
+    
+    /* default utility colors, SEMANTICAL selector  */
+    --uc__text--ob1: var(--cg);
+    --uc__text: var(--cb);
+    --uc__text--ub1: var(--cb);
+    --uc__background: var(--cw);
+    --uc__foreground: var(--cb);
+    --uc__fill: var(--uc__foreground);
+    --uc__border: var(--uc__foreground);
+        }
+    }

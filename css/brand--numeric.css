@@ -1,0 +1,81 @@
+@layer lock{
+body:not(.rds--freeze *) *:has(.rds *):not(.rds--freeze *)  {
+    --_cp__ob5: ;
+    --_cp__ob3: ;
+    --_cp__ob2: ;
+    --_cp__ob1: ;
+    --_cp: #22cafe;
+    --_cp__ub1: ;
+    --_cp__ub2: ;
+    --_cp__ub3: ;
+    --_cp__ub5: ;
+
+    /* color secundairy, abbreviated to first-letters */
+    --_cs__ob5: ;
+    --_cs__ob3: ;
+    --_cs__ob2: ;
+    --_cs__ob1: ;
+    --_cs: #face22;
+    --_cs__ub1: ;
+    --_cs__ub2: ;
+    --_cs__ub3: ;
+    --_cs__ub5: ;
+
+    /* color tertiary, abbreviated to first-letters */
+    --_ct__ob5: ;
+    --_ct__ob3: ;
+    --_ct__ob2: ;
+    --_ct_ob2: ;
+    --_ct: #22face;
+    --_ct__ub1: ;
+    --_ct__ub2: ;
+    --_ct__ub3: ;
+    --_ct__ub5: ;
+
+    /* color quarternairy, abbreviated to first-letters */
+    --_cq__ob5: ;
+    --_cq__ob3: ;
+    --_cq__ob2: ;
+    --_cq__ob1: ;
+    --_cq: #fa22ce;
+    --_cq__ub1: ;
+    --_cq__ub2: ;
+    --_cq__ub3: ;
+    --_cq__ub5: ;
+
+    /* color white, abbreviated to first-letters */
+    --_cw__ob1: white;
+    --_cw: ivory;
+    --_cw__ub1: ghostwhite;
+
+    abbreviated to /
+    --_cg__ob1: gainsboro;
+    --_cg: silver;
+    --_cg__ub1: slategray; 
+
+    /* color black, abbreviated to first-letters */
+    --_cb__ob1: ;
+    --_cb: #00000095;
+    --_cb__ub1: ;
+
+    /* utility color succes, abbreviated to first-letters */
+    --_ucs__ob1: ;
+    --_ucs:  limegreen;
+    --_ucs__ub1:  ;
+
+    /* utility color notification, abbreviated to first-letters */
+    --_ucn__ob1: ;
+    --_ucn:  dodgerblue;
+    --_ucn__ob1: ;
+
+    /* utility color warning, abbreviated to first-letters */
+    --_ucw__ob1: ;
+    --_ucw: orange ;
+    --_ucw__ub1: ;
+
+    /* utility color error, abbreviated to first-letters */
+    --_uce__ob1: ;
+    --_uce: crimson ;
+    --_uce__ub1: ;
+    }
+}

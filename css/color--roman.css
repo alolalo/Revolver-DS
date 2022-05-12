@@ -1,0 +1,111 @@
+
+    To read more about this extended freemium CC-BA-NC-SA license extension, please visit https://followgu.us/boum/ 
+    Lighter colors are ON BASE, 
+    Darker colors are UNDER BASE, 
+    Untill you hit the MAX on either side. 
+    */
+@layer lock {
+    body:not(.rds--freeze *) *:has(.rds *):not(.rds--freeze *) {
+    /* Nested Utility Colors, using the parent-name as selector. */
+    /* color primary, abbreviated to first-letters */
+    --cp__mob: var(--_cp__mob);
+    --cp__ooob: var(--_cp__ooob);
+    --cp__oob: var(--_cp__oob);
+    --cp__ob: var(--_cp__ob);
+    --cp: var(--_cp);
+    --cp__ub: var(--_cp__ub);
+    --cp__uub: var(--_cp__uub);
+    --cp__uuub: var(--_cp__uuub);
+    --cp__mub: var(--_cp__mub);
+
+    /* color secundairy, abbreviated to first-letters */
+    --cs__mob: var(--_cs__mob);
+    --cs__ooob: var(--_cs__ooob);
+    --cs__oob: var(--_cs__oob);
+    --cs__ob: var(--_cs__ob);
+    --cs: var(--_cs);
+    --cs__ub: var(--_cs__ub);
+    --cs__uub: var(--_cs__uub);
+    --cs__uuub: var(--_cs__uuub);
+    --cs__mub: var(--_cs__mub);
+
+    /* color tertiary, abbreviated to first-letters */
+    --ct__mob: var(--_ct__mob);
+    --ct__ooob: var(--_ct__ooob);
+    --ct__oob: var(--_ct__oob);
+    --ct__ob: var(--_ct_oob);
+    --ct: var(--_ct);
+    --ct__ub: var(--_ct__ub);
+    --ct__uub: var(--_ct__uub);
+    --ct__uuub: var(--_ct__uuub);
+    --ct__mub: var(--_ct__mub);
+
+    /* color quarternairy, abbreviated to first-letters */
+    --cq__mob: var(--_cq__mob);
+    --cq__ooob: var(--_cq__ooob);
+    --cq__oob: var(--_cq__oob);
+    --cq__ob: var(--_cq__ob);
+    --cq: var(--_cq);
+    --cq__ub: var(--_cq__ub);
+    --cq__uub: var(--_cq__uub);
+    --cq__uuub: var(--_cq__uuub);
+    --cq__mub: var(--_cq__mub);   
+
+    /* color white, abbreviated to first-letters */
+    --cw__mob: var(--_cw__mob);
+    --cw: var(--_cw);
+    --cw__mub: var(--_cw__mub); 
+
+    /* color gray, abbreviated to first-letters */
+    --cg__mob: var(--_cg__mob);
+    --cg: var(--_cg);
+    --cg__mub: var(--_cg__mub);
+
+    /* color black, abbreviated to first-letters */
+    --cb__mob: var(--_cb__mob);
+    --cb: var(--_cb);
+    --cb__mub: var(--_cb__mub);
+
+    /* utility color succes, abbreviated to first-letters */
+    --ucs__mob: var(--_ucs__mob);
+    --ucs: var(--_ucs);
+    --ucs__mub: var(--_ucs__mub); 
+
+    /* utility color notification, abbreviated to first-letters */
+    --ucn__mub: var(--_ucn__mob);
+    --ucn: var(--_ucn);
+    --ucn__mob: var(--_ucn__mub);
+
+    /* utility color warning, abbreviated to first-letters */
+    --ucw__mob: var(--_ucw__mob);
+    --ucw: var(--_ucw);
+    --ucw__mub: var(--_ucw__mub);
+
+    /* utility color error, abbreviated to first-letters */
+    --uce__mob: var(--_uce__mob);
+    --uce: var(--_uce);
+    --uce__mub: var(--_uce__mub);
+
+    /* RELATIVE utility colors, LITERAL selector */
+    --uc__primary--mob: var(--cp__mob);
+    --uc__primary:  var(--cp);
+    --uc__primary--mub: var(--cp__uuub);
+    --uc__secondary--mob: var(--cs__ooob);
+    --uc__secondary: var(--cs);
+    --uc__secondary--mub: var(--cs__mub) ;
+    --uc__tertiary--mob: var(--ct__ooob);
+    --uc__tertiary: var(--ct__ob);
+    --uc__tertiary--mub: var(--ct__ub);
+    --uc__quarternairy--mob: var(--cq__mob);
+    --uc__quarternairy: var(--cq__mob);
+    --uc__quarternairy--mub: var(--cq__mob);
+    /* RELATIVE utility colors, RELATIVE selector */
+    --uc__text--mob: var(--cg);
+    --uc__text: var(--cb__mob);
+    --uc__text--mub: var(--cb__mub);
+    --uc__background: var(--cw);
+    --uc__foreground: var(--cb);
+    --uc__fill: var(--uc__foreground);
+    --uc__border: var(--uc__foreground);
+    }
+}

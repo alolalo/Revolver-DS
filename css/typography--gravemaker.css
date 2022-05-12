@@ -1,16 +1,17 @@
-:root {
+@layer lock {
+    /* I'm applying some faux NAVY SEALS strategy here; double-tap to make sure it's dead; */
+body:not(.rds--freeze *) *:has(.rds *):not(.rds--freeze *) {
     /* Dedicated to Thomas Gravemaker, https://www.letterpressamsterdam.com, for sharing your 50+ years of letterpressing skills with me. Through this repository I hope to kick your eternal knowledge forward, and also creating a resource for your future students how to apply these concepts in digital media. All values used below are for reference to typographic design systems, proportions & calculations in letterpressing and digital media, not actual design choices despite the looks of it. 
     
-    Change ONLY relational --bu--* values, then apply them to the aliased relational-base. There are three flavors; relational-base (relative units), absolute-base (absolute units), and hybrid-base (x-height-unit) to reference how the duodecimo system in 12pt type differs from the 16px sedecimo system, and how x-height is a hybrid of the two from my opinionated design point of view. Headless, generative & utility-driven type-scales with simple math, and the gentle touch of a dutch giant called Thomas. */
+ There are three flavors; relational-base (relative units), absolute-base (absolute units), and relative-base (x-height-unit) to reference how the duodecimo system in 12pt type differs from the 16px sedecimo system, and how x-height is a hybrid of the two from my opinionated design point of view. These are experimental as much as they are ancient, and should provide usefull if you wish to take a more classical approach to writing your own fluid typographic system based on typography, not pixels.*/
 
         /* intentional gap */
         /* intentional gap */
 
-    /* parametric BASE-utility-units using B.O.U.W.:forks:: (c) down the pipe */
+    /* parametric BASE-utilities, these change EVERYTHING */
     --bu--rem-base: 16px;
     --bu--cic-base: 12pt;
     --bu--rex-base: 1ex;
-    --bu--ch-base: 1ch;
     /* not yet supported, see CanIUse and MDN docs */
     --bu--lh-base: 1lh;
     --bu--cjk-base: 1ic;
@@ -18,12 +19,12 @@
 
     /* intentional gap */
 
-    /* these TWO units are the primary setters.  */
+    /* these TWO units are the primary setters for everything hereafter  */
     --bu--rel-base: var(--bu--cic-base);
     --bu--abs-base: var(--bu--rem-base);
     /* intentional gap */
 
-    /* B.O.U.W.-fork:: Relative Typographic Sizes */
+    /* B.O.U.M.-fork:: Relative Typographic Sizes */
     /* proportional relative length-units using duodecimo system, 5 proportions of 12pt korps = 1 cicero = relative-unit-base */
     --rel-base: var(--bu--rel-base); /* 12pt */
     /* replacable WITH: ex-base, ch-base for relative control. em is only used in classes, not the system head */
@@ -46,8 +47,8 @@
     --rel-ub4: calc(var(--rel-ub3) - var(--rel-twelvth));
     --rel-ub5: calc(var(--rel-ub4) - var(--rel-twelvth));
     /* absolute utility units using BASE = 1 relative-unit-base */
-    --rel-8x: calc(var(--rel-base) * var(--rel-third) * var(--rel-sixth)); /* 96pt */
     --rel-6x: calc(var(--rel-base) * var(--rel-half));  /* 72pt */
+    --rel-8x: calc(var(--rel-base) * var(--rel-third) * var(--rel-sixth)); /* 96pt */
     /* 5x is not used in physical letterpressing, but shown below as an example to see why FIVE is off in 12pt: it's not proportionally equal to the 5 root proportions of cicero multitudes; 1pt, 2pt, 3pt, 4pt, 6pt. Therefor in physical space, you can't subtract whitespace like this since you would need a sawblade on the letterpressing table and make sure not to cut the lead in the proces. 8x is not in the root proportions, but can be made by multiplying them, which is what you want with relative units; to scale proportionally equal to a relative base. Note that 5x is the only odd needing an extra bump to get exact unlike the other proportional relations that can be achieved by only multiplying it's own proportions once. */
     --rel-5x: calc(var(--rel-base) * var(--rel-half) - var(--rel-twelvth));  /* 60pt */
     /* intentional gap */
@@ -55,7 +56,7 @@
     --rel-3x: calc(var(--rel-base) * var(--rel-fourth));  /* 36pt */
     --rel-2x: calc(var(--rel-base) * var(--rel-sixth));  /* 24pt */
 
-    /* B.O.U.W.:fork:: Absolute Typographic Sizes */
+    /* B.O.U.M.:fork:: Absolute Typographic Sizes */
     /* proportional absolute-units using sedecimo system, 4 proportions of 16px korps = 1 rem = 1 absolute-unit */
     --abs-base: var(--bu--abs-base);
     --abs-half: calc(var(--abs-base) / 2);
@@ -84,14 +85,14 @@
     --abs-3x: calc(var(--abs-base)* 3);  /* 48px */
     --abs-2x: calc(var(--abs-base)* 2);  /* 32px */
 
-    /* B.O.U.W.:fork:: Hybrid Typographic Sizes */
+    /* B.O.U.M.:fork:: Hybrid Typographic Sizes */
     /* hybrid utility units using 1 relative-ex-base = based on x-height of the first font (!). Note that the multipliers use sedecimo scales below the base, and relative multipliers above the base. None of these values are real values, just for illustration purposes on how to handle equal proportions in a hybrid model that is based on a relative unknown, yet a relative baseline that shows how devissions and multitudes are handled at scale.   */
+    --rex-base: var(--bu--rex-base);
     --rex-ob5: calc(var(--rex-base) * 17.875);
     --rex-ob4: calc(var(--rex-base) * 12.1);
     --rex-ob3: calc(var(--rex-base) * 7.750);
     --rex-ob2: calc(var(--rex-base) * 4.350);
     --rex-ob1: calc(var(--rex-base) * 2.1);
-    --rex-base: var(--bu--rex-base);
     --rex-half: calc(var(--rex-base) * 0.500);
     --rex-quarter: calc(var(--rex-base) * 0.250);
     --rex-eighth: calc(var(--rex-base) * 0.125);
@@ -101,5 +102,5 @@
     --rex-ub4: calc(var(--rex-base) * 0.375);
     --rex-ub5: calc(var(--rex-base) * 0.210);
 }
-
+}
 /* Created by https://justgu.us , the tiniest design agency you can hire to if you're looking for design system excellence and anti-fragile JIT atomic design. My expertise is naming things, the hardest programming language ever created for computer- mankind. Questions? https://askgu.us */
