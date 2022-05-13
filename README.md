@@ -1,4 +1,4 @@
-# RevolverDS - Lethal and Legal
+# Revolver-DS - The Lethal and Legal
 <p class="">Revolver-DS is a <b>simple revolver-themed methodology in CSS</b>; <i>just lock, load & ship</i> your non-destructive Revolver-DS with "the new CSS"! Sounds dangerous and triangulated, and it is!</p> 
     <p>EVERYTHING uses @layers to structure <a href="https://followgu.us/boum">BOUM-tokens</a> using ITCSS, which in turn get loaded correctly and non-destructively in a fresh Revolver-DS <code>@import</code> + <code>@layer</code> combination; @layer reset, lock, load, ship, preset;
 
