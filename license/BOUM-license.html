@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>.: B.O.U.~M. license :.</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a341aca9-4da2-4326-8097-405944d18722" class="page sans"><header><h1 class="page-title">.: B.O.U.~M. license :.</h1></header><div class="page-body"><p id="76a462ea-c0b1-4ced-9c81-fc43df18b7e1" class="">Last update: 16-May-2022 , Version: 1.0.5</p><p id="9400df55-f2e1-4a04-90af-acd42e37e774" class="">The following document is an addition to the CC BY-NC-SA Creative Commence 4.0 licence used and included in the following products owned by BonoBoos B.V., registered in Amsterdam under KVK nr: 67377416, The Netherlands (LLC), privately owned by Guus Hoeve, represented as his branded identity hereafter mentioned as <a href="http://justgu.us">justgu.us</a>, <a href="http://askgu.us">askgu.us</a>, and grants the end-user limited commercial copyrights to use the “℗Voice, © Identity &amp;™ Ownership” of <strong>.: said :.</strong> intellectual property, encapsulated by (.:  :.) ;</p><ul id="eecacc4a-6f60-49e5-b8cc-ac9db38501a2" class="bulleted-list"><li style="list-style-type:disc">.: B.O.U.~M. :. ™  semaforic naming convention (tokens, patterns, datasets &amp; texts), to be used in algorithmic design &amp; code, procedural design &amp; code, and design tokens used in design systems.</li></ul><hr id="afb40a5b-3e0e-4e91-8a90-7e36610e26a4"/><h1 id="950157a9-1d35-46c8-bcbe-9b889ecd8262" class="">Quick Links:</h1><p id="477d1338-2d35-4591-8eef-577fcbe3aee6" class="">(<strong>FREE) </strong>BOUM license shop: <a href="https://followgu.us/boumshop">https://followgu.us/boumshop</a> </p><p id="df448574-1b2f-4b50-9705-5610c4054810" class="">(<strong>EXAMPLE) </strong>Revolver-DS repository using BOUM-tokens: <a href="https://github.com/alolalo/RevolverDS">https://github.com/alolalo/RevolverDS</a></p><p id="c0721208-fed0-4529-b8f4-7a3f725b7f8d" class="">(<strong>ADVERTISEMENT) </strong>Revolver-DS gamified workshop “LOCKOUT” : <a href="https://followgu.us/workshop">https://followgu.us/workshop</a> </p><h1 id="2f6a8fee-e3a6-41ab-8e56-55f92d136f59" class="">Everyday Use cases</h1><p id="fea569f7-753b-4f85-999c-e1a00c22f80b" class="">These usecases are to explain how .: B.O.U.~M :. product license degrees work in everyday context, outside of legal context. There are three degrees of usage and user rights, from system product (3rd) to production product (1st) to end-product(2nd), the 4th degree is an extension of the 3rd. The BOUM IP travels in between these identities as seperate legal entities, each having their own rights and claim which will be explained later in this document.</p><h3 id="eb754910-4716-4226-a756-40e6ecb32fe7" class="">The VIP-ceiling: Views, Installs &amp; Prints</h3><p id="eb5067b2-accc-4ba8-ab69-c489e06054ae" class="">The concept of the license model is quite simple; you take the amount of Views, Installs &amp; Prints of an end-product (2nd degree only) using BOUM and look up in the table how big your company size is at the start of the project that is getting licensed.</p><p id="1d036282-aa62-46e2-b6f7-7c49e2b9c4be" class="">These two factors are only important at the start since they determine your entry-point of product license levels, nine in total, and three company-size levels. Once a license is installed, there is no need to upgrade to a “pro” license if your company grows in the meantime.</p><p id="7e000ac3-0ed4-4407-a117-89fb9500a437" class="">BOUM uses your product’s performance hereafter to measure the price you need to pay, as it doesn’t matter if your company grows in teamsize. Your product’s yearly VIP-ceiling level is what counts, an it starts for free up to 10k VIP per year, so if you’re start-up is growing but your product is steady in it’s growth, you don’t have to pay more because your company size increases. Only when your product hits it’s VIP-ceiling.</p><p id="867a790a-6fc7-4d4e-9bfb-c28bc5170ccf" class="">The only degree that needs to take the VIP-ceiling into account is the 2nd degree, unless 1st and 2nd degree are owned by the same person, party or company. The latter situation sees that 1st degree will inherit the VIP-ceiling, and any 2nd degree end-product’s usage adds to their own 1st degree ceiling, and the 1st degree’s ceiling is effectively doubling the price to pay.</p><p id="7d1a04fb-6d7f-4b28-bb0c-7410f4925c70" class="">To not have to pay for any VIP-ceiling cost for any of the products you make for yourself and your company, not 3rd party clients who always have their own VIP-ceiling on 2nd degree end products, you can use a system-license that grants you the exclusive bonus of not having to pay a dime in licensing cost hereafter, and allows unlimited projects to be created with it for inhouse use without having to track licensing cost.</p><p id="475856b0-84d6-4b8d-ad92-556c8e35806a" class="">However, as an indie developer or even a big agency you do NOT need to buy a system-license if you develop for multiple clients, as you CAN create unlimited end-products with a 1st degree license (production product) but no more than two for the same client. </p><p id="7177708e-3d65-444a-864e-c73f8b865906" class="">If you wish to have no restrictions for your customers to buy a system license, this would be your option to choose as well, plus you can create 1st degree products for clients too. 1st Degree is free forever, but limited to redistribution on what you can do with one degree later.</p><h2 id="bd8efc43-6c05-4a1e-8ffe-0d4d14232010" class="">Standard License Pricing (2nd degree)</h2><p id="a0ad821e-fef2-48e3-a070-e37dcf579b30" class="">All the licenses can be bought from the .: B.O.U.~M :. webshop</p><table id="e09bebcc-d120-4bb5-aba5-6ae0e3001d04" class="simple-table"><thead class="simple-table-header"><tr id="13fbfb46-6e4d-4780-8ccc-08d30cb6c75f"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">V.I.P.-ceiling , 9 Levels in total</th><th id="@pC~" class="simple-table-header-color simple-table-header" style="width:192px">INDIE (&lt;10)</th><th id=":QtE" class="simple-table-header-color simple-table-header" style="width:202px">PRO (&lt;100)</th><th id="MNXt" class="simple-table-header-color simple-table-header" style="width:190px">GROW (&lt;1000)</th></tr></thead><tbody><tr id="30286ddc-c25e-416a-9559-848cc53f78a2"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;10K (Start here)</th><td id="@pC~" class="" style="width:192px"><strong>FREE</strong></td><td id=":QtE" class="" style="width:202px"><strong>FREE</strong></td><td id="MNXt" class="" style="width:190px"><strong>FREE</strong></td></tr><tr id="4a6ebe57-b0c5-40a1-9b15-c18769bc6318"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;100K</th><td id="@pC~" class="" style="width:192px">€ 22,-</td><td id=":QtE" class="" style="width:202px">€ 220,-</td><td id="MNXt" class="" style="width:190px">€ 2200,-</td></tr><tr id="c69f1199-fd1f-498f-8408-e3770914df43"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;500K</th><td id="@pC~" class="" style="width:192px">€ 220,-</td><td id=":QtE" class="" style="width:202px">€ 1100,-</td><td id="MNXt" class="" style="width:190px">€ 11K</td></tr><tr id="8c5bf7fa-93e8-405c-9fd6-7ae769a6e43e"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;1.0<span style="border-bottom:0.05em solid">M</span></th><td id="@pC~" class="" style="width:192px">€ 1100,-</td><td id=":QtE" class="" style="width:202px">€ 11K</td><td id="MNXt" class="" style="width:190px">€ 55K</td></tr><tr id="979ddcfa-87f6-4a14-8a83-712622903624"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;10<span style="border-bottom:0.05em solid">M</span></th><td id="@pC~" class="" style="width:192px">€ 11K</td><td id=":QtE" class="" style="width:202px">€ 55K</td><td id="MNXt" class="" style="width:190px">€ 110K</td></tr><tr id="a91a3fa5-ecf9-478b-841d-b75dc1b164ca"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;100<span style="border-bottom:0.05em solid">M</span></th><td id="@pC~" class="" style="width:192px">FREE*</td><td id=":QtE" class="" style="width:202px">FREE*</td><td id="MNXt" class="" style="width:190px">FREE*</td></tr><tr id="0e1b09c1-25d1-4b20-9564-3a30bbf94dc6"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;500<span style="border-bottom:0.05em solid">M</span></th><td id="@pC~" class="" style="width:192px">€ 55K</td><td id=":QtE" class="" style="width:202px">€ 110K</td><td id="MNXt" class="" style="width:190px">€ 550K</td></tr><tr id="45010584-f8a2-4b17-af2a-252d0de1e9fb"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;1.0<em>B</em></th><td id="@pC~" class="" style="width:192px">€ 110K</td><td id=":QtE" class="" style="width:202px">€ 550K</td><td id="MNXt" class="" style="width:190px">€ 2.2<span style="border-bottom:0.05em solid">M</span></td></tr><tr id="4b25a0c4-6745-4e17-aae1-e440fd6a999d"><th id="d@rF" class="simple-table-header-color simple-table-header" style="width:142px">&lt;10<em>B</em></th><td id="@pC~" class="" style="width:192px">€ 550K</td><td id=":QtE" class="" style="width:202px">€ 1.1<span style="border-bottom:0.05em solid">M</span></td><td id="MNXt" class="" style="width:190px">€ 4.4<span style="border-bottom:0.05em solid">M</span></td></tr></tbody></table><p id="c0d0f305-4b54-4435-85d0-087debdfa648" class="">B.O.U.~M combines the <strong>views, installs &amp; prints (V.I.P.) </strong>in an average per year with a ceiling, and ties this to the products created with it. A 1st degree license can create 2nd degree END products with it, but the VIP coming from those accounts to the 1st degree if they are from THE SAME SOURCE. </p><p id="9ab817be-5a0a-4a05-9199-6353d8104dc1" class="">Meaning if you want to own all the rights of your product, you’re a system maintainer of self at scale. In any other case, like a client who recieves your work, the VIP-ceiling only accounts for the 2nd degree end-product.</p><p id="44cb57d7-10fe-4159-a3c6-50f19692ab2e" class="">There are three tiers; indie which has less than 10 people working at the company, pro less than 100, and grow less than 1000. All tiers start free if it’s a new product, existing products that already have an established user-base will enter at a higher level. </p><p id="8a3c859a-f872-4f4b-b31a-cd531a60e1cc" class="">FREE* means this tier is free if you paid all other tiers before that one, so if you happen to enter on the FREE* tier, your fee will still be the level before that one. FREE is actually free, no catch.</p><p id="48219196-a7a2-4b9e-9384-8101ad89b54c" class="">So before you think it’s smart to have 1st and 2nd degree rights on a product, it’s doubling your VIP-bill per product and makes no sense. If you wish to do just that, own all the rights of a product’s licenses (product and system rights) WITHOUT the VIP-ceiling, you need a system-license. </p><p id="f851d12f-59e6-4f18-ac80-3700bcdb1271" class="">Otherwise you just accept a double bill for the reasons you probably have, yet once a product is licensed you can NOT remove the VIP-ceiling. This means you can’t relicense if a product is already licensed, and this applies to all degrees but especially 1st and 2nd degree.</p><p id="bf370741-ba5e-49ed-935a-bf2e2a29f665" class="">System-licenses are the only licenses that do NOT have a VIP-ceiling tied to 1st and 2nd degree products if they are for inhouse use, and there is no limit on the amount of projects you can create from it. If you wish to make a design system for a client that needs to create end products with it, the only license that will create these rights is 3rd degree, not limited 3rd degree that can only create 2nd degree.</p><p id="4c768f93-9684-4816-b1a3-37fbc5baca7e" class="">In case for a client, your client benefits from your license ancestry and you don’t need to “switch license”. You just include their 2nd degree of license ownership, that inherits the rights of 1st degree ownership as the current owner of the 1st degree’s nested IP and 2nd degree ownership of product. </p><p id="e087c055-0597-4701-9d09-47a6da73b7db" class="">Not the production-product, the 1st degree version you used to make the 2nd degree and final end-product. A simple and clean separation of ownership of technical and commercial IP, by degree of transfer from 1st to 2nd connection. A trusted source of truth, accounted for by licenses on both sides and agreed upon in consent.</p><p id="b071b40e-519d-4c4e-b636-fdf7eb918f11" class="">ALL Standard licenses are <em><span style="border-bottom:0.05em solid">one-time payments for a lifetime of the product,</span></em><em> have </em><strong>NO RECURRING PAYMENTS or FEES</strong>, and have limited usage rights depending on your degree of (re)distribution. This includes the FREE-tier too, no exceptions.</p><p id="8819ba8d-1319-40cb-a736-0ca771e1cd5a" class="">All licenses ar <strong>per product / application, </strong>but are not applicable towards implementing it into your own design system. See the <em><span style="border-bottom:0.05em solid">design system license</span></em> section below for options to do just that! This is considered 3rd degree usage, on a systematical scale of commercial implementation to use .: B.O.U.~M :. for system design.</p><h1 id="f406e486-6a47-4e12-a63d-fcb894aaddcc" class="">When to upgrade a license</h1><p id="e72e4aa8-fd76-4615-ae2d-e612ec93c9c9" class="">You only upgrade your licence at the end of each year, to see if <strong>your product grows in numbers</strong>, as per views, installs &amp; prints, and then you check your product’s growth &amp; current V.I.P.-ceiling. </p><p id="47654377-8e7f-4a93-ba96-b5d7381ce710" class="">I would be so happy for anyone to say “YES! We NEED to upgrade!” because of their 1st milestone succes; actually getting paid! Second, this effectively means you can try .: B.O.U.~M :. on a new project for a full year before you need to pay.</p><p id="9512f7d1-906f-477e-8914-b3393ad7e50d" class="">Your license is for a lifetime, untill it hits the ceiling and you are <em>forced to upgrade</em> if you want to continue using it, or remove it from your design system &amp; sites completely. You only pay once, like in the good old days. Because if toiletpaper, a necessity, was invented in this era, it would probably come with a lifetime subscription…</p><p id="4d411de1-c491-489a-9b64-e40719a6fda1" class="">Regardles of your company-size, it’s time to upgrade if you have outgrown your license’s ceiling but not your staff. That’s costly enough already, so that is the upside of .: B.O.U.~M :. ‘s business-model; it’s growth focussed by not making you pay for when you grow in size, only in user and production growth.</p><p id="163ca7e0-70f7-441b-ba54-4e6e440a2f74" class="">It’s based on product-performance first, then the company-size. So early stage start-ups who need to hire people and scale don’t get derailed by a large invoice along their already costly longterm investments. We’re in it for the long run, not the quick cash.</p><p id="75654b2d-13cb-4f51-a7dd-0209f37a1e3b" class="">So too for government-size teams and products that have a <strong>public service</strong>, as legally speaking the company who owns the license is the one that can make claims (in court). Not the End Users, the contractors or the employees. </p><p id="a3dafefd-e8d9-44a3-b25c-6fe8f7cb9207" class="">They can create their own if needed from <strong>4th degree usage,</strong> and don’t have to pay any additional charges; it’s free to provision licenses or rights given the right degree. </p><p id="6d1852cf-51c2-4dcb-9bc2-7eed5b3813ab" class="">This also means that any employees or contractors at your company are automatically protected when using .: B.O.U.~M :. too, nor can they make any claims on their own behalf using your customized version of .: B.O.U.~M :. as per license. It’s per product, remember?</p><p id="ec6b12b2-7334-4931-902c-c56e424aa77c" class="">The free tier at 100 million V.I.P. <span style="border-bottom:0.05em solid">waivers any commercial attribution</span> needed to be paid by the licencsee, but it <em>does</em> require them to have a licence to be granted such rights. Meaning you purchased the licenses before the free tier, or you have to pay all fees up to FREE*.</p><p id="23f733a2-6742-4ad5-b4c9-63a1fdaf0c10" class="">After this point you don’t have to switch from indie to pro for example if your team-size grows next year, <em><span style="border-bottom:0.05em solid">but your product performs under the VIP-ceiling.</span></em><em> </em>This means you only upgrade when your product performs better than previous licenses permitted.</p><p id="c16f83db-ac4a-4f64-9cfb-3b4e74b709ec" class="">No need to upgrade or renew every year, the ceiling is what counts <strong>first, </strong>then you check your company-size. That’s how you determine your entry-level too, even when you have zero customers or views yet. Done.</p><h3 id="c8989eb1-1f10-4d9c-b3f5-73446e8dcdfb" class="">FIVE Degrees of User Rights &amp; Defenitions</h3><p id="04757bc9-3cbe-4e4c-836d-b31ced4616a2" class="">N<strong>th degree: </strong>this degree applies to all degrees afterwards, like how zero defines the start of a scale and is <strong>undestributable</strong> down the line. This degree applies to system licenses too, and is the only degree that can create 3rd degree and limited 3rd degree. </p><p id="a78f6364-4d2c-4bce-8593-553cfe9aa675" class="">All rights and BOUM-licenses are reserved to be invoked (unbound) or provoked (created) by any Nth-degree (origin) license creator only, and this right is exclusive to the Nth degree. This means that if an open source project dies, the license still lives as I didn’t revoke any of them to begin with.</p><p id="5af33e17-ac23-44a2-982a-c82d7fb61f63" class="">This system of user degrees starts with 3rd degree, than 1st degree, than 2nd degree. Each degree is a transfer of ownership, in which generally a 3rd degree user will create a system, that a 1st degree user will consume to produce the 2nd degree user’s end product.</p><p id="2cab9c35-3611-43f4-a837-d2d1863c74ab" class="">The 2nd degree is the last degree of usage, first comes 3rd, then 1st and finally 2nd. No officially licensed products can be made after the 2nd degree. Only 3rd degree, not limited 3rd degree, can generate new 1st and 2nd degree licensed products.</p><p id="8d80a51b-ab75-4ec6-88ad-1c9548113f48" class="">Like when you make a turnkey website for a client (1st and 2nd0, or their own custom gutenberg blocks so your client can create endless wordpress pages with for others (3rd, 1st and 2nd). </p><p id="90541938-2536-4341-9ff4-f96d371b0fad" class="">That is commercial use on a system level, beyond personal &amp;  professional, and thus 3rd degree. The developing party must have such a license, with which they can produce 1st and 2nd degree licenses for internal and external (client) use.</p><p id="523fd4da-0bd9-4457-b68d-e38ea8b98cce" class=""><strong>3rd degree: </strong>System Product (system design)
+<strong>can create: </strong>1st, 2nd , 4th and limited 3rd degree products</p><p id="898dcdfa-fe68-4fa7-99fe-a625602b9fee" class="">this degree is a commercial and <strong>official system</strong> <strong>generator</strong> of licenses, like ourselves, and can redistribute unlimited 1st degree, 2nd degree, and 4th degree, but <strong>not it’s own 3rd degree </strong>unless you’re the<strong> official origin of the .: B.O.U.~M :. naming convention </strong>(like us).</p><p id="8a3ed3c7-661e-48c8-ace2-9a13362d48c1" class=""><strong>1st degree:</strong> Production Product (design system)
+<strong>can create: </strong>2nd degree product</p><p id="8c57f33c-a408-4ae3-bfb9-4766cbd95de8" class="">this degree is the first user of a licence, and <strong>can re-destribute</strong> to 2nd degree a client.</p><p id="298507ee-21f3-4f06-a775-aeb09295a5d6" class="">For example a design agency creating a website for a client, must include a 2nd degree license for the end-product. But as a commercial entity, they can not reuse modules and parts of the project for their own DS, which is 3rd degree usage and is not covered by the product license (1st). Only a 3rd degree system-license can generate 1st and 2nd degree products.</p><p id="deac240f-c026-4ff6-a70d-83c6f6a4b378" class=""><strong>2nd degree:</strong> End Product
+<strong>can create:</strong> none, end of line</p><p id="05401939-0b13-409c-9061-4d85f60507cf" class="">this degree is the receiver of artifact of a 1st degree licensee, the owner of the End Product, and <strong>can NOT re-destribute or resell licenses to any degree of licensees.</strong> They can sell the artifacts as an end-product, but without modifcations of the license for the product. These artifacts would simply account to their VIP-ceiling, set by their 2nd degree user agreement. Any renewals of the license will be handled by the party who owns the license.</p><p id="162e85c6-940f-42d2-9c56-e47c22be8f27" class=""><strong>LIMITED 3rd degree: </strong>Open Source, non-commercial
+<strong>can create: 2nd and 4th degree</strong></p><p id="8647064c-9894-4d03-93cd-d9b0d8126c67" class="">this degree is clearly an Open Source initiative with no commercial eyemark, and distributes with the limitation that you can only create <strong>End Products that are 2nd degree and can NOT be re-destributed as commercially licensed 1st or limited 3rd degree after this degree. </strong></p><p id="bc29a32a-2d45-41bf-868a-9627bbf46b91" class="">This does mean that their end-product can be used commercially, but not the system (limited 3rd) that created the end-products. This is to say you can create a plugin that people use, but that plugin can not be used to create plugins. The plugin is the end-product.</p><p id="3c55742b-fcf1-48d5-b0a7-f338606ead81" class="">But say you do, you create an open source project that goes commercial, than you can simply upgrade to a system license AND you get a 50% discount to celebrate the birth of your start-up, and mine! It’s not that I am against commercial work in Open Source, it just never shares that succes back with any of their (re)sources.</p><p id="50089c04-02f5-479c-ab23-d5e6ef53faf5" class="">Last but not least, I don’t believe anyone trusts Open Source projects in the long run due to the fact they are never commercially maintained or funded (99,98% are NOT). .: B.O.U.~M :. makes a statement on that before it begins, by saying Open Source is commercially viable but not without it’s own ecosystem. </p><p id="d116b09a-878c-457b-9a9f-7c30ee583bb1" class="">That is tech’s modern slavery to me; unpaid work that is never seen or treated equally as the commercial entities that depend on it for their own survival, created by people way more intelligent and emphatic than they are. I believe it’s healthy to not go down that line in the long run, it’s just not sustainable for anyone really as the only resource you can find to do just that is a human resource. Like how I worked on this solo, unpaid so far. </p><p id="df9888ce-5ad8-49af-8594-08814835fe54" class="">Open Source simply is a degree for non-commercial use that I hope people share back with to the community using it, so that .: B.O.U.~M :. can be discovered and shared back. As simple as that, for free.</p><p id="b498e787-deb5-4514-baa4-f594b2fe5f10" class=""><strong>4th degree: </strong>extended (limited) 3rd degree
+<strong>can create: </strong>depending on limited or not, 1st and 2nd degree</p><p id="657502a9-ff57-475d-8be2-390b8d366ed6" class="">this degree acts on the behalf of 3rd degree’s distribution rights, and <strong>can re-destribute or resell licenses accordingly to their rights. </strong>This could be an application or a person provisioning licenses, created by a 3rd degree. Limited or Unlimited, a fourth degree is allowed to represent the 3rd degree to a plus one degree of usage without changing the degree of product that would otherwise happen.</p><h2 id="5d2d3ad7-dfa5-4d25-a5a0-404e90ac1cfa" class="">Default<strong> .: B.O.U.~M :. License Rights (Nth degree)</strong></h2><p id="0b02ce68-b19b-4b84-b0c0-e8305ca3f26b" class="">BonoBoos B.V. grants you an on-going, non-exclusive product license to use the .: B.O.U.~M :. dataset, text and interactive libraries shared publicly for commercial purposes in their coded components, primarily design tokens used by the “design system”, for <strong>1st, 2nd and limited 3rd degree </strong>product manufacturing in digital &amp; physical space. <strong>4th Degree is prohibited by default.</strong></p><p id="d8e4f418-f5f6-4aa3-8805-40ded7c34fa4" class="">The license grants permission to <strong>one legal entity</strong> (the Licensee) to access and use the licence up <strong>untill the V.I.P.-ceiling is reached </strong>on one (sub)domain or product. </p><p id="0d44d397-af17-4ebd-82ff-74c7cfc27924" class="">You <strong>can</strong>:</p><ul id="83f12a5e-e549-49a0-8573-793f6761e3ea" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create unlimited End Products, that all have a ceiling per product that is licensed.</li></ul><ul id="4b5edc29-0cb4-4387-bfb1-3f8e84764d14" class="bulleted-list"><li style="list-style-type:disc">Modify the .: B.O.U.~M :. naming-convention to create derivative branded naming conventions and products. Those products and derivatives are subject to this license.</li></ul><ul id="a2c5965f-c3d5-4c83-ac37-bdf1cfe3d3ec" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create unlimited End Products for unlimited Clients.</li></ul><ul id="6e7060e6-6baa-49b6-9266-85e39734e722" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create End Products where the End Product is sold to End Users.</li></ul><ul id="a957828a-509c-4438-b1fb-c95f564f82c9" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create End Products that are open source and freely available to End Users.</li></ul><p id="ec627f48-4d7c-4bbf-b93b-c3063325a135" class="">You <strong>canNOT</strong>:</p><ul id="718e4d69-2b22-4101-94b5-e2531f79b16d" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create End Products that are designed to allow an End User to build their own End Products using the .: B.O.U.~M :. naming convention or derivatives of the convention.</li></ul><ul id="7b486416-06fb-468a-b0df-781f822ad8fe" class="bulleted-list"><li style="list-style-type:disc">Re-distribute the .: B.O.U.~M :. naming-convention or derivatives of parts of the convention separately from an End Product, neither in code or as design assets.</li></ul><ul id="492d3999-186a-462b-852d-30ea1ffbdad3" class="bulleted-list"><li style="list-style-type:disc">Share your access to the licensed .: B.O.U.~M :. naming-convention with any other individuals without making a clear notification of the licence agreement and it’s limitations that apply upfront, or notify users in the root of your homepage/document.</li></ul><ul id="3e32d620-0793-411e-a89e-d788cd7aacfd" class="bulleted-list"><li style="list-style-type:disc">Re-distribute ownership of the license beyond their eligible degree, or parts of the .: B.O.U.~M :. naming-convention, to any company or product after creating and implementing it in a product, unless the entire licenced artifact itself is sold and all .: B.O.U.~M :. licenses and intellectual property are revoked from the product first. </li></ul><ul id="c46856f6-8fac-47d5-b6b0-0794ea01c6d5" class="bulleted-list"><li style="list-style-type:disc">To re-install or re-license a product license in a new company, <a href="mailto:guushoeve@me.com">please contact sales</a>. You may need to upgrade your license to begin with as ownership of the license can only be changed by us. After approval, the new registrant will freely get the license transfer accredited and approved by the origin.</li></ul><h1 id="1088c493-65f3-4186-b89e-e2d054ea01a4" class="">Everyday Use Cases ($$ and free)</h1><h3 id="e3ca42d7-701e-4512-8dd7-1bbd0bbc094d" class="">Client Project </h3><p id="3c09f4ee-0074-4376-bbaa-213e2f695dd5" class=""><strong>license needed:</strong> 1st degree (free)</p><p id="bdd8e7bf-52c2-4a20-be58-2d54e4e88992" class="">Suppose you wish to use BOUM for a client-project, regardless of your company size. Than the degree of usage is two degrees; first the production degree (1st) and than the end-product degree (2nd). It is recommended for each party to have their own license, since 2nd degree owns the IP which the 1st is developing for, but you own the production-degree rights (or the company you work for).</p><p id="59cdc363-6f3a-48fb-b713-ebf83380662f" class="">The reason for doing this is two-fold; one is to make sure that your client has full rights over their IP, and second to have freelancers have full rights over their IP; the design of system modules &amp; components.</p><p id="bd04355e-963d-4057-9197-b4ab490db79c" class="">This makes sure that BOUM seperates legal concerns as a standard, and gives all end-users the right to do so in a simple and professional manner. Including the legal matters surrounding the IP, like the design of system and the rights that come with them.</p><p id="1fdc20a6-f673-401e-a089-d1ab9c4bd281" class="">If the end-product licensee wishes to have the artifacts of the 1st degree licensee, they are required to purchase a 3rd degree system license since that is what 1st and 2nd degree add up to; internal system application usage on a higher degree of volume.</p><p id="cbf8b01c-899f-49c2-a17b-b88a59dde7f3" class="">The artifacts from a 1st degree license can be re-used for a second 2nd degree product, as long as the end-product is for the same client and created by the original legal owner of the 1st degree license. But not a third product.</p><p id="e0dd7baf-5312-4d40-b02c-d10ee8369e2e" class="">This would require your client to purchase a system license from the 1st degree, which the 1st degree gets a 30% cut from.  They buy that license from the shop with your special discount code.. This way the client owns all the rights to their IP, and the system to create it with.</p><p id="89387550-f8d4-4512-bc56-33855cf368ff" class="">But even still it is possible to do so, for free; If your project is not commercially tied but you do wish to put the artifacts in public, you will need a limited 3rd degree license (FREE) that grants you this exclusion. </p><p id="1f9a51bc-6b26-4aa6-b390-c49f154c539f" class="">You can not use private or public BOUM open source to feed your own 1st degree products (production system) if you were the creator of those source, where the origin and the end-product is clearly the same 1st, 2nd and limited 3rd degree, in order to bypass getting a 3rd degree license.</p><p id="78891e7a-d6bb-4835-a29d-694e933469dd" class="">If the 1st degree licensee wishes to re-use their client’s design system modules and components that you created for a client commercially in another project, you will need a 3rd degree license ($$$). </p><p id="45a7de70-507f-4a96-bd1a-c663cbfb811d" class="">You can not however use it to create the same product or brand identity as the client, for yourself or another client. This counters the fact any owner of a 1st degree license has the right to reuse anything from the client side’s IP. like icons, artwork, copy-writing or design specifically used for a unique IP like a custom 3d landing page.</p><p id="c9e9aa49-faf5-4957-988f-7bee909e33bf" class="">As a 3rd degree user you don’t need the consent of 2nd degree to reuse system modules &amp; components, unless otherwise stated by the owner of the end-product for legitimate reasons that contradict what is said in this legal document by order of presedence afterwards (creation). </p><p id="c49f15db-8acf-441b-a0c4-9ff123e081f0" class="">However, if a client wants those rights they would have to upgrade to a system-license and if they do not, you will still have the aforementioned rights to use the system modules &amp; components, as this legal document preceeds any contract that didn’t pay for artifacts mentioned in this document as legal tender of ownership.</p><p id="4dae4e27-f5b7-4ba8-b96b-9ab92761a451" class="">The intent is to stimulate consent of ownership and copyright agreements to the degree of professional and commercial use, without limiting free usage and availability afterwards. This will not be an issue in most cases, but that’s why just in case it does you know your rights as they do.</p><p id="97da570a-00b6-4dee-8841-505a2137b340" class="">The free tiers are generous enough to get started commercially, and the paygate is fair for all to get started with paying for the legal services that protected your IP for free up to this point. If not saved you tons of legal fees you would normall have to pay a licensed legal practitioner to write up and settle for you (in court).</p><h3 id="f1463ad7-9275-454c-9dea-4231a2f54f76" class="">Open Source Project (non commercial)</h3><p id="e5e39599-b0b1-44e1-aa2e-916313d55370" class=""><strong>License needed:</strong> Limited 3rd degree (free)</p><p id="0b2a3405-00b4-4386-a786-c2b33bbf1068" class="">Open Source Projects have limited usage; their design system can not be commercial and they can not pass down 1st degree user rights. Only 2nd degree user rights of using their end-product, which can be commercial projects. But the intent is not to create commercial work, but if they do or when they do, they simply need to upgrade to a system license and will get a 50% discount to celebrate!</p><p id="4e3a58d8-da13-45b7-9f4e-161744e1e7b8" class="">So in practice, if you would create a templated landingpage application using the limited 3rd degree license, your customers are still allowed to use the artifacts commercially. But as a limited 3rd degree licensee you can not make any money on it directly or indirecte.</p><p id="092df738-57f9-442c-95bb-75b6972cc9ef" class="">You can not redestribute any of it’s parts that contain BOUM-tokens, as the product is an end-product. That would be unrestricted 3rd degree usage that would allow for one more step, and even generate 1st degree licenses that can make an end-product.</p><p id="7565c6b5-942e-4174-9699-6de8f0c9e6d9" class="">If you do wish to have the 1st degree rights to commercially use BOUM-tokens, than please consider upgrading to a system-license that is for a lifetime! And you never have to pay any VIP-ceiling for any of your own projects, and can create unlimited 1st and 2nd degree licensed products that will never cost you a dime!</p><p id="e762b8b7-c76e-4e42-ba20-5f2bf84b851a" class="">No subscriptions or yearly renewals, a one-time payment sets your company up professionally &amp; legally anytime. Even with a FREE 1st, 2nd and limited 3rd degree tier, BOUM is very generous on the free-tier terms but keeps a healthy commercial eyemark too for when your business grows, and to keep this open source project alive in the long run. Open Source is free, but not forever.</p><h3 id="b7a45c5b-dfa1-4beb-a650-dc877e9c7687" class="">Personal Project</h3><p id="84b14e34-c682-4534-a50c-19a64818f96f" class=""><strong>License needed:</strong> 2nd degree (free)</p><p id="f1cab863-b7cf-451b-8703-a17af0ab8805" class="">You do not have the intent to use BOUM for any public use after your usage. Your project is the end-product, and this project will not be transfered to another degree hereafter.</p><p id="95cc9eee-346f-4f50-a9b9-17e259b709b7" class="">The 2nd degree rights are the “highest” rights of ownership of product, as this stage is mostly where any monetization happens. You can thus use it for your own commercial project, but you can not sell the production system (1st degree) to any other party. </p><p id="bf79712b-dd52-48fb-a9f0-60d399066f48" class="">Simply because 2nd degree is the end-degree of usage, they would need a license transfer process or even an upgrade to system-license in some cases. There is no degree after 2nd degree, and since a license can’t be relicensed after creation it stops here.</p><p id="41ab7fac-cc25-49a2-8238-f9d0479470ed" class="">And since you started out as 2nd degree, upon transfer it would overtake ancestry and become 1st degree magically, since the new owner is a degree of transfer and becomes the new 2nd degree. Even if done by a 4th degree. Time-travel would not allow it, and so too do we say “STOP” on 2nd degree.</p><p id="b2d61323-5ff8-4b22-aee4-f655176d8a4e" class="">You can NOT own 1st and 2nd degree rights to any product and than make more than two products with it, as this adds up to 3rd degree usage; system level usage. 2nd Degree is also the only degree (end product) to which the VIP-ceiling accounts to, but if both are owned by one party you effectively pay double.</p><p id="8c8f22e4-8f80-46ff-b1da-35c23f9566ce" class="">This simply means that you can have 1st and 2nd degree rights with a VIP-ceiling and max on products, or you would also have the 3rd degree rights to make a third or products without a ceiling. Not even limited 3rd degree has these rights, only commercial 3rd degree can freely produce 1st and 2nd degree licenses without having to pay for their licensed products. </p><p id="90600364-2d99-4091-b60a-cf35e01c1326" class="">You can NOT reverse engineer licenses afterwards by getting a system license, since once a product is created it can not be re-licensed by the same party. This must be done by the origin, which can be a 3rd degree, or even the Nth degree: me, <a href="http://justgu.us">justgu.us</a>.</p><h3 id="4554ffec-a235-449e-9adf-4bc5f360dbaf" class="">Public Work (like a CodePen)</h3><p id="fec864bf-6e2d-41fc-942b-4d0b35943423" class="">License Needed: none, accreditation and a link to <a href="http://followgu.us/boum">followgu.us/boum</a> </p><p id="e763f391-d201-4892-a7cc-76cf5b69864a" class="">Say you are not at all interested in the whole legal side of .: B.O.U.~M :. because you’re working on something non-commercially, and don’t even think about the licensing process. This is totally normal and not seen as a violation at all, if you’re not exposing the entire data-set or it’s texts. Just think like Nike and Just Use IT!</p><p id="ec8ffaaa-4289-40b0-ac5a-d3b88f785efa" class="">We would prefer to be accredited if you wish to respect the honor-code that we do, and put a link in it that points to <a href="http://followgu.us/boum">followgu.us/boum</a>. This would serve anyone who views your public work, especially those new to BOUM-tokens, which saves you an explenation too ;)</p><p id="eb636afd-e7cb-4125-872e-77b157409d98" class="">So in practice, BOUM is free to use without a license as the default license (Creative Commons 4.0 CC BY-NC-SA) is still in effect, which is the non-commercial share-alike variant that requires accreditation. A healthy practice that makes sure everyone can use your work, even without a license, without breaking the creative’s code of honor.</p><h3 id="1a0b3642-c682-41ac-949f-fc3eed0f2ac9" class="">Public Company (Agency)</h3><p id="0dece349-d3a1-4e4f-a737-0daf7b86aa93" class=""><strong>License Needed: </strong>3rd degree (paid)
+<strong>can create: </strong>1st, 2nd and limited 3rd degree</p><p id="a0506080-f16b-471f-8d6c-cdec03a27f28" class="">If you’re a medium to large scale company that would like to try .: B.O.U.~M :. than 1st degree usage would fit the bill for the first few projects. But sooner than later you will hit the ceiling of degrees once your clients will want more work done by you.</p><p id="cbaf0a60-a778-41b7-9821-1e74a8abf3be" class="">3rd Degree has the advantage of being able to create <strong>all degrees</strong> of ownership, except itself. It will also make sure you never have to pay any VIP-ceiling fees for projects that you use <strong>internally</strong>. Only external projects of the 2nd degree will have a VIP-ceiling attached, so managing license fees internally is a thing of the past with a system license.</p><p id="0fca37b8-479b-4245-85ee-77ccc9330067" class="">Another thing that the commercial license grants is to create endless 2nd degree products for any client, instead of being maxed by two on the 1st degree license. </p><p id="9ad1013c-8c09-4872-94ca-663c255bef1b" class="">Plus you would be able to make design system products (1st degree) for a client, that they can use to create end-products (2nd degree) for their clients. This is something 1st degree can simply not provide due to the degrees of usage and transfer.</p><p id="e0f70b3c-5afb-4e76-8654-00a204a591c8" class="">But you might be on the light side of the force too as a design giant, and contribute to open source non-commercially. For the love of the craft. You are free to create your own limited 3rd degree licenses that spawn from your 3rd degree, without any overhead or worries on degrees of usage of your IP and system product.</p><h1 id="decbc501-b508-42dd-8adc-2dec9901038f" class="">Personal, Educational &amp; Professional use </h1><p id="b3ef0fe2-a67a-4d09-ac5e-fb6e967368b7" class="">You are free to use .: B.O.U.~M :. for personal and professional use based on the FREE 2nd degree Standard Product license, available for anyone who wants to start using their work carrying BOUM-tokens  legitimitally and publicly.</p><p id="d6dde2ab-be92-4b9c-89c4-32b3b4de911a" class="">A FREE license grants you the same limit as unlicensed, but the actual difference is that you have purchased a license for free, versus using a licensed product that limits what you can do with it.</p><p id="0c5801a1-e244-4062-8155-2abc99f444c2" class="">This license is meant to protect .: B.O.U.~M :. and it’s IP, and thus yours, and not limit what you can do with it. Ironically true, isn’t it? Even without a license, the CC BY-NC-SA is the default license for BOUM-tokens and means you can’t share the work commercially without sharing alike (free).</p><p id="87d8b370-0df4-4ed5-bc05-b0065f45423a" class="">Free does have a value, and that value is measurable too; a receipt of your POL (Proof of License) that you can get for free from <a href="https://www.followgu.us/boumshop">the shop</a>.</p><p id="f6e0b027-0240-4193-8c98-d6a4f7956f4e" class="">It’s totally fine to use it unlicensed, as long as you are not making a copy of the work to escape legal matters explained in this document, or use the entire dataset of BOUM-tokens publicly without written consent.</p><p id="2bc28c43-e6ec-41c8-9a28-125ab2b68179" class="">No need to have a license for something like a CodePen or any other online coding platform, just make sure you put a license notice and link to <a href="http://followgu.us/boum">followgu.us/boum</a> in your comments somewhere, so others can learn about BOUM too.</p><p id="029a3910-6e13-4c51-852b-d403d03272f0" class="">See, there’s no point about money being made, just legal matter and accreditation of origin. Like it should be when you use professional work of others tbw. If time is everything, than respect costs nothing.</p><p id="e25cb7f6-7393-4a91-9032-09dd5f707ef9" class="">This “group” is therefor the exclusion made to public personal use, unlicensed and under 10K VIP’s per year, and is <span style="border-bottom:0.05em solid">accepted as normal</span>. It’s not like I own the word “base”, but I do own the axiomatic naming pattern plus all the text and works created by it from the roots, and that IP is essential to protect in this legal statement.</p><h3 id="426cea07-dead-4d86-9926-ca48393892db" class="">Recursive Ownership</h3><p id="d7c12d29-0696-43a1-adef-b9970f2324eb" class="">BOUM recursively applies itself in design, code and (technical copywriting) as well as it’s legal documentation; same form and function, where the tokens expose the legal documentation’s terms and conditions applied to your product’s design tokens. </p><p id="f6840af9-6f18-4039-8433-f9ee8d8d2256" class="">Like how this document is applied to BOUM-tokens itself, to protect itself and it’s offspring. A safe family home to grow up in, healthy &amp; legally fit to serve.</p><p id="e3f4a769-6f6b-4313-9e14-c36ffcf5a046" class="">You are not protected at the moment of a copycat attack if unlicensed, or are allowed to share, store and sell the product or it’s assets to which BOUM-tokens are attached to any 3rd party.</p><p id="78d7ff42-9c44-4b28-8819-c2c110a86da2" class="">A small chance of either, but that’s the simple logic of what being licensed can do for you either under personal and professional circumstances in legal matters. </p><p id="c9d8705a-6b82-4f85-ba18-e0b3ac1303a3" class="">In case you didn’t do that but need the legal backup, just drop in a license at anytime to get going with your daily business. We’re not the police, we just have simple principles and practices to stick to.</p><p id="ba0f3ad6-5fb7-42fd-8950-b3b810adf089" class="">For professional use however you will need to have a proper proof of license-degree (3rd, 1st &amp; 2nd) installed for the project before it is published for your personal bookkeeping. See <a href="https://www.followgu.us/boumshop">the webshop</a> to get your free license today!</p><p id="131586e4-ebc2-4d87-ade7-642be95a8928" class="">For Educational Use, a limited 3rd degree Open Source license is provided given that no commercial artifacts can be produced by them to any degree. A few usecases have been made so you can read for yourself how Open Source and others would work in practice.</p><p id="5f6f6471-5155-475b-95aa-c05182c00c60" class="">Limited 3rd degree gives the same rights as 1st degree, but adds the right to distributie non-commecially, which is perfect for accredited educational institutions. The artifacts created by limited third degree are therefor 2nd degree, non-commercial end products.</p><p id="671770b8-1f3e-464c-9e03-bf407a20c1da" class="">We do not limit product development at any stage, until it changes degree of ownership as the product goes public, and if it has a commercial eye-mark of usage or not which is determined by the product’s Views, Installs &amp; Prints (VIP-ceiling) combined.</p><p id="eedf81d7-aaad-462e-b58d-dd32bf3a4d35" class="">Once pubished, meaning anyone with a computer outside of your workforce can access and find it like your client, the products needs the right kind of license-degree notice attached that shows the degree of usage.</p><p id="97fbfc1b-3d42-4b1a-bcf4-06a8dff5d28f" class="">Once a product transfers ownership, it is not needed to change the ownership of the licensee; a license is attached to a product, which in turn cascades the usage degree from 1st to 2nd degree; the end product and owner of artifact. Third degree is the only degree that can generate 1st degree, which is not part of limited 3rd degree’s user rights and definitions.</p><p id="694b3927-de91-428f-a1ad-885f24407fb2" class="">That license is most likely will be owned by a legal entity after your degree if you create for others. The elligibility of ownership is therefor decided by which legal entity owns the 2nd degree license, and you are safe having your own 1st degree license on the exact same product.</p><p id="c8873089-9b15-474f-be29-1862f44adc4a" class="">This saves you from doing mountains of paperwork meetings upfront, yet all the legal protection and design system tooling to do so ready upfront. Even as a small indie, you’re protected like a corporate by crunching out products that have FREE legal protection built in for both parties.</p><p id="af79aa99-a045-47f1-ab12-c4b88fe4cd18" class="">It also helps separate legal concerns bewteen large companies in an efficient manner that settles the case to be made; who owns what in digital space, who can do what and when, and what’s the registered value and ownership of it all together, in a networked distribution system as large as ours? </p><p id="b789ee33-d916-4518-973f-7e652b8e0997" class="">Most legal value in large companies is based on soft-value, that turns into hard matter; digital. BOUM-tokens can be measured, added and thus valued in a large data-base without the need to track internal licensing cost (3rd degree only) for each project. They might want to track the savings in legal costs that .: B.O.U.~M :. can provide out of the box.</p><h3 id="669cd690-8802-476f-bce8-6cd9349462e8" class="">FREE &amp; FAIR Pricing </h3><p id="683a1e96-1f95-4565-9b09-235bf4a80954" class="">The license-rates are designed to be <strong>for low-income-first</strong>. Legal is not a privilege and everyone fears legal, and they shouldn’t. It’s just a matter of practice, and BOUM is free legal matter to start with forever.</p><p id="eb5f771b-4be4-425e-a76c-22c248cac1e2" class="">I’ts free for personal and non-commercial use, up to a generous free tier point of 10K VIP’s per year that will keep .: B.O.U.~M :. free forever* for most personal use, perfectly legal and respectful.</p><p id="b0f76ad1-99f2-48d9-9b9f-52a3ec4524e1" class="">The .: B.O.U.~M :. license covers a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl">CC BY-NC-SA 4.0 license</a> that prohibits the use of BOUM-tokens commercially, prohibits remixing the work, standerdizes any accreditation, demands you share it freely and alike, and extends upon it commercially with this document that gives licensees the personal &amp; commercial excempts they need. </p><p id="34620f82-6b4d-4d02-b4ea-c5f04b12f18a" class="">The licences are <strong>for</strong> <strong>a product’s lifetime, dorment or not</strong>, meaning inactive or live projects are protected by the internationally acknowledged Creative Commons Standard and this commercial freemium supplement, regardless if it’s published by a dorment company or person. If it has a .: B.O.U.~M :. license included, and you have a proof of license ownership (shop here), the IP is protected. </p><p id="7a6737b0-f2ab-4245-a2f0-3af25553e926" class="">Please read too that it protects a product <em>and not the legal identity that owns the product</em>, nor does it represent such in the court of law for the sake of proving ownership of said degree of license. This makes all five degrees of .: B.O.U.~M :. have their own rights at each degree of the cascade of product development, starting with the Nth-degree: the origin.</p><p id="65d60fee-1376-493f-8215-3a4df2fee0b0" class="">This license would serve as proof in a courtcase, backed up by a legal agreement and proof of license purchase (FREE!) before the fact you need to prove ownership of, and more specifically of what you created. That is exactly why .: B.O.U.~M :. creates legal documentation AND tender when you apply BOUM-tokens to your product’s “design tokens“.</p><p id="b5775d7d-5d18-4cca-9786-b15172656dd5" class="">This also makes the seperation between us forcing a takedown on a product due to it’s violation of agreement before any legal settlement, and not sueing a company or a person respectfully due to their degree of rights. If anything, it can help people defend their customers if anything would happen, but again; this legal document is all about prevention and consent before the fact.</p><p id="ca65cd0a-b1c6-4f25-b119-47ca7b8c8f6d" class="">The law is simple on that, but we’re simpler; let’s play it fair and square as we can literally be, upfront. Including “the bad” stuff.</p><h3 id="b08c7360-1908-4d8d-9b19-46b0c1961d21" class="">FREE &amp; FAIR Stealing</h3><p id="cc0ae503-e97e-4c0d-9bb1-a103213d2fb6" class="">If for some reason you wish to persue the happy hunt of stealing this IP, let me make it easy for you; just replace the token-convention with BasePlusMinus (BPM), the predecessor I invented first.</p><p id="afa537b8-6829-4bb6-aa41-f9f749417c75" class="">I did a talk on that in 2020, and it can do exactly what BOUM can do, and your product will not be taken down in the case of a violation. But you can not use BOUM first, and then reverse engineer it. Nor will I have to hear on Twitter if you did just do that, take the concept directly from me whilst promising to accredit.</p><p id="c2353c7d-c8d1-43a5-ab1b-69566a25250d" class="">You can use the legitimately stolen version for just about anything, but not for NFT’s, crypto-currency or any SaaS-related product endorsing the two. Nor are you allowed to use BPM beyond 2nd degree usage, meaning you can’t make it publicly available to copy and use on other end-products or system products. Just your own.</p><p id="0c4412cb-4db9-436c-a9c4-bdcebde64bd9" class="">You are not allowed to use BOUM-tokens first, and than replace them with BPM in case of a violation and breach of license agreement. You must also notify Revolver-DS on the attempt of legal theft, so at least there is a line of communication between the parties with some established “gentleman’s agreement”.</p><p id="52f43895-a033-41cc-86a9-d05369c8df43" class="">If you wish to withhold from reporting the theft, the example to steal BOUM was given to begin with, and you had the choice to do a copyleft-way and stay out of the waters that protect the IP, and all that the end-products carry on forward. This means; nobody can copy your product’s legally stolen BOUM-tokens too, and that fact is abolishable copycat behaviour punishable by international law.</p><p id="d0d89023-f07a-48d9-a1d4-edecebaa0721" class="">This is true for all products that BOUM is applied to, and can not be reversed engineered post license. If it has a BOUM-license, than it’s officially using the IP for protection and privacy of usage to the 1st, 2nd or 3rd degree. Anything else is unlicensed use of the IP it is attached too, including legally stolen BOUM-tokens itself, without prior written consent.</p><h3 id="ff958efe-4e9f-44f9-a215-5d641e93fb43" class="">Wanted: Legal Practitioners</h3><p id="72a624a2-68a2-4d63-99f1-c88af34d3198" class="">See the indie-way is the hard way. Yes, you can steal from me or us depending, but on these terms. Everything else is something I would refer to as “human nature”, and I don’t deal with those kind of unhuman intentions anymore in a personal matter. Stealing happens on the intellectual plane the most, a realm unseen by most who never created “things” in the abstract space of boundless digital.</p><p id="42ef6851-60ca-4492-ab57-1449c61784f3" class="">The kind of personality that sparks your nature to hunt them, and steal your stuff back, like how indies have their products copied because it was too easy to do so. Word by word, line by line of code. If not consented, your work is unprotected and there are people who just “do it anyway”.</p><p id="c7181db1-e478-4925-9e64-9974ae0e6506" class="">So if you happen to be a legal practitioner that would love to join me on my yearly legal hunting-trip to catch any of those who couldn’t resist, than please reach out to join us! </p><p id="5ac4ef1f-ae3e-452f-a010-d84b2a26409f" class="">It’s an exclusive and fun weekend where we get to hunt for humanity’s sake; our own indy bread and butter. Just <a href="http://askgu.us">askgu.us</a> for the travel-plans &amp; a digital domain hunting-pass! No humans or animals are harmed in the process.</p><p id="4fa969bb-ed9e-49c0-825e-685fda237ee0" class="">Also, if you happen to be a whistle-blower that wants to report a company for stealing my work; There is a generous 40% finders fee on any money owed to us, and we promise to protect our source. Just <a href="http://askgu.us">askgu.us</a> anonimously how to report.</p><p id="e0a994f2-6587-469e-8689-32ce41c37f37" class="">But that’s as far as my brute force goes. That’s <a href="http://justgu.us">justgu.us</a>, straight-forward about the simple things that matter in life.</p><p id="ef2d35c6-49e8-48e3-b808-5b6cc98b820e" class="">All energy hereafter is used to help people create deadsimple legal documentation to protect their beloved work against any unconsentual use. No license to date really covers web3.</p><p id="582d84e3-0ee6-463d-bcb3-47f1c41b8281" class="">Our protection is your protection in this case, as equals, so there should not be any reason for distrust anymore. That would backfire against ourselves like how the Oroborus snake eats itself.</p><h2 id="c272e4da-4830-4c7b-9297-3889abdb91f8" class="">NFT’s, Crypto &amp; Web3 are not allowed (sorry)</h2><p id="58f3a45e-892c-449c-a638-26778bbd2653" class="">By default, the use of .: B.O.U.~M :. for <strong>NFT products, Crypto-currency, or Saas-products sopporting either off the two formentioned is prohibited</strong> and you cannot change this in the license after you recieve it as an included license, for it will warrent the license void but not it’s penalties by enforced legal arrangement to take the product down. </p><p id="8d3b08b8-de04-43bb-8ffa-30f896d90d4f" class="">This does not limit you to applying it to generative art, and as a matter of fact can actually help you create generative art that can not be copied for the unconsentual use of NFT’s. </p><p id="0daa07ab-5911-492f-abb6-d427318e2afa" class="">This is a fundemental baseline of approval for .: B.O.U.~M :. as an independant collective, and as IP; we’re not against art, we’re against the malpractice misuse of our intellectual and creative work. Most of which is freely shared, but never recongnized, and often misused.</p><p id="2cc4a1ec-6118-4fb6-8259-04e9e799d468" class="">We’re not against NFT or artists, we’re against web3 malpractices that don’t stop at your door. They drill down to the very price you and I use for gas and electricity today. An unhealthy unbalance will result, and I’m drawing the legal line here before I even help it grow.</p><p id="2dad4c7d-6af9-4213-9cdd-0ce596f32170" class="">For more information and explenation, please refer to the mission statement at the end of this document for more insight &amp; details on why I decided any use of BOUM for web3 related products is denied. Any public statements will not be made hereafter, nor personal.</p><p id="4c37c9cd-69a5-4b5c-b634-95d831494de2" class="">Simply put, don’t touch this if you’re making NFT’s, FREE or $$$. Free does have a price; ethical use of my work and my values that are otherwise used for the exact things I’m against.</p><p id="5d692770-e3d4-47da-a53e-acfe8128ad43" class="">Please note again that you are allowed to use it for generative art, and to protect it from being used for NFT’s and such practices legally.</p><p id="d486d225-628d-481b-8c59-827d5b992f4b" class=""> There is no license agreement that I know of that provides artists in that space their own rights to say their work can NOT to used as NFT. We’re not against art or artists at all. We’re pro copyrights!</p><h2 id="83e4921b-f935-489b-b49a-731d53cf6ba6" class="">Who OWNS the rights to a .: B.O.U.~M :. license ?</h2><p id="3795e603-02ad-4875-82f8-ba0ea1cb3b1b" class="">You cannot personally own a license of .: B.O.U.~M :., only a single product that has it nested does which in turn is owned by said company or legal person. All licenses have a degree, and most will have 2nd degree licenses; endproduct licenses.</p><p id="84f3a167-76dd-422e-883b-946ef7037a2f" class="">So technically speaking .: B.O.U.~M :. is not your IP, it’s a licensed legal product nested in your IP to which you own the rights. Like how you would attach it to a ‘color-primary__oob’ inside your project’s code, that is how the product is protected by a nested BOUM-token.</p><p id="84c83d89-1eb8-4e9a-b166-0ae636b39d03" class="">And that is how your IP is protected, since the license that protects BOUM-tokens also applies to your product, without the definition of your product. Your product just includes a license notice, just like any regular user agreement because it shows how to use it for others. </p><p id="8af910ad-2a64-48f4-a1aa-5b4c9d35c400" class="">This way covering legal matters is simple, smart and technically efficient for how your product or design system gets legally distributed over time and scale. All the generated work created using BOUM is of such value; a product’s legal tender with a record of value, that literally grows like a tree. Like a BOUM.</p><p id="ad6bcc12-67e6-4792-8800-83c7c22c2a0e" class="">This means you can start using it on something you’re working on and that is still growing, <em>not</em> get any views, installs or copies out the door, walk away from the project, sell your version of DOS to Bill for $25,-, and it still works as <strong>legal value due to protect you</strong>. </p><p id="7250aa7f-8d07-4590-9a4e-a5412443fe4a" class="">In this case Bill would not get DOS for $25,- since he can’t get a BOUM-product that is 2nd degree; you own those rights and need to request a license transfer. </p><p id="d4ede166-52df-4807-8faa-dc9118d8f0e0" class="">Bill would have needed to upgrade to a system license of 4.4M over time, of which you would have recieved 30%. That would have been fair for everyone, instead of you getting a slice of cake and Bill eating the rest.</p><p id="64af4a96-cbdc-47ec-910a-dc7e2846dd1c" class="">That is ridiculous as it is true, in perfect symmetry parity. BOUM’s licensing model works in everyone’s favor, like Rock, Paper &amp; Scissor do. Us, you and your clients. But only if that’s needed..</p><p id="77cc9f83-f590-4544-8b4f-aa0cabdb4388" class="">If you created a system on a 1st degree license for free, and someone else wants to buy it, the price is set for them and you get a 30% referral bonus on their purchase of a license! </p><p id="21fe1037-4c4b-4b3a-b9cd-4acbcebf2b97" class="">So you see, knowing your rights matter and despite 2nd degree having the right of IP, the 1st degree licensee has the right of system which they can resell as 3rd degree with a kickback! </p><h2 id="5a6f0a6e-8323-4ffa-b2cf-0be75de1c4cc" class="">Personal and Professional protection</h2><p id="22552c68-7013-4788-86b4-49babcb4fe71" class="">Why can’t a license be put to my name personally? </p><p id="6e673d8b-66df-416e-b02c-ced4a598eb1b" class="">This makes sure that the right kind of legal documentation is nested inside your products, but never owned by any person that <strong>doesn’t hold  the legal entity of owning the proof of ownership.</strong> These can be bought from the BOUM-webshop for free, by either party (1st and 2nd) without approval from a 3rd degree.</p><p id="7d9a8b18-d845-439b-ab12-06f675f45472" class="">In short, you’re now protected from “theft” because your product is globally &amp; legally certified by the CC BY-NC-SA license, with an additional BOUM-license agreement by .: B.O.U.~M. :. that is commercially viable &amp; legal tender applied to your product upfront. Even if your start-up has an MMR of 0.</p><p id="ec4c57dd-44f0-42c4-b70c-a3a7c666eda6" class="">Whatever product that may be, and that is what makes .: B.O.U.~M :. unique as a legal product; no need to write your own legal document anymore! We have your product covered by ours, commercial-grade when you’re ready to get serious.</p><p id="de501256-12dc-4f8c-ae08-79290faeb888" class="">So now your colors are actual valuable company IP, and not your product’s revenue strictly speaking, by their design token naming. You you own the company and it’s licensed products. Simple and settled in the eyes of the law, so that means you win from the start in any case. </p><p id="23383329-dd30-4508-b84c-d9d982c5d457" class="">And most cases will actually be internal use with trusted sources, not the courtrooms where you fight out the fiction from the facts.</p><p id="092583fc-ff05-463f-9edf-addda02af09b" class="">Most new business have no concern (or clue!) about any legal yet, yet legal will matter at some point down the line of product design with internal trust statements. Mostly business logic for the lack of a better word.</p><p id="d68039a3-ca37-46c2-a085-e67d7174c21a" class="">Like where you have employees that build a product, and they want to start using a design system professionally. Ask them; did you cover license agreements of all the open source stuff you use? This needs to covered from a point of business logic upfront, and this is why .: B.O.U.~M :. covers this for you.</p><p id="e55c5309-f63d-433b-93e5-61a334838a7e" class="">That’s where the order of presedence starts to really kick in, and you need contracts to solve who owns what. BOUM provides license degrees that work simple &amp; smart, and give you the rights to transfer the rights based on your degree.</p><p id="d254862c-856f-4043-a7b8-6586c0efe090" class="">Your business looks so much better when it’s covered the product’s legal ownership on that part in the first place. And you will have a much better peace of mind if it ever comes down to personal protection from the law as a business. </p><p id="f378a3b8-b9d4-4fbc-89f6-4dcccb205199" class="">So indeed, business is always personal and trust is something to earn. So why not now, that is where it begins too. Like a transparent insight on the costs;</p><h2 id="daa78cc3-52f4-489c-b269-7fb7a0b39625" class="">Standard Product License Usage (1st, 2nd and limited 3rd degree)</h2><p id="6d664a5e-18ab-40b4-b771-1e658167051d" class="">Examples of usage <strong>allowed</strong> by the license:</p><ul id="51a00b7c-f707-4832-8958-c0fa0a7f7fb6" class="bulleted-list"><li style="list-style-type:disc">Creating a personal website by yourself (2nd degree)</li></ul><ul id="2274e05a-64f1-405b-9c41-e72dfacb8669" class="bulleted-list"><li style="list-style-type:disc">Creating a website or web application for a client that will be owned by that client (1st &amp; 2nd)</li></ul><ul id="c3efa154-e281-4787-9318-883b936a063f" class="bulleted-list"><li style="list-style-type:disc">Creating a commercial SaaS application (like a website builder for example) where end users have to pay a fee to use the application (1st &amp; 2nd)</li></ul><ul id="bffb85ea-04aa-4fd8-8efc-6a5cb2e372ff" class="bulleted-list"><li style="list-style-type:disc">Creating a commercial self-hosted web application that is sold to end users for a one-time fee (1st &amp; 2nd)</li></ul><ul id="f986f0fa-3c64-4a0e-82ec-7923a6b4717b" class="bulleted-list"><li style="list-style-type:disc">Creating a web application where the primary purpose is clearly not to simply re-distribute the BOUM-naming convention (like a front-end framework that uses it for it’s design token naming for example) that is free and open source, where the source code is publicly available (<span style="border-bottom:0.05em solid">limited</span> <span style="border-bottom:0.05em solid">3rd degree</span>) and promotes using the .: B.O.U.~M :. licence agreement on the homepage with appropriate accreditation</li></ul><p id="c1a2e261-4887-46e5-b62b-606bab0ed853" class="">Examples of usage <strong>not allowed</strong> by the license:</p><ul id="0bcb3966-3290-4130-b035-069dba1b8568" class="bulleted-list"><li style="list-style-type:disc">Creating a repository of your favorite design tokens using .: B.O.U.~M :. (or derivatives based on the naming convention) and publishing it publicly.</li></ul><ul id="9d696caa-8e3c-42ec-be97-1e9c2471d303" class="bulleted-list"><li style="list-style-type:disc">Creating a React or Vue version of .: B.O.U.~M :. and making it available either for sale or for free</li></ul><ul id="d0b82d60-5e4b-40ca-8ce4-cdff38b72745" class="bulleted-list"><li style="list-style-type:disc">Create an <strong>NFT-COLLECTION</strong> using .: B.O.U.~M :.-naming convention and making it available either for sale or for free</li></ul><ul id="ffa6559f-bc4f-4593-ac33-74e17a78a25f" class="bulleted-list"><li style="list-style-type:disc">Create a crypto-based product or SaaS using BOUM-naming convention and making it available either for sale or for free</li></ul><ul id="5c8e1084-5453-49c0-b33c-448bb19df042" class="bulleted-list"><li style="list-style-type:disc">Create a commercial Google Chrome, Figma or Sketch UI plugin for handling design tokens that uses .: B.O.U.~M :. as a design token convention, and making it available for sale or for free, excluding non-commercial Open Source projects that have their source code publicly available for free and who promote .: B.O.U.~M :. on the homepage</li></ul><ul id="f4ab8957-e03f-4186-a83f-87bc73bb915f" class="bulleted-list"><li style="list-style-type:disc">Creating a &quot;website builder&quot; project where end users can build their own websites using .: B.O.U.~M :.-naming convention included with or derived from <strong>3rd degree users</strong> (system licence), excluding non-commercial Open Source projects that have their source code publicly available for free and who promote .: B.O.U.~M :. on the homepage</li></ul><ul id="371fcfef-09ec-4509-8cc2-47237ec17a21" class="bulleted-list"><li style="list-style-type:disc">Creating a theme, template, or project starter kit using the .: B.O.U.~M :. naming convention, or parts of it, and making it available either for sale or for free, excluding non-commercial Open Source projects that have their source code publicly available for free and who promote .: B.O.U.~M :. on the homepage</li></ul><ul id="d7c17060-cf3a-4ba5-b6f4-a1c79233e0e8" class="bulleted-list"><li style="list-style-type:disc">Creating an admin panel tool (like <a href="https://nova.laravel.com/"><strong>Laravel Nova</strong></a> or <a href="https://activeadmin.info/"><strong>ActiveAdmin</strong></a>) to create .: B.O.U.~M :. naming conventions that is made available either for sale or for free, excluding non-commercial Open Source projects that have their source code publicly available for free and who promote .: B.O.U.~M :. on the homepage</li></ul><p id="42646f0f-9350-4be9-8e16-63fb31798f41" class="">In simple terms, use .: B.O.U.~M :. <strong>as an end product </strong>(2nd degree) for anything you like except for projects that compete with .: Revolver DS :. activities or .: B.O.U.~M :. and would have a negative impact on our license sales and services like our infamous “Naming Things Workshop”. It’s an original IP to protect original’s IP.</p><p id="4693edac-41a8-4ca8-ae9d-03e01b467977" class="">We’re protected by the same license you are currently reviewing to back up our “indie word”, but to also give people using .: B.O.U.~M :. the same rights to claim their <strong>voice, identity &amp; ownership of intellectual property.</strong> With an actual proof of purchase, being free to start with. Forever.</p><h3 id="d059db63-25ec-47e2-ad52-6f350237a980" class=""><strong>Standard Product License Definitions</strong></h3><p id="39b1ed10-15c8-4003-9b00-00e69bdd1d74" class="">Licensee is the individual who has purchased a Standard Product License, and is <strong>1st degree user</strong>. The product it is applied to then becomes 2nd degree user, the end-user.</p><p id="30bf5630-e51f-4fb6-b57b-1b1f542c888b" class="">.: B.O.U.~M :. naming convention are the text, dataset and (CSS) source code snippets are made available to the Licensee after purchasing a .: B.O.U.~M :. license. <strong>the licensed product</strong>.</p><p id="cde3932c-b293-4135-bf6d-5820ba7b4302" class="">End Product is any artifact produced that incorporates the B.O.U.M-naming convention or derivatives of the name, and is <strong>2nd degree user</strong>.</p><p id="2e0c951d-2524-457e-a2c8-53f25c78512f" class="">End User is a user of an End Product, and has <strong>no degree and no rights to (re)distribute.</strong></p><p id="4633c76c-0a67-4ae2-a52d-43da6394b409" class="">Client is an individual or entity receiving custom professional services directly from the Licensee, produced specifically for that individual or entity. Customers of software-as-a-service products are not considered clients for the purpose of this document.</p><p id="d25e245f-37b2-4df9-af2c-1144576a5822" class="">Limited 3rd Degree means that the End Product is limited to redestributions to the 2nd degree, but in no way limited to the technical destribution by means of “OS design system” in the 1st.</p><p id="8a86ff59-8b02-4396-936d-fd6175a78e4f" class="">This limitation only limits you to <span style="border-bottom:0.05em solid">not</span> make your OS project a license-provider, which is an exclusive system license feature, but doesn’t limit you to redistribute it as if it were a system license to the third degree. Just make sure the product is an <strong>end product.</strong></p><p id="4e1ffc02-e8e3-4889-a563-955abe5b1ab2" class="">The limitation is relicensing and redistribution rights to only .: B.O.U.~M :. as a 2nd degree product; to be used in an End Product, that’s all. 3rd Degree design system licenses can only be given to commercial parties.</p><p id="4384a667-490f-449f-a049-88e3945fddb4" class=""><strong>Product License</strong> <strong>Pricechart</strong> <strong>Legenda</strong>: INDIE means a company of less than three people, PRO less than a hundred, GROW less than a thousand people. </p><p id="7a106a28-eacb-492a-8226-d2d3bc89bfc3" class="">All prices are in Euros (€) and truncated to <strong>K</strong>, <span style="border-bottom:0.05em solid">M </span> for clarity and reading experience only.</p><h1 id="b42ae209-e43b-42ef-8a80-d4dd942f852c" class="">Design System Licence Pricing</h1><p id="1378796d-0eca-49cf-b1ef-2be634e81357" class=""><em>Design System Licences give you 3rd degree usage rights, the right to use in commercial design systems and create unlimited 1st &amp; 2nd degree licenses without the VIP-ceiling for your own use, but do NOT generate the proof of license like how it’s done between 1st and 2nd degree. Third degree licenses are done semi-manually, for safety reasons and identification-reasons.</em></p><table id="ddfd030e-dd43-49c3-90df-e3a71feeee5d" class="simple-table"><thead class="simple-table-header"><tr id="68ef67fb-d809-43f3-a5f7-bef8690371c7"><th id="K&gt;}a" class="simple-table-header-color simple-table-header" style="width:181px">ONE-Time* License Fee</th><th id="Nt?A" class="simple-table-header-color simple-table-header" style="width:147px">INDIE (&lt;3)</th><th id="_bLF" class="simple-table-header-color simple-table-header" style="width:146px">PRO (&lt;10)</th><th id=":MMf" class="simple-table-header-color simple-table-header" style="width:153px">GROW (&lt;100)</th><th id="b&lt;k@" class="simple-table-header-color simple-table-header" style="width:166px">GIANT (&lt;1000)</th></tr></thead><tbody><tr id="0d924ad6-4f1c-4ea0-9eb5-e6d1a3fce68c"><td id="K&gt;}a" class="" style="width:181px">Design System Licence</td><td id="Nt?A" class="" style="width:147px">€ 5.000,-</td><td id="_bLF" class="" style="width:146px">€ 25.000,-</td><td id=":MMf" class="" style="width:153px">€ 125.000,-</td><td id="b&lt;k@" class="" style="width:166px">€ 1.250.000,-</td></tr></tbody></table><p id="534601e1-ebfa-4bea-b4ba-8a9d2d7d4d49" class="">The<strong> Design System licence is based on your company-size</strong>. This means that if you hold a design system licence and your company grows, you <strong>must upgrade to keep using it</strong> MINUS the fees you already paid<strong>.</strong> </p><p id="862cf640-61f4-4928-90fe-774ce8529f96" class="">The fee is one-time only and does not need to be checked yearly like the Standard Licenses, only when your company scales and the design system with it. </p><h2 id="dbd10bf5-f037-4ec6-9382-a207f7e15336" class="">Design System<strong>  License Usage (3rd degree Usage)</strong></h2><p id="0d92174b-808e-422d-b65c-1795efd1fcfa" class="">Design <em>System Licenses are apllicable to system design products (algorithms, programs, devtools, functions) and End User design systems at large, and </em><strong><em>extends Standard Product License Usage and Limitations, but NOT limited 3rd degree usage such as Open Source, as it replaces the non-commercial part for commercial use.</em></strong></p><p id="490fe1f6-7f6f-4064-9469-e8ef28c5ab8c" class="">BonoBoos B.V. grants you an on-going, non-exclusive license to use the .: B.O.U.~M :. naming convention commercially &amp; publicly to the 3rd &amp; 4th degree usage.</p><p id="fc059052-c3e5-462e-a08c-3910456f9857" class="">The license grants permission to <strong>all Employees and Contractors of the Licensee</strong> to access and use the .: B.O.U.~M :. naming convention.</p><p id="a22bc44f-0ba1-4e10-963b-2a681ffea0fa" class="">You <strong>can</strong>:</p><ul id="852ec020-3625-486f-a5df-c91d6252f3cc" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create unlimited End Products, that can be used by the End User to be re-destributed. These artifacts have <strong>3rd degree user rights.</strong></li></ul><ul id="3f9be9c5-b0e6-4449-9c29-348aa68e9500" class="bulleted-list"><li style="list-style-type:disc">Modify the .: B.O.U.~M :. naming-convention to create derivative .: B.O.U.~M :. naming conventions. Those artifacts are subject to <strong>2nd degree user rights</strong>.</li></ul><ul id="8fda7e78-1a6d-4f6d-9cc1-18d10a333c94" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create unlimited End Products for unlimited Clients. Those artifacts are subject to <strong>3rd degree user rights</strong>.</li></ul><ul id="23d7e389-fb67-4e92-a9dc-7661a351238d" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create End Products where the End Product is sold to End Users. Those artifactsare are<strong> </strong>subject to <strong>2nd degree user rights.</strong></li></ul><ul id="2e71b096-2ce3-4dd4-a004-d5114a0aa81e" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create End Products that are open source and freely available to End Users, but have<strong> limited 3rd degree and no rights to (re)distribute</strong>.</li></ul><ul id="2c506858-d89b-4d55-803f-73fe1898e97a" class="bulleted-list"><li style="list-style-type:disc">Creating a theme, template, or project starter kit using the .: B.O.U.~M :. naming convention, or parts of it, and making it available either for sale or for free. Those artifacts have <strong>2nd degree user rights.</strong></li></ul><ul id="3da7bf51-51fa-4fa4-b5a9-b13e7b974a79" class="bulleted-list"><li style="list-style-type:disc">Create a commercial Google Chrome, Figma or Sketch UI plugin for handling design tokens that uses .: B.O.U.~M :. as a design token convention, and making it available for sale or for free. These artifacts are subject to <strong>1st degree user rights.</strong></li></ul><ul id="734c14a6-5a35-4136-8800-e1765b6b5ef3" class="bulleted-list"><li style="list-style-type:disc">Creating a &quot;website builder&quot; project where end users can build their own websites using .: B.O.U.~M :.-naming convention included with or derived from <strong>3rd degree user licence</strong> (design system licence). These artifacts are subject to <strong>2nd degree user rights.</strong></li></ul><p id="53fe2943-a0aa-4714-9129-51c190faa604" class="">You <strong>canNOT</strong>:</p><ul id="3033b45c-1cc3-43bd-8e28-4ff3afe34f2a" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create End Products that are designed to allow an End User to build their own End Products using .: B.O.U.~M :. naming convention or derivatives of the .: B.O.U.~M :. naming convention.</li></ul><ul id="09c6d032-c914-4c7b-a810-33bffb2799be" class="bulleted-list"><li style="list-style-type:disc">Re-distribute the .: B.O.U.~M :. naming-convention or derivatives of the .: B.O.U.~M :. naming convention separately from an End Product. This warrents the license void due to breach of first principle; a license is embedded in a product and cannot be distributed seperately.</li></ul><ul id="229472fa-f458-4e60-b3b1-92729bb1285c" class="bulleted-list"><li style="list-style-type:disc">Use the .: B.O.U.~M :. naming-convention to create End Products that are the property of any individual or entity other than the Licensee or Clients of the Licensee.</li></ul><p id="28500614-8e79-416f-b220-bae974ef86a7" class="">In short what we don’t want people to do with it is to copy the naming convention in a way that it gives them <strong>re-destribution rights after the 1st or 2nd degree</strong>. </p><p id="3fb07a24-11eb-474c-a5e3-247b653a51f8" class="">You can make tons of products that people use to create something new with, free of charge, but the <strong>standard licenses</strong> are what you ship with your products and do <em>not need</em> a design system license to begin with. It’s an end-product, not a development product.</p><p id="cfa49296-c73d-48a1-9383-161c2ca6ca70" class="">Yet you’re severely limited to using it in your company-wide design system if you only use a product license. It’s no problem to give it a test-drive on a project, and systemizing that projects design system. But using it later on as such for automation of other projects, even if just parts of it, is considered using it as a design system.</p><p id="2e5d8581-073c-4253-9902-283fa83a14b5" class="">Examples of usage <strong>allowed</strong> by the license:</p><ul id="9c359d72-799a-49eb-b780-386312f5d173" class="bulleted-list"><li style="list-style-type:disc">Creating a design system for your company that creates modules for design systems</li></ul><ul id="b6c4a799-04bb-4f27-a68d-c32335e1be6f" class="bulleted-list"><li style="list-style-type:disc">Creating a web application for a client that will be owned by that client, but not the system</li></ul><ul id="ac2e2b0e-0179-47af-a282-462500480852" class="bulleted-list"><li style="list-style-type:disc">Creating a commercial SaaS application (like an invoicing app for example) where end users have to pay a fee to use the application</li></ul><ul id="e69b8599-7fa7-4261-ba90-34dda58101a3" class="bulleted-list"><li style="list-style-type:disc">Creating a commercial self-hosted web application that is sold to end users for a one-time fee</li></ul><ul id="b4d16334-f8ab-4451-a5a7-774aca6be7b7" class="bulleted-list"><li style="list-style-type:disc">Creating a web application where the primary purpose is clearly not to simply re-distribute the .: B.O.U.~M :. naming convention (like a front-end framework that uses it for its UI for example) that is not free and open source, where the source code is publicly available.</li></ul><ul id="b3e120c2-69d7-4b5b-a688-0587cfe02dd3" class="bulleted-list"><li style="list-style-type:disc">Creating a theme or template using the .: B.O.U.~M :. naming-convention and making it available either for sale or for free</li></ul><ul id="88c665fa-ed8b-40e6-b006-2d53b00230c6" class="bulleted-list"><li style="list-style-type:disc">Creating a &quot;website builder&quot; project where end users can build their own websites using design tokens included with or derived from .: B.O.U.~M :. naming-convention</li></ul><p id="a7d5b0c0-4ee5-4b4d-be29-e31795a98270" class="">Examples of use <strong>not allowed</strong> by the license:</p><ul id="dbd3c780-3ecf-4461-90d5-39c0d19a3bc7" class="bulleted-list"><li style="list-style-type:disc">Creating a repository of your favorite .: B.O.U.~M :. naming-conventions (or derivatives based on .: B.O.U.~M :. naming convention) and publishing it publicly free or paid</li></ul><ul id="9b02e3bb-8d3a-4f49-b7d6-b4cf83986e44" class="bulleted-list"><li style="list-style-type:disc">Creating a React, Angular, Svelte or Vue version of .: B.O.U.~M :. naming-convention and making it available either for sale or for free</li></ul><ul id="36892a67-7bcb-402f-9a4e-2a641d17798e" class="bulleted-list"><li style="list-style-type:disc">Creating an admin panel or design tool to create design systems using .: B.O.U.~M :. naming-convention (like <a href="https://nova.laravel.com/"><strong>Laravel Nova</strong></a> or <a href="https://activeadmin.info/"><strong>ActiveAdmin</strong></a>) that is made available either for sale or for free</li></ul><ul id="119b5908-9ed9-4fc7-9fc2-3b568020ebeb" class="bulleted-list"><li style="list-style-type:disc">Creating any End Product that is not the sole property of either your company or a client of your company. For example your employees/contractors can&#x27;t use your company’s .: B.O.U.~M :. naming convention to build their own websites or side projects using 1st and 2nd degree, only using 3rd. They can simply get their own  license without the trouble, but system use of BOUM-tokens is paid for since it’s very likely this is commercial grade use.</li></ul><h3 id="d0e6a084-5d7e-4f29-9f20-48e5db1a41a8" class="">Design System<strong> License Definitions</strong></h3><p id="f9e5e0ef-f93d-4760-b789-91b7925fa28f" class="">Licensee is the business entity who has purchased a System License, and is a <strong>3rd degree user</strong>. This does not grant the licensee FREE licenses to apply nor does the license include a proof of license for them to apply and must be purchased (for FREE!) separately in the BOUM-store.</p><p id="ee040cc1-d637-4e65-aae1-17d86b7186b0" class="">Company-sizes for System Licenses have other values mentioned than with Standard Product Licenses; PRO is limited to &lt;10, GROW is &lt;100 and GIANT is added and is &lt;1000. INDIE remains unchanged at &lt;3, which also covers personal use.</p><p id="bfd7f4f0-d95e-43d8-a064-fb1397bb8d13" class="">.: B.O.U.~M :. naming-convention are the text, datasets, design tokens, source code snippets and design assets made available to use after purchasing a .: B.O.U.~M :. <strong>proof of license purchase.</strong></p><p id="e0387ef8-37c0-4711-a92b-2330e54b2268" class="">End Product is any artifact produced that incorporates the .: B.O.U.~M :. naming-convention to the 2nd degree of usage.</p><p id="e74b735e-2456-41eb-8001-c8f38b3eaae5" class="">End User is a user of an Production Product or an End Product, and technically has no rights in the context of this contract but is the sole beneficiairy and consumer of the end-product.</p><p id="57afc231-aff7-4bb8-b78f-921cbfa8fbbd" class="">Employee is a full-time or part-time employee of the Licensee, and is essentially a <strong>4th degree user </strong>acting on behalf of a <strong>3rd degree user</strong>, and can generate <strong>2nd degree productss </strong>(licenses on products) to be used by their clients as end-products, or inhouse for developing parties who are <strong>1st degree users</strong> for (re)distribution on the company’s behalf the said client.</p><p id="7e4260e2-58d2-451b-afcb-88cf9cf16688" class="">Contractor or Employee is an individual or business entity contracted to perform services for the Licensee, and has <strong>no degree or rights to (re)distribute unless recognized as a 4th degree user.</strong></p><p id="79c42d11-c1b3-4f5b-a679-a44cc86d57ab" class="">Client is an individual or entity receiving custom professional services directly from the Licensee, produced specifically for that individual or entity, and has <strong>no degree or rights to (re)distribute but owns the rights of the end-product (2nd degree), and the IP of the system product (1st degree).</strong></p><p id="98d86933-7f96-46bf-a7ca-c2afc577a927" class="">Customers of software-as-a-service products are not considered clients for the purpose of this document, and have therefor <strong>no degree or rights to (re)destribute</strong></p><h2 id="794d75bb-80f9-4a97-8151-fd43e80427dc" class=""><strong>Enforcement of Violation</strong></h2><p id="86a30367-3933-4b52-bf16-74abdcc1d0e0" class="">If you are found to be in violation of the license ceiling and not upgrading to the right plan, protection towards your products will be terminated, and a refund may be issued at our discretion. When license violation is blatant and malicious (such as intentionally redistributing the .: B.O.U.~M :. naming-convention through private warez channels), no refund will be issued and a takedown will be ordered by the court of law, and all costs involved will be reclaimed. </p><p id="52d1d6fd-7bde-4c5d-b1b2-0a3580b1448c" class="">A fine will only be considered if there is significant loss of revenue, for the minimum of the next available paid license tier (not FREE*) or to a maximum value of the goodwill of the .: B.O.U.~M :. IP collectively.</p><p id="046bfe4d-9a61-4abb-8684-d4fc36f423d6" class="">Our intent of enforcement is to capture and retain our collective value regardless if we would lose you as a customer, which is why we will persue in most cases. Not devaluate and talking about our or your business, and waste money and time chasing pennies or petty theft criminals. But if push comes to shove, we demand a full takedown of your products if our simple and reasonable demands are not met.</p><h2 id="ca3310eb-0ed4-4c9b-8024-2d5133d876d9" class=""><strong>Liability and Responsibility</strong></h2><p id="9c445514-48ba-4338-a6c2-3269e9f0c1e2" class="">BonoBoos B.V.’s liability to you for costs, damages, or other losses arising from your use of the .: B.O.U.~M :. naming convention — including third-party claims against you — is limited to a refund of your license fee. </p><p id="36027757-5c45-4e50-af64-c10c2e2bd015" class="">BonoBoos B.V. may not be held liable for any consequential damages related to your use of the .: B.O.U.~M :. naming convention or it’s licenses in any of the <strong>five (+nth) degrees of usage.</strong></p><p id="1e581284-9578-4ec8-9cdc-c79d7992f670" class="">This Agreement is governed by the laws of the applicable law in The Netherlands, situated in Amsterdam. Legal proceedings related to this Agreement may only be brought in the courts of The Netherlands, Amsterdam. All communication shall be written in English or Dutch accordingly.</p><p id="414c55c2-3f8a-466c-be91-f1414578ba8c" class="">You agree to service of process at the moment you buy a license from the shop ánd you install it in your product in dual discretion. For yourself or a client. Licenses that are bought but not implemented are not worthless, they are defenseless due to having no product to be associated with or any proof of ownership claiming they did the transaction.</p><h1 id="639478ba-be08-49ee-941a-c7834f464951" class="">NFT-Disclaimer and Mission Statement (nth degree)</h1><p id="891a4953-6995-4816-b476-23e0ac11bf7a" class="">.: B.O.U.~M :. itself is protected by the same license agreement you are currently viewing, and lives on “a blockchain of design tokens” into every edge of your product. This one too.</p><p id="5f403400-2643-4695-99ed-f23bd94cb7e0" class="">Your very own “legal crypto-currency ” to start protecting your property beforehand, without burning any gas-prise, and safe from anyone using it for <strong>NFT-abuse in their (OS) software</strong>. </p><p id="11f72799-e34e-4c45-abe4-6c5f71d7df82" class="">This means that .: B.O.U.~M :. strictly <em><strong>prohibits the use</strong></em> of it’s very own product to be used in anything related to NFT practices, including creating products, tokenizing and mining for using crypto-currency.</p><p id="2881a8fe-8afa-4242-bcd7-5436e0d8a516" class="">We’re not against the art of generative art or NFT’s in general. I actually own one (I won) by an incredibly talented artist named Frank.</p><p id="ddf8a53e-d16f-468c-8045-c145ff98863f" class="">We’re against burning up the independent creatives whos work so often gets abused for fast profits, <strong>without their consent</strong> because they naïvely share their work freely on the web. </p><p id="5b9821f9-eb08-461b-9f00-be0060e2b464" class="">Without the right copyrights attached, your work can be used for just about anything you really don’t like it to be used for at all. But the damage is done, and you’re duped.</p><p id="3a089ad3-c886-4f81-bba6-62ea8cff9f50" class="">In hindsight there is no way to opt-out if your work gets “hacked”, and it makes some feel sick. Me included because the feeling of loss is immense, especially if you don’t even know or have seen this “frenemy” in real life. .: B.O.U.~M :. protects those who wish to do so upfront.</p><p id="a3f552b1-7432-476d-a4ef-18b768053572" class="">.: B.O.U.~M :. therefor protects it’s own IP from NFT malpractices using it’s own practice of protecting it’s naming convention, right inside the code itself.</p><p id="dcd8477f-2981-4946-ade0-c683d97db818" class="">And you can do the same by buying a license for FREE and owning those same rights on your domains &amp; products made with it, protecting it instantly with “<span style="border-bottom:0.05em solid">design tokens on a block-chain”.</span> </p><p id="01f1f25d-5749-49e1-90ca-ef3af147e0fe" class="">A legal NFT against NFT’S, how ironic! Zero gas-price, zero-budget.</p><p id="1d28f03b-7a98-4a66-86b3-3e2096d41143" class="">And that’s how your indie products are protected like a block-chain; <em>the </em><em><strong>.: B.O.U.~M :. naming convention</strong></em><em> is used in the root of your design system,</em> and thus protects the products you make beforehand.</p><p id="5c462ca0-ca4e-41ab-8158-0765fdf5192e" class="">We’re not against copying or NFT’s; we are <strong>pro copyrights</strong>! We can all decide on what terms people will copy our work in the future, without the most ancient crypto around: legal tender. Design can fix this and .: B.O.U.~M :. is the first attempt at solving this on a design system level.</p><h2 id="4f484946-48ba-4edc-99c4-538c1fd0b5ac" class="">Monetary Disclaimer &amp; Service Notice</h2><p id="de4aea04-69be-4b0b-83aa-348a64a2d95d" class="">There’s only one “catch” regarding legal and money; you need to pay for legal protection, even if it’s FREE. This is why free does have a value that is actually measurable.</p><p id="1e136085-1c83-4098-b66c-1e10b213baa3" class="">Or there is no “consent or trade of value” that can be used to value your IP in the court of law based on .: B.O.U.~M :. ‘s value, nor is there any proof of consent that you and I have <strong>a legal agreement </strong>on paper that proofs such value excists, neither of us owns anything if we didn’t exchange value.</p><p id="7dae8973-e4c3-4adf-802a-82057e44b12e" class="">The fine line of the law, yes. But doable, right? Free doesn’t mean no value, it’s the price of zero. That is a transfer of value too; TRUST in the system and it’s design.</p><p id="779340b7-af3d-4688-aa52-103ca9dbed20" class="">In short; the collective value of .: B.O.U.~M :. is determined by the collective of licenses that hold a literal monetary value. On your register and ours, FREE is just another value on a receipt of exchange of trade.</p><p id="126db762-9bd7-4599-8c86-e510aeb402eb" class="">So if there is no value to defend, there is no law to uphold, because there is no consent of <strong>at least two parties</strong> that such value excists in our shared yet protected intellectual property.</p><p id="e497eeea-07b9-47f5-a9f8-5a83d43a2878" class="">In turn .: B.O.U.~M :. <strong>must add value</strong> to your register, or no value is added to begin with, nor protected. FREE included if that’s the start of your indie business, the law does not judge that.</p><p id="5ea1311d-8051-4580-8926-ba3901ef03c1" class="">So that’s how I slowly but surely build up an indie-business of myself, using my own naming convention algorithm and commercially creative indie-license, so that in due time when “one of us gets hit”, the collective reacts as a backbone of proof in your case.</p><p id="c547f9ae-0281-4514-a5ef-411f22b9362c" class="">That’s why you pay for a license at some point, to add to the collective goodwill that protects us all. But please take note here; we <strong>do not offer legal services or show up in court with you. </strong>It’s a product that you buy, not a personal service despite our very personal approach.</p><p id="c293f7d1-fc26-4237-bedd-ebc49829414d" class="">That is not our business, that is showbusiness that requires you to run after your money <strong>behind the fact in court</strong>. I love creating awesome design systems, training and naming conventions for a living <strong>first and formost.</strong> This design system naming convention is a testimony of that creative affection I have with people who make them.</p><h3 id="37af9487-5b98-4fcb-810b-3aa0f9fcace2" class="">Reseller License and Profit Sharing BONUS (4th degree user)</h3><p id="eda6d291-0de4-4a86-8117-0556e99d005f" class="">All <strong>third degree</strong> design system licensees automatically get a reseller-code with which they can buy upgrade licenses for their clients <em>with a discount of up to 30%.</em> This discount is offerred so clients stick with their source, you, and the source-code.</p><p id="2b856c2d-f181-4cb6-9469-eb66c707210e" class="">This is to stimulate that a single source of truth is passed on forwards in trust and value, and doesn’t need governance to be applied correctly commercially. That’s covered by the license itself and the community that has been granted access. The rest is up to economics &amp; ecosystem use.</p><p id="d1c99c3a-9492-40d5-ae01-6c6ce2bc8b12" class="">A <strong>first degree</strong> design system licensee (FREE) can also get a 30% referral bonus for bringing in a 2nd degree customer who needs to upgrade to a design system license if they wish to create more than two projects from a free 1st degree license. </p><p id="e7fca96b-7cbb-49b8-a1cc-561fbf968eec" class="">This is to stimulate that system designers get paid for their work because they own the rights of system design, and by law and license agreement a client must pay you to own that 1st degree license, which get’s consumed by the new 3rd degree license. As a bonus, your client <strong>never has to pay VIP-ceiling fees</strong> ever again, and sets their business up legally for life.</p><h2 id="b5caafd9-b513-47e6-b8d7-24e8fa8a230b" class=""><strong>Questions?</strong></h2><p id="f0bac0fc-e1f9-4395-85b8-37133e41d3dd" class="">Unsure which license you need, or unsure if your use case is covered by the licenses? We offer custom licenses on request!</p><p id="2ab0161a-90d9-4ad7-99bc-5cc65494f2fb" class="">Just <a href="http://askgu.us">askgu.us</a>, the creator of .: B.O.U.~M :. and <a href="https://github.com/alolalo/RevolverDS">Revolver-DS</a></p><h3 id="afb08d77-f35f-4cc9-b8c1-c0547cff2613" class="">Attribution &amp; Contribution</h3><p id="79b4520c-84ea-463e-a620-807661cf9a76" class="">This Creative Commons License addition was made possible by <a href="https://tailwindui.com/license">TailwindCSS</a>’ excellent page on their own legal and licence notice, that formed most of the bases for this licence agreement to support the commercially creative indie industry at large <strong>protect their hard-earned voice, identity and ownership of their IP. </strong></p><p id="b605c87d-6fd5-4c4a-a9df-92bf29f6027e" class="">If anything, I hope this will inspire others to think about web3 and how they license their work ethically, and that this document becomes a base for others too (given the credits).</p><p id="6936b3b9-f828-45ed-bdac-e46334e2be81" class=""><strong>If you wish to support the development of anything I make for free, feel free to have a look at my personal </strong><a href="https://followgu.us/webshop"><strong>SHOP </strong></a><strong> for cool merchandise! </strong></p><p id="1641dae2-93f7-4f4e-8e30-27dae83f2e83" class="">And if you see any typo or legal loopholes that you think should be fixed, please contact me at <a href="http://askgu.us">askgu.us</a>! </p><p id="b1995be3-113d-436b-9df5-52eb0dc4c85d" class="">
+</p></div></article></body></html>
