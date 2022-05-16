@@ -1,5 +1,5 @@
 
-/* Revolver DS Design-Reset, based on Eric Meijer's, Elad Shechter, Andy Bell& Josh Comeau's CSS resets for sane defaults, plus the introduction of '--q'; a single utility variable that Ques anything from a container level for later use everwhere */
+/* Revolver DS Design-Reset, based on Eric Meijer's, Elad Shechter, Andy Bell & Josh Comeau's CSS resets for sane defaults in CSS */
 body, iframe, pre, img, svg, video, canvas, select {
         max-width: 100%;
         overflow: auto;

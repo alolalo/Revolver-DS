@@ -64,7 +64,7 @@ pre code {
     font-size: 1.1em;
   }
 
-h1 {
+h1, h2 {
     font-family: "Major Mono Display", Helvetica, monospace;
     margin-block-start: min(3vw, 5vw);
     margin-block-end: min(2vw, 4vw);

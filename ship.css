@@ -1,4 +1,6 @@
-/* LOAD.css is specifically used to lock in all your Lateral Tokens (utilities). These are referred to as "Lateral  Design Tokens" as they hold lateral values, meaning they don't hold literal or relative values, but refer to something more lateral like the utility itself. */
+/* SHIP.css is specifically used to lock in all your Lateral Tokens (loaded elsewhere), and are instantly recognizable by their 'u' prefix that means utility, followed by their group identity like color(--uc), layout(--ul), font(--uf). 
+
+This makes sure you know exactly what type of design token you're loading and which layer it came from; ship. This is the whole reason to stick to the naming convention, so it doesn't need documentation.*/ 
 
     .rds:not(.rds--freeze){
     /* RELATIVE utility colors: RELATIVE selector */
@@ -57,5 +59,47 @@
     --uf__size--ob3: clamp(2.65rem, calc(1.68rem + 4.86vw), 6.05rem);
     --uf__size--ob4: clamp(3.75rem, calc(2.21rem + 7.71vw), 9.15rem);
     --uf__size--ob5: clamp(5.30rem, calc(2.86rem + 12.19vw), 13.83rem);
+
+    /* ATOMIC DEV UTILITIES */
+
+    /* utility color succes, abbreviated to first-letters */
+    --ucs__mob: var(--_ucs__mob);
+    --ucs: var(--_ucs);
+    --ucs__mub: var(--_ucs__mub); 
+
+    /* utility color notification, abbreviated to first-letters */
+    --ucn__mub: var(--_ucn__mob);
+    --ucn: var(--_ucn);
+    --ucn__mob: var(--_ucn__mub);
+
+    /* utility color warning, abbreviated to first-letters */
+    --ucw__mob: var(--_ucw__mob);
+    --ucw: var(--_ucw);
+    --ucw__mub: var(--_ucw__mub);
+
+    /* utility color error, abbreviated to first-letters */
+    --uce__mob: var(--_uce__mob);
+    --uce: var(--_uce);
+    --uce__mub: var(--_uce__mub);
+
+    /* utility color foreground, background, midground, vectorground, textground, lineground, abbreviated to first letters */
+    --uc__ofg: ;
+    --uc__fg: ;
+    --uc__ufg: ;
+    --uc__omg: ;
+    --uc__mg: ;
+    --uc__umg: ;
+    --uc__obg: ;
+    --uc__bg: ;
+    --uc__ubg: ;
+    --uc__ovg: ;
+    --uc__vg: ;
+    --uc__uvg: ;
+    --uc__otg: ;
+    --uc__tg: ;
+    --uc__utg: ;
+    --uc__olg: ;
+    --uc__lg: ;
+    --uc__ulg: ;
     }
 

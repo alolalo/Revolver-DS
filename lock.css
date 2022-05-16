@@ -1,6 +1,4 @@
-/* .: B.O.U~M. :. copyrighted design tokens (https://www.followgu.us/license) use ROMAN SEMANTICAL NOTATION to ramp tokens ON or UNDER the relative Base, using characters only.
-
-/* LOCK.css is specifically used to lock in all your tokens that you don't want to touch hereafter. These are referred to as "Literal Design Tokens" as they hold literal values. */
+/* LOCK.css is specifically used to lock in all your hard-coded values. These are referred to as "Literal Design Tokens" as they hold literal values. It is recommended that you annotate every _literal _token with an _underscore before the prefix. This is so you allways know which css file, and which layer the token comes from in the order of loading or when you're debugging.*/
 
     .rds:not(.rds--freeze) {
     --_cp__mob: ;
@@ -81,17 +79,12 @@
     --_uce:  ;
     --_uce__mub: ;
 
-    /* spacing utility, abbreviated cascading t-shirt sizes */
-    --space-XX: clamp(0.13rem, calc(0.11rem + 0.06vw), 0.19rem);
-    --space-XS: clamp(0.25rem, calc(0.23rem + 0.13vw), 0.38rem);
-    --space-SS: clamp(0.50rem, calc(0.44rem + 0.31vw), 0.81rem);
-    --space-SM: clamp(0.69rem, calc(0.59rem + 0.50vw), 1.19rem);
-    --space-M: clamp(1.0rem, calc(0.81rem + 0.63vw), 1.56rem);
-    --space-MM: clamp(1.44rem, calc(1.25rem + 0.94vw), 2.38rem);
-    --space-ML: clamp(1.88rem, calc(1.63rem + 1.25vw), 3.13rem);
-    --space-LL: clamp(2.81rem, calc(2.44rem + 1.88vw), 4.69rem);
-    --space-LD: clamp(3.75rem, calc(3.25rem + 2.50vw), 6.25rem);
-    --space-DD: clamp(5.63rem, calc(4.88rem + 3.75vw), 9.38rem);
-    --space-XD: clamp(7.50rem, calc(6.50rem + 5.00vw), 12.50rem);
+    /* utility token Q: store any color in this CAPITALIZED token for inline use of style */
+    --Q: ;
 }
 
+@property --Q {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: #face22;
+  }

@@ -1,0 +1,20 @@
+/* The approach to using layers in-between if needed makes sure that you can nest layers in-between using dot-notation like so, without inventing new names or loading orders using numbers;
+
+@layer lock, load, ship;
+
+@import url('lock.css') layer(lock.lock)
+@import url('color--utilities.css') layer(lock.load) 
+@import url('load.css') layer(load)
+@import url('ship.css') layer(ship) */
+
+@layer lock {
+    .rds:not(.rds--freeze) {
+        --h: 120;
+        --s: 50%;
+        --l: 50%;
+        --a: 100%;
+        --Q: hsla(var(--h), var(--s), var(--l), var(--a));
+    }
+
+.lob + .lob + .lob {--l: 95%;}
+}
