@@ -16,9 +16,11 @@ The following document is an addition to the CC BY-NC-SA Creative Commence 4.0 l
 
 (**ADVERTISEMENT)** Revolver-DS gamified workshop “LOCKOUT” : [https://followgu.us/workshop](https://followgu.us/workshop) 
 
-# Everyday Use cases
+# Everyday Usage
 
-These usecases are to explain how .: B.O.U.~M :. product license degrees work in everyday context, outside of legal context. There are three degrees of usage and user rights, from system product (3rd) to production product (1st) to end-product(2nd), the 4th degree is an extension of the 3rd. The BOUM IP travels in between these identities as seperate legal entities, each having their own rights and claim which will be explained later in this document.
+There are usecases to explain how .: B.O.U.~M :. product license degrees work in everyday context, outside of legal context. These will be described later on to explain how degrees of usage work from 3rd, to 1st to 2nd degree. A simple triangulated set of usage rights.
+
+There are three degrees of usage and user rights, from system product (3rd) to production product (1st) to end-product(2nd), the 4th degree is an extension of the 3rd. The BOUM IP travels in between these identities as seperate legal entities, each having their own rights and claim upon transition which will be explained later in this document.
 
 ### The VIP-ceiling: Views, Installs & Prints
 
