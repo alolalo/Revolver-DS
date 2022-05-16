@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="import" href="lock.css" async>
+    <link rel="import" href="load.css" async>
+    <link rel="import" href="ship.css" async> -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>.: Revolver-DS :.</title>
+</head>
+<body class="">
+    <!-- a .rds parent can't be set twice. You must first freeze rds on the parent first, and re-enable .rds on the parent to make it flow again. Freeze does not stop flow, it's stops rds from flowing further down an element and can be re-enabled on the same element.  -->
+    <style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;white-space:nowrap;position:relative;transition:0.5s;}#forkongithub a:hover{background:#22cafe;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:absolute;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/alolalo/RevolverDS">Fork me on GitHub</a></span>
+    <div class="rds">
+    <h1 class="">.: HOW TO Revolver-DS :.</h1>
+    <h3>a semantical ITCSS DS methodology</h3>
+    <p>I had this DX question: what would the perfect developer hand-off to any design system by a designer look like?... Well, like any other design system!</p>
+   <p>To get YOU and designers started with Revolver-DS;</p>
+   <ol>
+       <li><a href="https://github.com/alolalo/RevolverDS">Fork the Repository</a> from Github</li>
+        <li>Create a new branch for their changes and additions</li>
+        <li>Import their changes using a pull request in due time</li>
+        <li>Add <code>.rds</code> class to your body (or anything small)</li>
+        <li>Done! Just lock, load & ship their designs, when they're ready!</li>
+   </ol>
+    <p>It was designed for lethal and non-destructive simplicity on language, all buff and no technical fluff other than the latest and greatest CSS. Like a gun, a CSS design system can be a scary thing to see or to handle but it's not; it's simple if you play it safe!</p>
+    <h2> Revolver-DS unloaded</h2>
+    <p>Revolver-DS is made with one simple strategy; <b>NO Docs</b>, strictly semantical principles and product development. Since there are no docs, all code is strictly commented and naming things semantically is a top priority. That leaves prototypes and demos as documentation (like this post).</p>
+    <p class="">Revolver-DS is a <b>simple revolver-themed methodology in CSS</b>; <i>just Lock, Load & Ship</i> your non-destructive CSS using only the <code>@layer</code> syntax, which is a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">CSS-only syntax</a> that allows you to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">@import</a> a CSS file into a specific <u>semantical</u> layer of a Revolver-DS.</p>
+    <pre><code>
+        /*style.css*/
+
+        @layer reset, lock, load, ship, preset;
+
+        @import url('../css/lock.css') layer(lock);
+        @import url('../css/load.css') layer(load);
+        @import url('../css/ship.css') layer(ship);
+    </pre></code>
+
+    <h1>Key Terminology</h1>
+    <p>From the ground up, Revolver-DS' design language is made for designing design systems, not designers or developers. The entire system is 100% semantically named, has no docs, and thus needs some introduction of it's simple language use;</p>
+    <h2>Four Types of Variables</h3>
+    <ol>
+        <li>Literal Variables</li>
+        <li>Nested Variables</li>
+        <li>Relative Variables</li>  
+        <li>Lateral Variables</li>
+    </ol>
+    <p>I've written about these types of variables <a href="https://www.followgu.us/cssvariables">in another post</a>, but they are quite simple to understand without reading up on it; 
+        <b>Literal</b> variables hold literal (hardcoded) values, that <b>relative</b> variables consume as they hold literal or nested variables they relate to. <b>Nested</b> Variables are a special kind of literal variable, like <code>--color--blue</code> and <code>--_color--blue</code> would be linked in this example. They nest their parents name, and only serve "family" purpose.</p>
+    <p><b>Lateral</b> Variables are design tokens that hold multiple values loaded elsewhere, like how a <code>hsl(var(--h), var(--s), var(--l))</code> would make up a HSL-color. They are laterally connected design tokens, hence the name lateral token.</p>
+    <h2>Five Types of @Layers</h2>
+    <ol>
+        <li>@Reset</li>
+        <li>@Lock</li>
+        <li>@Load</li>
+        <li>@Ship</li>
+        <li>@Preset</li>
+    </ol>
+    <p>Each kind of token also has a special layer that it belongs to, and each layer has <u>one writing rule</u> attached to write tokens for the three primary layers. This is done for the sake of layering and the ease of remembering "which token goes where" in the loading order of Revolver-DS.</p>
+    <h3>@layer Reset</h3>
+    <p>This is the traditional place to put your CSS reset. Revolver-DS has one included but you are free to replace it with your own, or even unload it completely by locking out the @reset layer.</p>
+    <pre><code>
+    /* Revolver DS Design-Reset, based on Eric Meijer's, Elad Shechter, Andy Bell 
+    & Josh Comeau's CSS resets for sane defaults in CSS */
+
+    body, iframe, pre, img, svg, video, canvas, select {
+            max-width: 100%;
+            overflow: auto;
+            word-break: break-word;
+        }
+
+    *:not(iframe, canvas, img, svg, video):not(svg *)) {
+        all: unset;
+        display: revert;
+    }
+    /* and some more .... */
+    </code></pre>
+    <h3>@layer Lock</h3>
+    <p>LOCK.css is specifically used to lock in all your hard-coded values. These are referred to as "Literal Design Tokens" as they hold literal values. It is recommended that you annotate every literal token with an _underscore before the prefix and after --. This is so you allways know which css file and which layer the token comes from in the order of loading or when you are debugging.</p>
+    <pre><code>
+        /* color secundairy, abbreviated to first-letters */
+
+        --_cs__mob: ;
+        --_cs__ooob: ;
+        --_cs__oob: ;
+        --_cs__ob: ;
+        --_cs: #face22;
+        --_cs__ub: ;
+        --_cs__uub: ;
+        --_cs__uuub: ;
+        --_cs__mub: ;
+    </pre></code>
+    <p>If you are unfamiliar with <a href="https://www.followgu.us/boum">BOUM-tokens </a>, they are a dead-simple way to name tokens on a ramp semantically from a relative base. It stands for <b>B</b>ase, <b>O</b>n, <b>U</b>nder, <b>M</b>ax | <b>M</b>odifier and is a companion to naming things the BEM-way semantically & simple.</p>
+    <p>There are three bonusses for using BOUM-tokens for developers. It doesn't conflict with any excisting naming convention, it can flip colors from one side of the scale to the other by just replacing o's and u's programmatically, and it comes with a free custom open source copyright license agreement, designed specifically for handling DS artifacts internally & externally.</p>
+    <h3>Sorry, No NFT's allowed</h3>
+    <p>If you would like to work with Revolver-DS without BOUM-tokens because of the license agreement, just replace the tokens with 100~900 variations you see in most design systems to date. Revolver-DS is released for free under the MIT license, but BOUM-tokens have a creative commons CC BY-NC-SA plus additional <a href="https://www.followgu.us/license">BOUM-license</a> attached to it so I can protect ANY IP I create with .: B.O.U.~M :. <u>against the use in NFT's, crypto-currency or SaaS-related products supporting either</u>.</p>
+    <h3>@layer Load</h3>
+    <p>LOAD.css is used to load in all your literal and nested design tokens. These are referred to as "Relative Design Tokens" as they are relative to other tokens. This is where you can load in your own design tokens, or even unload them completely by locking out the @load layer.</p>
+    <p>If you followed the rule of _underscoring in lock.css, in load.css you can now use the same name minus the _underscore. This makes sure that you know exactly which layer or css-file the token is coming from; lock or load.</p>
+    <pre><code>
+        /* color secundairy, abbreviated to first-letters */
+
+        --cs__mob: var(--_cs__mob);
+        --cs__ooob: var(--_cs__ooob);
+        --cs__oob: var(--_cs__oob);
+        --cs__ob: var(--_cs__ob);
+        --cs: var(--_cs);
+        --cs__ub: var(--_cs__ub);
+        --cs__uub: var(--_cs__uub);
+        --cs__uuub: var(--_cs__uuub);
+        --cs__mub: var(--_cs__mub);
+    </code></pre>
+    <h3>@layer Ship</h3>
+    <p>SHIP.css is specifically used to lock in all your Lateral Tokens (loaded elsewhere), and are instantly recognizable by their 'u' prefix that means utility, followed by their group identity like color(--uc), layout(--ul), font(--uf).</p>
+    <p>This is the whole reason to stick to the naming convention, so it doesn't need documentation to see where something is coming from, and can be explained in a comment.</p>
+    <pre><code>
+        /* RELATIVE utility colors: LITERAL selector */
+        --uc__background: var(--cs);
+        --uc__foreground: var(--cb);
+    
+        --uc__text--mob: var(--);
+        --uc__text: var(--cb);
+        --uc__text--mub: var(--);
+    
+        --uc__fill: var(--uc__foreground);
+        --uc__border: var(--uc__foreground);
+        
+        /*  utility layout: Spacing */
+        --ul__space--ob2: clamp(3.75rem, calc(2.00rem + 8.75vw), 12.50rem);
+        --ul__space--ob1: clamp(1.88rem, calc(1.00rem + 4.38vw), 6.25rem);
+        --ul__space--base: clamp(1.0rem, calc(0.50rem + 2.19vw), 3.13rem);
+        --ul__space--ub1: clamp(0.50rem, calc(0.29rem + 1.06vw), 1.56rem);
+        --ul__space--ub2: clamp(0.13rem, calc(0.08rem + 0.25vw), 0.38rem);
+    </code></pre>
+    <h3>@layer Preset</h3>
+    <p>Preset is where your design tokens and your (dev) design system meet and sync up their values. In or outwards, you could set up Revolver-DS to consume your tokens, or in reverse. Non-destructively.</p>
+    <pre><code>
+        /* from Revolver-Ds to your design system */
+        --cs__mob: var(--color-primary--950);
+        --cs__ooob: var(--color-primary--900);
+        --cs__oob: var(--color-primary--800);
+        --cs__ob: var(--color-primary--700);
+        --cs: var(--color-primary--600);
+        --cs__ub: var(--color-primary--500);
+        --cs__uub: var(--color-primary--400);
+        --cs__uuub: var(--color-primary--300);
+        --cs__mub: var(--color-primary--200);
+
+        /* from your design system to Revolver-Ds */
+        --color-primary--950: var(--cs__mob);
+        --color-primary--900: var(--cs__ooob);
+        --color-primary--800: var(--cs__oob);
+        --color-primary--700: var(--cs__ob);
+        --color-primary--600: var(--cs);
+        --color-primary--500: var(--cs__ub);
+        --color-primary--400: var(--cs__uub);
+        --color-primary--300: var(--cs__uuub);
+        --color-primary--200: var(--cs__mub);
+    </code></pre>
+    <p>This makes sure that you are never stuck having to adopt to Revolver-DS, or the other way around if you're a designer wanting to consume the front-end design system without leaving a trace of bad code. A headless design system for people who don't like to lose their head in the maze!</p>
+    <h3>Nesting RDS @layers</h3>
+    <p>Nested design tokens carry the same name as their parent. Nested @layers do too and each of the layers Lock, Load and Ship can be subdevided with the same set;</p>
+    <pre><code>
+        @layer lock.lock {}
+        @layer lock.load {}
+        @layer lock.ship {}
+        @layer load.lock {}
+        @layer load.load {}
+        @layer load.ship {}
+        @layer ship.lock {}
+        @layer ship.load {}
+        @layer ship.ship {}
+    </code></pre>
+    <p>This is done so that once you have a loading strategy that you like and want to stick to at scale,it can easily be maintained on the spot in case you need to import something inbetween two layers, like a bunch of utilities for example or maybe even a testing library;</p>
+    <pre><code>
+        @import url('lock.css') layer(lock.lock)
+        @import url('color--utilities.css') layer(lock.load) 
+        @import url('load.css') layer(load)
+        @import url('ship.css') layer(ship.lock)
+        @import url('tokens.css') layer(ship.load)
+        @import url('testkit.css') layer(ship.ship) 
+    </code></pre>
+    <p>Making sure everything is nicely put into semantical layers keeps the system fresh without the tech jargon and naming! It can concurrently recreate or subdevide itself with itself, which is an axiomatic holy grail in abstract factory modelling. In this case it's done by one designer and the new CSS ;)</p>
+    <h3>@layer *</h3>
+    <p>In your style.css file there is one last layer; the anonymous @layer without a name. This works like any other layer except you can't add anything to that layer later on (by intent), or it will conflict with itself. This is the last layer you will need to use before any regular CSS kicks in.</p>
+    <pre><code>
+        @layer {
+            p, h1, h2, h3 {
+                max-width: clamp(46ch, 50vw, 68ch);
+                margin-inline-start: clamp(2vw, 2.5vw, 3vw);
+            }
+            
+            h1, h2, h3 {
+                margin-block-end: clamp(-0.35vw, -0.6vw, -1vw);
+                white-space: nowrap;
+            }
+            
+            p, h2, h3, ul, ol {
+                font-family: "IBM Plex Mono", Arial, monospace;
+            }
+    </code></pre>
+    <h3>The <b>MOST</b> !important @layer</h3>
+    <p>@layers support <code>!important</code> in a very special way; they reverse the order of loading @layers! And Revolver-DS <b></b>does NOT USE</b> <u>!important</u> in any of it's layers. Meaning?...</p>
+    <p>
+    This means you still have <u><b>HALF</b> of all the @layers available</u> that Revolver-DS could provide for you technically speaking! This "negative space" is intentionally left for your design of system to exploit Revolver-DS' loading order JIT, without JS!</p>
+    <p>For a good read on what !important can do already using @layers, <a href="https://css-tricks.com/css-cascade-layers/"> have a look</a> what Miriam Suzanne did with it, one of the (if not the only) authors of the new @layer feature in CSS, and creater of <a href="https://sass-lang.com/">Sass</a></p>
+    <h3>Hello Designers, Bye Devs!</h3>
+    <p>The fun of the new CSS is just getting started with @layers for me, and I hope that this design system will serve many designers and developers on how to communicate as system designers.</p><p>No more job-titles or jargon fencing you from access to the source of truth, just stick to the mnemonical semantics and just Lock, Load & Ship it into the "unknown", together!</p>
+    <h3>Questions: Just ASK gu.us!</h3>
+    <p>Any Questions about Revolver-DS or me? Just <a href="https://www.askgu.us">ask Guus</a> or <a href="https://www.followgu.us">follow Guus</a> to see where I hang out on digital social. Thanks for reading and #KTBF: Keep the Basics Fresh!</p>
+</div>
+</body>
+</html>
