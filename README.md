@@ -1,5 +1,5 @@
 # Revolver-DS - The Lethal and Legal Design System
-<p class="">Revolver-DS is a <b>simple revolver-themed methodology in CSS</b>; <i>just lock, load & ship</i> your non-destructive Revolver-DS with "the new CSS"! Sounds dangerous and triangulated, and it is!</p> 
+<p class="">Revolver-DS is a <b>simple revolver-themed ITCSS methodology in CSS</b>; <i>just lock, load & ship</i> your non-destructive design token @layers! </p> 
     <p>EVERYTHING uses @layers to structure <a href="https://followgu.us/boum">BOUM-tokens</a> using ITCSS, which in turn get loaded correctly and non-destructively in a fresh Revolver-DS <code>@import</code> + <code>@layer</code> combination; @layer reset, lock, load, ship, preset;
 
  <pre><code>
@@ -16,15 +16,15 @@
 <p>Revolver-DS aims to do exactly what all the others forgot; create a design system for designers in the same manner as developers do, so there's a seperation of concern upfront "what wins". @layers will fix that! </p>
 
  <h1>.: Key Principles :.</h1>
-    <h3>EVERYTHING :has(Layers)</h3>
-    <p>Revolver-DS strictly uses the @layers feature to prevent any conflict with any class-based DS code, and to keep everything modularly and strictly layered instead of typed. A best practice that designer's know how to do as well, and saves them from naming things technically because "it's code".</p>
-    <h3>EVERYTHING :is(Tokenized)</h3>
-    <p>RDS strictly uses tokenized <a href="followgu.us/cssvariables">"Literal, Relative and Lateral"</a> CSS variables. They supercharge the layering of Revolver-DS without JS, as well as create a pleasant dx-experience without being forced to adopt a framework or alienating concept. Use the design system we already have; language!</p>
-    <h3>EVERYTHING :is(Semantical)</h3>
-    <p>What does color--600 actually mean? Is it the default, or the base? Numerics don't cut it that way, semantically. This is why Revolver-DS has it's own semantical token notation called .: B.O.U.~M :. that uses a relative --base to start from. Need more? Base plus one. Need less? Base minus one. It works great with fluid scales like Utopia (included!).</p>
-    <h3>EVERYTHING :is(Accessible)</h3>
-    <p>It should require no more than HTML, CSS and a text editor to get started with Revolver-DS. Pen & Paper is how I thought this system out, and in digital it works offline too. Just add <code>.rds</code> to your body element, and poof! </p><p>But what is more important than any of that is the design language is fully semantical, and accessible for non-technical people to get started with. The result: No docs, strictly simple principles to remember by hand.</p>
-    <p>The technical aspect of accessibility is something Revolver-DS cares deeply about. Yet there are already better systems out there that can do a better job on that level. Second, we anticipate CSS features like color-contrast() to solve this in a native way.</p>
+<h3>EVERYTHING :has(Layers)</h3>
+<p>Revolver-DS strictly uses the @layers feature to prevent any conflict with any class-based DS code, and to keep everything modularly and strictly layered instead of typed. A best practice that designer's know how to do as well, and saves them from naming things technically because "it's code".</p>
+<h3>EVERYTHING :is(Tokenized)</h3>
+<p>RDS strictly uses tokenized <a href="followgu.us/cssvariables">"Literal, Relative and Lateral"</a> CSS variables. They supercharge the layering of Revolver-DS without JS, as well as create a pleasant dx-experience without being forced to adopt a framework or alienating concept. Use the design system we already have; language!</p>
+<h3>EVERYTHING :is(Semantical)</h3>
+<p>What does color--600 actually mean? Is it the default, or the base? Numerics don't cut it that way, semantically. This is why Revolver-DS has it's own semantical token notation called .: B.O.U.~M :. that uses a relative --base to start from. Need more? Base plus one. Need less? Base minus one. It works great with fluid scales like Utopia (included!).</p>
+<h3>EVERYTHING :is(Accessible)</h3>
+<p>It should require no more than HTML, CSS and a text editor to get started with Revolver-DS. Pen & Paper is how I thought this system out, and in digital it works offline too. Just add <code>.rds</code> to your body element, and poof! </p><p>But what is more important than any of that is the design language is fully semantical, and accessible for non-technical people to get started with. The result: No docs, strictly simple principles to remember by hand.</p>
+<p>The technical aspect of accessibility is something Revolver-DS cares deeply about. Yet there are already better systems out there that can do a better job on that level. Second, we anticipate CSS features like color-contrast() to solve this in a native way.</p>
     
     
 <h3>EVERYTHING :is(Headless)</h3>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="import" href="lock.css" async>
+    <link rel="import" href="load.css" async>
+    <link rel="import" href="ship.css" async> -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>.: B.O.U.~M :.</title>
+</head>
+<body class="">
+    <!-- a .rds parent can't be set twice. You must first freeze rds on the parent first, and re-enable .rds on the parent to make it flow again. Freeze does not stop flow, it's stops rds from flowing further down an element and can be re-enabled on the same element.  -->
+    <style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;white-space:nowrap;position:relative;transition:0.5s;}#forkongithub a:hover{background:#22cafe;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:absolute;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/alolalo/RevolverDS">Fork me on GitHub</a></span>
+    <div class="rds">
+    <h1 class="">.: Hello BOUM-tokens! :.</h1>
+    <h3>a fully semantical & legal naming convention</h3>
+    <p>Hello and wellcome to the introduction of .: B.O.U.~M :. A fully semantical and copy-right protected naming convention designed to make naming tokens in design systems a breeze, and makes sharing work legally easier.</p> <p>No docs, simple principles and a free, custom DS license agreement that handles redistribution of attached BOUM-tokens internally & externally. Like a block-chain without the crypto, just tokens.</p>
+    <p>.: B.O.U.~M :. is a simple acronym for:</p>
+    <ul>
+        <li>BASE</li>
+        <li>ON</li>
+        <li>UNDER</li>
+        <li>MAX | _MODIFIER</li>
+    </ul>
+    <p>As a narrative, you start choosing your token from the relative BASE. Then if you need more of a certain value, simply go one ON base. Need less? One under base.</p> <p>And if you want to be certain to hit the highest value up or down, just MAX it out.</p>
+    <img src="img/Artboardboum.png" alt="explenation of BOUM acronym">
+    <p> A dead-simple way to dial your token-value up or down using everyday layman's language; one more on, or one under. And your token's default BASE-token is no-token!</p>
+    <p>Because seriously, what does --color--600 actually say about how that color is used? It's just imaginary numbers represented on a scale of 100's. Is that the default choice for "the base color"?</p>
+    <p>BOUM-tokens use "imaginary semantics" that cascade nicely up and down from a relative BASE you already picked. A designed language.</p> <p>And using some roman numerics to layer tokens (I, II, III), the design language stays fully semantical throughout code too. Github Co-Pilot loves it too, it just " read & writes " BOUM-tokens like it was pre-installed.</p>
+    <pre><code>
+    /* Nested Utility Colors, using the parent-name as selector. */
+    /* color primary, abbreviated to first-letters */
+
+    :root {
+        --cp__mob: var(--_cp__mob);
+        --cp__ooob: var(--_cp__ooob);
+        --cp__oob: var(--_cp__oob);
+        --cp__ob: var(--_cp__ob);
+        --cp: var(--_cp);
+        --cp__ub: var(--_cp__ub);
+        --cp__uub: var(--_cp__uub);
+        --cp__uuub: var(--_cp__uuub);
+        --cp__mub: var(--_cp__mub);
+    }
+    
+    .class {
+        color: var(--cp__mob);
+        background-color: var(--cp__mub)
+    }
+</code></pre>
+<p>Having a seperation of concern in naming tokens, BOUM-tokens will never conflict with framework tokens like Tailwind. Using Revolver-DS; just lock, load and ship your BOUM-tokens in any DS, so pick one you like.</p> <p> A win-win for devOps & desOps; a no-code design system for seperating devOps concerns in a desOps DS, and making it easier for all to play fair game to CRUD non-destructively.</p>
+<p>But like any good old TellSell commercial: <b>BUT WAIT, there's MORE!!</b></p>
+<h3>No-JS JIT refactoring</h3>
+<p>The name BOUM is four characters, and that's the max amount of characters you can use (excluding _modifiers) for writing out BOUM-tokens. But refactoring tokens is just as easy to do as creating them.</p>
+<h3>Refactoring A Color</h3>
+<p>For some designers color is everything, for a dev it's clean code. Both are served in this example;</p>
+<p>Suppose we created a color primary, with +8 variations, four dark and four light. And we need to add a lighter color, but can't use more o's. How to do that?</p>
+<pre><code>
+    /* color primary, abbreviated to first-letters */
+    
+    :root {
+        --cp__mob: var(--_cp__mob);
+        /* new color goes HERE */
+        --cp__ooob: var(--_cp__ooob);
+        --cp__oob: var(--_cp__oob);
+        --cp__ob: var(--_cp__ob);
+        --cp: var(--_cp);
+        --cp__ub: var(--_cp__ub);
+        --cp__uub: var(--_cp__uub);
+        --cp__uuub: var(--_cp__uuub);
+        --cp__mub: var(--_cp__mub);
+    }
+</code></pre>
+<p>A perfect example to show how to do it the quick and dirty way using modifiers, and the quick and easy way using numerical replacement.</p>
+<h3>Quick and Dirty</h3>
+<p>Modifiers are a special case where you need to modify a color-name, and place it on the ramp. But the question is; which token does it attach too?</p>
+<p>Luckily there is a simple rule for writing _modified tokens; it gets the name from the token that is closest to the base. Declared with an _m (and some << markers).</p>
+<pre><code>
+    /* color primary, abbreviated to first-letters */
+    
+    :root {
+        --cp__mob: var(--_cp__mob);
+        --cp__ooob_m: var(--_cp__ooob_m); /*<<*/
+        --cp__ooob: var(--_cp__ooob);
+        --cp__oob: var(--_cp__oob);
+        --cp__ob: var(--_cp__ob);
+        --cp: var(--_cp);
+        --cp__ub: var(--_cp__ub);
+        --cp__uub: var(--_cp__uub);
+        --cp__uuub: var(--_cp__uuub);
+        --cp__mub: var(--_cp__mub);
+        }
+    </code></pre>
+    <p>Done! That's quick and dirty in a clean way, but also very quick and dirty to "find and replace". It makes _modified tokens sooó easy to read and find, without needing any docs.</p>
+    <h3>Quick and Easy</h3>
+    <p>Now we get into the real deal; refactoring an entire code-base using BOUM-tokens. Or just an entire color-set, the process is the same; find & replace!</p>
+    <p>Dead-simple; you just hit CTRL+F and search for "ob", "oob", "oob" and replace them with numbers at the end; ob1, ob2, ob3. Numbers are not a crime, but using them for imaginary nonsense is.</p>
+    <pre><code>
+    /* color primary, abbreviated to first-letters */
+        /* before refactoring
+    :root {
+    --cp__mob: var(--_cp__mob);
+    --cp__ooob_m: var(--_cp__ooob_m);
+    --cp__ooob: var(--_cp__ooob);
+    --cp__oob: var(--_cp__oob);
+    --cp__ob: var(--_cp__ob);
+    --cp: var(--_cp);
+    --cp__ub: var(--_cp__ub);
+    --cp__uub: var(--_cp__uub);
+    --cp__uuub: var(--_cp__uuub);
+    --cp__mub: var(--_cp__mub);
+    }
+
+        /* after adding & refactoring */
+    :root {
+    --cp__mob: var(--_cp__mob);
+    --cp__ob5: var(--_cp__ob5);
+    --cp__ob4: var(--_cp__ooob_m);
+    --cp__ob3: var(--_cp__ooob);
+    --cp__ob2: var(--_cp__oob);
+    --cp__ob1: var(--_cp__ob);
+    --cp: var(--_cp);
+    --cp__ub1: var(--_cp__ub);
+    --cp__ub2: var(--_cp__uub);
+    --cp__ub3: var(--_cp__uuub);
+    --cp__ub4: var(--_cp__ub4);
+    --cp__mub: var(--_cp__mub);
+    }
+    </code></pre>
+
+    <p>I personally like to keep the MAX on and under the base, for ease of access. You could easily just count on too at the end, but the relative MAX is lost. MAX and the BASE are the only tokens that never need refactoring, any new color would simply replace it and degrade the old;</p>
+</code></pre>
+
+<h3>Refactoring the Refactored</h3>
+<p>Now that we have refactored everything but the MAX and the BASE to numbers, how would you modify tokens that go over the top or bottom?</p>
+<p>Dead-simple again too; MAX is semantical and ob* is numerical, which simple means; just give the old max a number, and the new value the MAX value.</p>
+<pre><code>
+
+    /* add color on top of MAX on base */
+
+:root {
+--cp__mob_m: var(--_cp__mob_m); /*<<*/
+--cp__mob: var(--_cp__mob); /*OLD MAX*/
+--cp__ob4: var(--_cp__ooob_m);
+--cp__ob3: var(--_cp__ooob);
+--cp__ob2: var(--_cp__oob);
+--cp__ob1: var(--_cp__ob);
+--cp: var(--_cp);
+}
+
+    /* after refactoring NEW & OLD MAX*/
+:root {
+--cp__mob: var(--_cp__mob_m); /*NEW MAX*/
+--cp__ob5: var(--_cp__mob); /*UPGRADED*/
+--cp__ob4: var(--_cp__ooob_m);
+--cp__ob3: var(--_cp__ooob);
+--cp__ob2: var(--_cp__oob);
+--cp__ob1: var(--_cp__ob);
+--cp: var(--_cp);
+}
+</code></pre>
+<p>Numerical notation is a way of making sure that the semantics of going up or down the ladder stay in place. This hybrid way keeps their relative & semantical BASE, MIN & MAX, without creating an imaginary numeric scale to replace those too.</p> <p>Just an obvious evolution, like how the roman numerical system was replaced due to too many characters needed to display. At some point it's time to replace characters with numbers.</p> <p>For BOUM-tokens the rule is simple; After four; <b>NO more semantics</b>. Just gracefully let the o's and u's decay, and get progressively enhanced with good-old numbers!</p>
+<p>But like a REALLY good TellSell commercial for an indie design system: There's even MORE!</p>
+<h3>Cascading TT-shirt tokens</h3>
+<p>Every good system has an anti-pattern, and BOUM's anti-pattern is to make design tokens fully semantical without the need for numerics, untill.</p>
+<p>Yet every modern design system uses tokens like "sm", "md", "lg" "xlg", "2xl" etc. for sizes. They start ADDING numbers to semantics because they want "less characters". An anti-pattern.</p>
+<p>TT-shirt sizes are a fully semantical evolution of ordinairy t-shirt sizes with numbers. The sizes simply trade place up or down the ladder, and "knit" semantics together like BOUM does.</p>
+<pre><code>
+    --XX = smallest size (min)
+    --XS = extra small 
+    --SS = small small (base small)
+    --SM = small medium 
+    --MM = medium medium(base medium)
+    --ML = medium large
+    --LL = large large (base large)
+    --LD = large display
+    --DD = display display (max)
+</code></pre>
+<p>The pattern is quite simple and consistent with the rest, but why would you replace your t-shirt sizes with TT-shirt sizes?</p> <p> Well if you are interested in fluid design, like Utopia's fluid typescales, it makes it easy to create pairs that you can remember. And they make your code smaller too.</p>
+<p>Second, just like BOUM-tokens, TT-shirt tokens have a simple pattern to them so they are easy to predict, and never conflict with numerics.</p>
+<p>Just Keep The Basics Fresh! #KTBF</p>
+    <h3>COPYRIGHT NOTICE & LICENSE AGREEMENT NOTICE</h3>
+
+<p>.: B.O.U.~M :. tokensets are copyright protected in addition to the Creative Commons 4.0 CC-BA-NC-SA license agreement that protects creatives in the field of digital. A copy can be found here: https://followgu.us/license</p>
+
+<p>The license is simple; BOUM-tokens are tokens that are attached at the end of your design tokens. These BOUM-tokens are copyright protected so your design system's tokens created from it automatically get legal protection, because the BOUM-tokens you use are protected by the license agreement that you have.</p> 
+
+<p>You in turn have a proof of license or not, which is free to get from the BOUM-shop https://followgu.us/boumshop. A smart contract between Revolver-DS and any other product I make with it, so I make sure it doesn't get used for NFT's, crypto-currency or SaaS-related products.</p>
+
+<p>I like this planet very much, and crypto makes people so corrupted. I'm keeping it web 2.5 and say no to web3's mallpractices. Something no other license agreement even dares to consider.</p>
+
+<p>But if you're using it for education or a CodePen, it's totally not neccesary to get a license unless you intend to publish the entire design token convention. </p>
+<p>Accreditation (https://justgu.us) with a notification of the license (https://followgu.us/boum) is enough if you don't need to be licensed, but still want to do the right thing.</p>
+<h3>Questions: Just ASK gu.us!</h3>
+    <p>I'm <a href="https://justgu.us"></a>just Gu.us</p>; The tiniest Dutch Design System Agency, packed inside a human body!</p>
+    <p>Any Questions? Just <a href="https://www.askgu.us">ask Gu.us</a> or <a href="https://www.followgu.us">follow Gu.us</a> to see where I hang out on digital social. If you wish to support the development of anything I make for free, feel free to have a look at my personal <a href="https://followgu.us/webshop">🛒 SHOP</a> for rad designer merchandise!</p>
+    <p>I love branding, naming things and design systems so much, that I started giving an "guns blazing" <i>applied game design</i> workshop called<a href="https://followgu.us/workshop">"LockOUT"</a>.</p> <p>For those that want to learn the true art of design systems ; <u>designing a DS pattern language</u> by hand, no code, playing a serious & applied game I made to name things. <b>ONSITE at your company</b> or online if you need to!</p>
+</div>
+</body>
+</html>

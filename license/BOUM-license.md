@@ -2,7 +2,7 @@
 
 Last update: 16-May-2022 , Version: 1.0.5
 
-The following document is an addition to the CC BY-NC-SA Creative Commence 4.0 licence used and included in the following products owned by BonoBoos B.V., registered in Amsterdam under KVK nr: 67377416, The Netherlands (LLC), privately owned by Guus Hoeve, represented as his branded identity hereafter mentioned as [justgu.us](http://justgu.us), [askgu.us](http://askgu.us), and grants the end-user limited commercial copyrights to use the “℗Voice, © Identity &™ Ownership” of **.: said :.** intellectual property, encapsulated by (.:  :.) ;
+The following document is an addition to the CC BY-NC-SA Creative Commence 4.0 licence used and included in the following products owned by BonoBoos B.V., registered in Amsterdam under KVK nr: 67377416, The Netherlands (LLC), privately owned by Guus Hoeve, represented as his branded identity hereafter mentioned as [justgu.us](http ://justgu.us), [askgu.us](http://askgu.us), and grants the end-user limited commercial copyrights to use the “℗Voice, © Identity &™ Ownership” of **.: said :.** intellectual property, encapsulated by (.:  :.) ;
 
 - .: B.O.U.~M. :. ™  semaforic naming convention (tokens, patterns, datasets & texts), to be used in algorithmic design & code, procedural design & code, and design tokens used in design systems.
 

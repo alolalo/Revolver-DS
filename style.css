@@ -86,6 +86,12 @@ body {
     font-weight: 500;
 }
 
+img {
+    max-width: min(80%, 800px);
+    margin-inline-start: clamp(2vw, 2.5vw, 3vw);
+    margin-block-start: clamp(1vw, 1.5vw, 2vw);
+}
+
 :where(.rds > *:not(.rds--freeze)) {
     color: var(--uc__text);
 }
@@ -112,124 +118,7 @@ Need less?
 Just godown Under Base from whwere you are. 
 Untill you hit the MAX on either side after three.
 
-It uses ROMAN SEMANTICAL NOTATION to give name to design tokens on- and
-under the base, using their first letters o' and u' like the
-roman numbers I, II and III use letters to spell them.
-
-// Roman Semantical Notation: X, I, II, III, M
-
-I'm not reïnventing the wheel here, I'm just using the roman numeric system
-as the primary analogy for how BOUM-tokens are semantically generated. The default 
-way to write out tokens is BEM-like, using --(B)__(E)--(M) as a writing-pattern.
-
-// WRITING PATTERN: --[BASE]__{ELEMENT}--MODIFIER, for example;
-Utility Color Primary, modified On On base; --uc__primary--oob
-Color Primar, modified Under base --cp__ub
-
-Please note that the concept of base and element is therefor interchangable. Some tokens don't
-need more than a Base + Modifier, which makes the BOUM-modifier the element. The
-writing-pattern of the --higher and __lower dashes doesn't swap places to keep consistency.
-
-//EXAMPLE: 
-
-MAX On Base : __mob;
-On On On Base : __ooob;
-On On Base: __oob;
-On Base: __ob;
-Base: ;
-Under Base: __ub;
-Under Under Base: __uub;
-Under Under Under Base: __uuub;
-MAX Under Base: __mub;
-
-which would look semantically like this on an abbreviated color primary;
-    --cp__mob: ;
-    --cp__ooob: ;
-    --cp__oob: ;
-    --cp__ob: ;
-    --cp: ;
-    --cp__ub: ;
-    --cp__uub: ;
-    --cp__uuub: ;
-    --cp__mub: ;
-
-So in short; need more value? On base. Need less value? Under base. BOUM
-works fully semantical systematically, and that is what makes it unique.
-
-A minimal and effective way to speak about design tokens as 
-semantical rules, not numbers, as a universal design language in code.
-
-BOUM is a Axiomatic and Semaforic IP to be exact, but that's
-just literature & legal slang versus keeping it layman's; 
-
-BOUM keeps it simple; just start with three tokens and let your choices 
-grow (no more than three(+1)) ON or UNDER the BASE from there on!
-
- // START with three...
---token__mob: ;
---token: ;
---token__mub: ;
-
-// THEN you add some
-
---token__mob: ;
---token__oob: ;
---token__ob: ;
---token: ;
---token__ub: ;
---token__uub: ;
---token__mub: ;
-
-And then... you need a value "in between" ...
-
-{{{{  How to write MODIFIERS }}}}
-
-Say you need a color-stop in your palette, between __ob and __oob.
-How would you name that token? And where would you place it?
-
-    --cp__mob: ;
-    --cp__ooob: ;
-    --cp__oob: ;    << {{ new color value? }}
-    --cp__ob: ;    << {{ new color value? }}
-    --cp: ;
-
-Let's assume we know the color is "just in between", than we
-could apply the rule "closest to the base" to adopt the name
-from, with a modifier prefixed: '_m__'.
-
-In this case, On Base (__ob) would be the closest value to
-mimic as a name, putting it right there where you want it; 
-modified in between '__ob' and '__oob', the new color-name is:
-
-MODIFIED On Base: --_m__cp__ob, so it sticks it's butt out screaming
-"HELLOOOO! I'm HERE!", without compromizing the standard semantics when
-you type and select from a list of autocompletes. 
-
-The added _m__ makes it dive straight to the bottom of the list, ignored mostly as it should be.
-
-A modifier looks semantically like this in a matrix of a color;
-    --cp__mob: ;
-    --cp__ooob: ;
-    --cp__oob: ;
-    --_m__cp__ob: ;
-    --cp__ob: ;
-    --co: ;
-    
-    Exceptions can be made, but only one per token unless you
-    want something like this to hit your approval inbox;
-    
-    --_mmm__cp--ooob
-    --_mm__cp--ooob
-    --_m__cp--ooob
-    --_mm__cp--oob
-    --_mm__cp--ob
-    --_mmm__cp
-
-Even still, that looks acceptably readable however, it's just
-not clear what the signal versus the noise is anymore since modifiers
-became the norm, not the exception.
-
-Design language is a huge part of Revolver-DS, if not everything.
+Design language is a huge part of .: B.O.U.~M :., if not everything.
 That's why RDS keeps principles simple and sticks to these basics;
 
 0. No Docs, Strictly Comments & Principles
