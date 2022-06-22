@@ -1,6 +1,6 @@
 # Revolver-DS - The Lethal and Legal Design System
 <p class="">Revolver-DS is a <b>simple revolver-themed ITCSS methodology in CSS</b>; <i>just lock, load & ship</i> your non-destructive design token @layers! </p> 
-    <p>EVERYTHING uses @layers to structure <a href="https://followgu.us/boum">BOUM-tokens</a> using ITCSS, which in turn get loaded correctly and non-destructively in a fresh Revolver-DS <code>@import</code> + <code>@layer</code> combination; @layer reset, lock, load, ship, preset;
+    <p>EVERYTHING uses @layers to structure <a href="https://followgu.us/boum">BOUM-tokens</a> using ITCSS, which in turn get loaded correctly and non-destructively in a fresh Revolver-DS <code>@import</code> + <code>@layer</code> combination; @layer reset, lock, load, ship, preset;</p>
 
  <pre><code>
         /*style.css*/
@@ -12,8 +12,8 @@
         @import url('../css/ship.css') layer(ship);
         
 </pre></code>
-    
-<p>Revolver-DS aims to do exactly what all the others forgot; create a design system for designers in the same manner as developers do, so there's a seperation of concern upfront "what wins". @layers will fix that! </p>
+    <p>The layers reset (first) and preset (last) are specifically designed for developers post designer implementation. All they have to remember is to just lock, load & ship it! A design system should be that easy to implement with other design systems; just pull the trigger.</p>
+<p>Revolver-DS aims to do exactly what all the others forgot; create a design system for designers in the same manner as developers do, so there's a seperation of concern upfront "what wins". @layers will fix that, and with five clearly seperated layers, both parties can rejoice! </p>
 
  <h1>.: Key Principles :.</h1>
 <h3>EVERYTHING :has(Layers)</h3>
@@ -23,7 +23,7 @@
 <h3>EVERYTHING :is(Semantical)</h3>
 <p>What does color--600 actually mean? Is it the default, or the base? Numerics don't cut it that way, semantically. This is why Revolver-DS has it's own semantical token notation called .: B.O.U.~M :. that uses a relative --base to start from. Need more? Base plus one. Need less? Base minus one. It works great with fluid scales like Utopia (included!).</p>
 <h3>EVERYTHING :is(Accessible)</h3>
-<p>It should require no more than HTML, CSS and a text editor to get started with Revolver-DS. Pen & Paper is how I thought this system out, and in digital it works offline too. Just add <code>.rds</code> to your body element, and poof! </p><p>But what is more important than any of that is the design language is fully semantical, and accessible for non-technical people to get started with. The result: No docs, strictly simple principles to remember by hand.</p>
+<p>It should require no more than HTML, CSS and a text editor to get started with Revolver-DS. Pen & Paper is how I thought this system out, and in digital it works offline too. Just add <code>.rds</code> to your body element, and poof! </p><p>But what is more important than any of that is that the design language is fully semantical, and accessible for non-technical people to get started with. The result: No docs, strictly simple principles to remember by hand so you can self-learn them by your own hands. And maybe even pass them on, but that's beautiful too; to learn yourself or to teach to learn yourself how to teach; a student you are, a student you will remain</p>
 <p>The technical aspect of accessibility is something Revolver-DS cares deeply about. Yet there are already better systems out there that can do a better job on that level. Second, we anticipate CSS features like color-contrast() to solve this in a native way.</p>
     
     
@@ -62,10 +62,16 @@ I got hopelessly lost at the start coming from digital, as we are use to the **8
 
 If anything, that would be the aim for for Revolver Design System; to create an optimal flow of import, export and departing from design systems for your next creation. Don't like Gravemaker's way of doing things? Well he's not a big fan of digital either, or Amazon. But I do think it's worthwhile to keep practicing, and so I continue on any "luxery time" I have to dive into it in the applied sense (demos). 
 
-After reading the dutch book _Praktisch Rekenen: voor zetters, drukkers en binders_ by C. Hofmann, I got to learn the math that Thomas was educated with, and knows by heart and hand how to set right each and every time. Perfect, no computer, just by memory and the science behind the math.
+After reading the dutch book _Praktisch Rekenen: voor zetters, drukkers en binders_ by C. Hofmann, I got to learn the math that Thomas was educated with, and knows by heart and hand how to set right each and every time. Perfect, no computer, just by memory and the science behind the math. This is why I believe any knowledge should require no more than five fingers to explain. 
 
-This is therefor a the balanced middle-ground to help digital typographers as well as letter-pressers a demonstration how those proportions actually relate in **odds & even** proportions of the root-value. Because it is exactly the root-value that you pick that will set the stage for both your press, and your print. 
+And this way of dealing with numbers, by hand, has been done by a famous (selftaught) physician, scientist, socialist & mentor to many beyond his lifetime 'Bede' (724) who invented this method to "learn by hand" so the mnemonics (in memory) are retained in the physical form, but will always be conveyed by a presence and voice that CAN explain the principle by their own hands. This method is called **computus digitorum**, later known as just "computus" which is how your contiousness computes.
 
-In todays field of design, generative design is a much appraised field of craftsmanship. I've personally created a mental model the B.O.U.M.:fork:. that is an abbreviation of the following acronyms; BASE, ON, UNDER, MODIFIER, *fork* that shows the **symmetrical composition** in these models and proportions, but use _proportional equality_ to form these models from the center-out. From the base size, up or under using fluid overlap with <code>clamp ()</code>
+This to me was as clear as night and day; computus digitorum is most certainly one of the principle behind our everyday computer science, as all software runs by the hand of their creator, which is effectively a computus digital; the physical manifestation of a predefined set of mental operations to be executed by a computer. To me that sounds as relevant as it is ancient, and traces computer science back to well over a melennia than we previously thought.
 
-Gridless if you will since the numbers you change in the '--bu--' will actually form the scale & size of the grid, but you can forget about that for a second if you will; what's important about generative design is that the _parametric head-values_ can be easily manipulated to see their effects. Therefor this demo serves as a purpose to see how duodecimo en sedecimo will actually work in generative typography scales, based on traditional scales.
+This method is also a scientific self-test to really see if your teacher knows what they are talking about (meaning in those times; you are your own best teacher!), and to see where you differ with other teachers. So self-learning was about writing and rewriting your handy mnemonics untill self-taught to perfection, or they would simply not work for you; your own mnemonics.
+
+This is the forgotten lesson about hand mnemonics; that you are able to see the abstract theory of your own mind to someone has on their own execution of thought, that both can actually relate to in the physical realm. Nowadays it's just "words against words", meta-physical vs meta-physcial, a quite boring interactivity if you aim for the highest goal; enlightened factfull relativity based on logic vs logic, not illogic mixed with logic.
+
+This is therefor a the balanced middle-ground to help digital typographers as well as letter-pressers a demonstration how those proportions actually relate in **odds & even** proportions of the root-value. Because it is exactly the root-value that you pick that will set the stage for both your press, and your print. You should be able to see the pattern and it's principles by hand, and not another visual representation of something that it actually never is in real life. You just need to concentrate and find your focus, it's easier than you think.
+
+article on Handy Mnemonics: https://publicdomainreview.org/essay/handy-mnemonics
